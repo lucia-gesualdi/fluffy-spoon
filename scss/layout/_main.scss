@@ -1,0 +1,308 @@
+@media screen and (max-width: 768px) {
+    blockquote {
+        display: none;
+    }
+    .main {
+        display: grid;
+        grid-template-areas: "section" "aside";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        .section {
+            grid-area: section;
+            width: auto;
+            padding: 0.2rem 1.5rem;
+        }
+        .aside {
+            grid-area: aside;
+            width: auto;
+            padding: 0.2rem 5rem;
+            .card {
+                background-color: $lightgray;
+                .card__title {
+                    background-color: $black;
+                    color: $saffron;
+                    text-align: center;
+                    font-size: xx-small;
+                    font-weight: light;
+                }
+                p {
+                    font-size: small;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .info {
+        margin: 0;
+        padding: 0.5rem;
+        width: auto;
+        .info__title {
+            padding: 0.2rem 0rem;
+            background-color: $black;
+            color: $lightgray;
+            border-radius: 0.2rem;
+            font-size: 1em;
+        }
+        .info__body {
+            .info__body--title {
+                padding: 0.1rem 0rem;
+                background-color: $saffron;
+                border: 0.1rem solid $darkgray;
+                border-radius: 0.2rem;
+                font-size: 0.85em;
+            }
+            .info__body--content {
+                padding: 0.5rem 0.1rem;
+                background-color: $lightgray;
+            }
+        }
+    }
+    .form {
+        .form__title {
+            text-align: center;
+            font-size: 0.2em;
+        }
+        .form__body {
+            padding: 1rem 0.5rem;
+            text-align: center;
+            background-color: $lightgray;
+            border: 0.1rem solid $black;
+            .form__body--input {
+                display: flex;
+                flex-flow: column nowrap;
+                font-size: 0.8em;
+                font-weight: bold;
+            }
+            .form__body--news {
+                font-size: 1em;
+                font-weight: bold;
+            }
+            .form__body--comment {
+                font-size: 1em;
+                font-weight: bold;
+            }
+            .form__buttons {
+                font-size: 1em;
+                font-weight: lighter;
+                .button {
+                    padding: 0.1rem 0.4rem;
+                    border-radius: 0.2rem;
+                    background-color: $black;
+                    color: $saffron;
+                }
+            }
+        }
+    }
+    .pubdomain {
+        margin: 1rem;
+        padding: 1rem;
+        border: 0.5rem solid $sinopia;
+        border-radius: 0.5rem;
+        .pubdomain__title {
+            padding: 0.5rem 0.5rem;
+            background-color: $black;
+            border-radius: 0.2rem;
+            color: $lightgray;
+        }
+        .pubdomain__body {
+            padding: 1rem 0rem;
+            text-align: start;
+            font-size: normal;
+            font-weight: 500;
+        }
+    }
+    .pubdomain__links {
+        margin: 1rem;
+        padding: 1rem;
+        border: 0.5rem solid $sinopia;
+        border-radius: 0.5rem;
+        .pubdomain__links--title {
+            padding: 0.5rem 0.5rem;
+            background-color: $black;
+            border-radius: 0.2rem;
+            color: $lightgray;
+        }
+        .pubdomain__links--links {
+            padding: 1rem 0rem;
+            text-align: start;
+            font-size: normal;
+            font-weight: 500;
+            li a {
+                color: $sinopia;
+                text-shadow: 0.1rem 0rem 0.1rem $black;
+                padding-left: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        .quote {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+            font-size: large;
+            font-weight: 400;
+            margin: 2rem 2em;
+            padding: 1rem;
+            text-align: center;
+        }
+        .main {
+            max-width: 1400px;
+            align-self: center;
+            display: grid;
+            grid-template-areas: "section aside";
+            grid-template-columns: 80% 20%;
+            grid-template-rows: auto;
+            .section {
+                grid-area: section;
+                margin: 0rem 2.5rem;
+            }
+            .aside {
+                grid-area: aside;
+                position: sticky;
+                top: 0;
+                margin: 0;
+                padding-left: 0.5rem;
+                .card {
+                    margin-bottom: 1.5rem;
+                    background-color: $lightgray;
+                    .card__title {
+                        background-color: $black;
+                        color: $saffron;
+                        text-align: center;
+                        font-size: x-small;
+                        font-weight: light;
+                    }
+                    p {
+                        font-size: normal;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        /* nosotros */
+        .info {
+            margin: 0;
+            padding: 2rem;
+            width: 900px;
+            align-self: center;
+            .info__title {
+                padding: 0.5rem 0rem;
+                background-color: $black;
+                color: $lightgray;
+                border-radius: 0.2rem;
+                font-size: 1.5em;
+            }
+            .info__body {
+                .info__body--title {
+                    padding: 0.1rem 0rem;
+                    background-color: $saffron;
+                    border: 0.1rem solid $darkgray;
+                    border-radius: 0.2rem;
+                    font-size: 1em;
+                }
+                .info__body--content {
+                    padding: 1rem 0rem;
+                    background-color: $lightgray;
+                }
+            }
+        }
+        /* contacto */
+        .form {
+            width: 900px;
+            align-self: center;
+            .form__title {
+                text-align: center;
+                font-size: 1em;
+            }
+            .form__body {
+                padding: 1rem 0.5rem;
+                text-align: center;
+                background-color: $lightgray;
+                border: 0.2rem solid $black;
+                .form__body--input {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+                .form__body--news {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+                .form__body--comment {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+                .form__buttons {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    .button {
+                        padding: 0.1rem 0.4rem;
+                        border-radius: 0.2rem;
+                        background-color: $black;
+                        color: $saffron;
+                    }
+                }
+            }
+        }
+        /* Public Domain */
+        .pubdomain {
+            width: 900px;
+            align-self: center;
+            margin: 1rem;
+            padding: 2rem;
+            border: 0.5rem solid $sinopia;
+            border-radius: 0.5rem;
+            .pubdomain__title {
+                padding: 0.5rem 0.5rem;
+                background-color: $black;
+                border-radius: 0.2rem;
+                color: $lightgray;
+            }
+            .pubdomain__body {
+                padding: 1rem 0rem;
+                text-align: start;
+                font-size: large;
+                font-weight: 500;
+            }
+        }
+        .pubdomain__links {
+            width: 900px;
+            align-self: center;
+            margin: 1rem;
+            padding: 2rem;
+            border: 0.5rem solid $sinopia;
+            border-radius: 0.5rem;
+            .pubdomain__links--title {
+                padding: 0.5rem 0.5rem;
+                background-color: $black;
+                border-radius: 0.2rem;
+                color: $lightgray;
+            }
+            .pubdomain__links--links {
+                padding: 1rem 0rem;
+                text-align: start;
+                font-size: large;
+                font-weight: 500;
+                li a {
+                    color: $sinopia;
+                    text-shadow: 0.1rem 0rem 0.1rem $black;
+                    padding-left: 3rem;
+                }
+            }
+        }
+    }
+}
+
+img:hover {
+    transform: scale(1.5, 1.5);
+}

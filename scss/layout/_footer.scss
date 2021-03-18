@@ -1,0 +1,79 @@
+@media screen and (max-width: 992px) {
+    .footer {
+        background-color: $black;
+        display: flex;
+        flex-flow: column nowrap;
+        .footer__links {
+            color: $darkgray;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            .links__contact {
+                font-size: 0.7em;
+            }
+            .links__tandc {
+                font-size: 0.7em;
+            }
+            .links__social {
+                font-size: 0.85em;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                li{
+                    padding: 0rem 0.2rem;
+                }
+            }
+        }
+        .copyright {
+            color: $sinopia;
+            font-size: xx-small;
+            margin: 0rem;
+            padding: 0rem;
+            text-align: center;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .footer {
+        background-color: $black;
+        display: flex;
+        flex-flow: column nowrap;
+        .footer__links {
+            color: $darkgray;
+            margin: 0rem;
+            padding: 0rem 1rem 0.5rem 1rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            .links__contact {
+                padding: 1rem;
+                li {
+                    padding: 0.1rem;
+                }
+            }
+            .links__tandc {
+                padding: 1rem;
+                li {
+                    padding: 0.1rem;
+                }
+            }
+            .links__social {
+                padding: 1rem;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                li {
+                    padding: 0rem 0.5rem;
+                }
+            }
+        }
+        .copyright {
+            color: $sinopia;
+            padding: 0rem 1rem;
+            text-align: center;
+        }
+    }
+}

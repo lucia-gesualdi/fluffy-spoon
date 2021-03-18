@@ -1,0 +1,171 @@
+@media screen and (max-width: 576px) {
+    .header {
+        background-color: $black;
+        display: flex;
+        flex-flow: column nowrap;
+        .header__icons {
+            color: $darkgray;
+            font-size: xx-small;
+            padding: 0%;
+            display: flex;
+            flex-flow: row nowrap;
+            .header__icons--social {
+                display: none;
+            }
+            .header__icons--account {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                li {
+                    font-size: xx-small;
+                    text-align: center;
+                    padding: 0.5rem 0.1rem;
+                    a {
+                        padding: 0rem 0.2rem;
+                    }
+                }
+            }
+        }
+        .header__logo {
+            color: $saffron;
+            font-family: "Courier New", Courier, monospace;
+            font-size: xx-small;
+            font-weight:lighter;
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: center;
+            span {
+                color: $sinopia;
+                font-family: "Courier New", Courier, monospace;
+                font-size: small;
+                font-weight: normal;
+            }
+            img {
+                width: 15%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        background-color: $black;
+        display: flex;
+        flex-flow: column nowrap;
+        .header__icons {
+            color: $darkgray;
+            font-size: xx-small;
+            padding: 0%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            .header__icons--social {
+                display: none;
+            }
+            .header__icons--account {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                li {
+                    font-size: xx-small;
+                    text-align: center;
+                    padding: 0.5rem 0.1rem;
+                    a {
+                        padding: 0rem 0.2rem;
+                    }
+                }
+            }
+        }
+        .header__logo {
+            color: $saffron;
+            font-family: "Courier New", Courier, monospace;
+            font-size: small;
+            font-weight: light;
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: center;
+            span {
+                color: $sinopia;
+                font-family: "Courier New", Courier, monospace;
+                font-size: normal;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-color: $black;
+        display: flex;
+        flex-flow: column nowrap;
+        .header__icons {
+            color: $darkgray;
+            font-size: 1.2rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            .header__icons--social {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                li {
+                    font-size: 1em;
+                    padding-left: 0.4rem;
+                    padding-right: 0.4rem;
+                }
+            }
+            .header__icons--account {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                li {
+                    font-size: 1em;
+                    padding-left: 0.4rem;
+                    padding-right: 0.4rem;
+                }
+            }
+        }
+        .header__logo {
+            color: $saffron;
+            font-family: "Courier New", Courier, monospace;
+            font-size: small;
+            font-weight: light;
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: center;
+            span {
+                color: $sinopia;
+                font-family: "Courier New", Courier, monospace;
+                font-size: normal;
+                font-weight: bold;
+            }
+            animation-name: logo;
+            animation-iteration-count: 1;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            @keyframes logo {
+                0%{
+                    transform: translatey(-800px);
+                }
+                25% {
+                    transform: translatey(80px);
+                }
+                50% {
+                    transform: translatey(-10px);
+                }
+                75%{
+                    transform: translatey(30px);
+                }
+                100%{
+                    transform: translatey(0px);
+                }
+            }
+        }
+    }
+}
