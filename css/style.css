@@ -163,7 +163,7 @@ a {
     .main .aside {
       grid-area: aside;
       width: auto;
-      padding: 0.2rem 5rem; }
+      padding: 0.2rem 4.5rem; }
       .main .aside .card {
         background-color: #eaf1ec; }
         .main .aside .card .card__title {
