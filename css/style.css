@@ -16,40 +16,29 @@ a {
     display: flex;
     flex-flow: column nowrap; }
     .header .header__icons {
-      color: #93ffd4;
-      font-size: xx-small;
-      padding: 0%;
-      display: flex;
-      flex-flow: row nowrap; }
+      color: #93ffd4; }
       .header .header__icons .header__icons--social {
         display: none; }
       .header .header__icons .header__icons--account {
-        margin: 0;
-        padding: 0;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around; }
+        flex-flow: row nowrap; }
         .header .header__icons .header__icons--account li {
-          font-size: xx-small;
-          text-align: center;
-          padding: 0.5rem 0.1rem; }
+          text-align: center; }
           .header .header__icons .header__icons--account li a {
-            padding: 0rem 0.2rem; }
+            font-size: 1.5em; }
     .header .header__logo {
       color: #ecbd25;
-      font-family: "Courier New", Courier, monospace;
-      font-size: xx-small;
-      font-weight: lighter;
+      width: 100%;
       display: flex;
       flex-flow: column nowrap;
-      text-align: center; }
+      text-align: center;
+      text-transform: lowercase; }
+      .header .header__logo h1 {
+        color: #ecbd25;
+        font-size: 1.2em; }
       .header .header__logo span {
         color: #c3073f;
-        font-family: "Courier New", Courier, monospace;
-        font-size: small;
-        font-weight: normal; }
-      .header .header__logo img {
-        width: 15%; } }
+        font-size: 1.21em; } }
 
 @media screen and (max-width: 768px) {
   .header {

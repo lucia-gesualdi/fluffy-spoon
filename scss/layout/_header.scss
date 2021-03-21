@@ -5,45 +5,34 @@
         flex-flow: column nowrap;
         .header__icons {
             color: $darkgray;
-            font-size: xx-small;
-            padding: 0%;
-            display: flex;
-            flex-flow: row nowrap;
             .header__icons--social {
                 display: none;
             }
             .header__icons--account {
-                margin: 0;
-                padding: 0;
                 display: flex;
                 flex-flow: row nowrap;
-                justify-content: space-around;
                 li {
-                    font-size: xx-small;
                     text-align: center;
-                    padding: 0.5rem 0.1rem;
                     a {
-                        padding: 0rem 0.2rem;
+                        font-size: 1.5em;
                     }
                 }
             }
         }
         .header__logo {
             color: $saffron;
-            font-family: "Courier New", Courier, monospace;
-            font-size: xx-small;
-            font-weight:lighter;
+            width: 100%;
             display: flex;
             flex-flow: column nowrap;
             text-align: center;
+            text-transform: lowercase;
+            h1{
+                color: $saffron;
+                font-size: 1.2em;
+            }
             span {
                 color: $sinopia;
-                font-family: "Courier New", Courier, monospace;
-                font-size: small;
-                font-weight: normal;
-            }
-            img {
-                width: 15%;
+                font-size: 1.21em;
             }
         }
     }
