@@ -1,32 +1,46 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .footer {
         background-color: $black;
         display: flex;
         flex-flow: column nowrap;
         .footer__links {
-            color: $darkgray;
+            color: $lightgray;
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
+            flex-flow: column nowrap;
+            align-items: center;
+            letter-spacing: 0.2rem;
+            word-spacing: 0.1rem;
+            line-height: 2.1rem;
             .links__contact {
-                font-size: 0.7em;
+                text-align: center;
+                padding: 0.4rem 1rem;
+                font-size: 0.8em;
+                li a {
+                    padding: 0.5rem 0rem;
+                }
             }
             .links__tandc {
-                font-size: 0.7em;
+                text-align: center;
+                padding: 0rem 1rem;
+                font-size: 0.8em;
+                li a {
+                    padding: 0.5rem 0rem;
+                }
             }
             .links__social {
                 font-size: 0.85em;
+                text-align: center;
                 display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-evenly;
-                li{
-                    padding: 0rem 0.2rem;
+                flex-flow: row;
+                li a {
+                    text-align: center;
+                    padding: 0rem 3rem;
                 }
             }
         }
         .copyright {
-            color: $sinopia;
-            font-size: xx-small;
+            color: $darkgray;
+            font-size: 0.8em;
             margin: 0rem;
             padding: 0rem;
             text-align: center;
@@ -34,28 +48,32 @@
     }
 }
 
-
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .footer {
+        margin: 0;
         background-color: $black;
         display: flex;
         flex-flow: column nowrap;
         .footer__links {
-            color: $darkgray;
+            color: $lightgray;
             margin: 0rem;
             padding: 0rem 1rem 0.5rem 1rem;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+            letter-spacing: 0.2rem;
+            word-spacing: 0.1rem;
+            line-height: 2.1rem;
             .links__contact {
-                padding: 1rem;
+                font-size: 0.9em;
+                padding: 0.4rem 1rem;
                 li {
                     padding: 0.1rem;
                 }
             }
             .links__tandc {
-                padding: 1rem;
+                font-size: 0.9em;
+                padding: 0.4rem 1rem;
                 li {
                     padding: 0.1rem;
                 }
@@ -71,7 +89,8 @@
             }
         }
         .copyright {
-            color: $sinopia;
+            font-size: 0.8em;
+            color: $darkgray;
             padding: 0rem 1rem;
             text-align: center;
         }

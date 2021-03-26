@@ -1,79 +1,112 @@
 @media screen and (max-width: 992px) {
-    .article {
-        display: flex;
-        flex-flow: column nowrap;
-        .article__title {
-            text-align: start;
-            background-color: $sinopia;
-            color: $black;
-            font-size: 1.2em;
-            font-weight: light;
-            padding: 0.3rem 1.5rem;
-        }
-        .article__content {
+    article {
+        margin-top: 0.5rem;
+        background-image: url("/img/bgimage8.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .article {
             display: flex;
             flex-flow: column nowrap;
-            align-items: center;
-            .content__title {
-                font-size: small;
-                font-weight: 100;
-                text-align: start;
-            }
-            li .vid1 .vid2 .vid3 .vid4 .vid5 .vid6 .vid7 .vid8 {
+            .article__title {
                 width: 100%;
+                text-align: center;
+                background-color: $black;
+                color: $sinopia;
+                padding: 0.5rem 0rem;
+            }
+            .article__content {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                .content__title {
+                    font-size: 0.85em;
+                    font-weight: 600;
+                    text-decoration: underline;
+                    text-align: center;
+                }
+                li .vid1 .vid2 .vid3 .vid4 .vid5 .vid6 .vid7 .vid8 {
+                    width: auto;
+                }
             }
         }
     }
 }
 
 @media screen and (min-width: 992px) {
-    .article {
-        margin: 7rem;
+    article {
+        margin-top: 0.5rem;
         display: flex;
         flex-flow: column nowrap;
-        .article__title {
-            text-align: start;
-            background-color: $sinopia;
-            color: $black;
-            padding: 0.6rem 0.3rem;
-        }
-        .article__content {
-            margin-left: 2rem;
-            padding: 0.1rem;
-            display: grid;
-            grid-template-areas:
-                "v1 v2 v3 v4"
-                "v5 v6 v7 v8";
-            grid-template-columns: 25% 25% 25% 25%;
-            grid-template-rows: 50% 50%;
-            .content__title {
-                font-size: x-small;
-                font-weight: 100;
-                text-align: start;
+        align-items: center;
+        .article {
+            width: 1200px;
+            margin: 0;
+            padding-bottom: 3rem;
+            background-image: url("/img/bgimage8.jpg");
+            background-position: left;
+            background-repeat: repeat;
+            background-size: cover;
+            .article__title {
+                width: 1200px;
+                text-align: center;
+                background-color: $black;
+                color: $sinopia;
+                padding: 1rem 0rem;
+                font-family: $font;
+                font-size: 1.5em;
+                font-weight: 800;
+                letter-spacing: 0.1rem;
             }
-            li .vid1 {
-                grid-area: v1;
-            }
-            li .vid2 {
-                grid-area: v2;
-            }
-            li .vid3 {
-                grid-area: v3;
-            }
-            li .vid4 {
-                grid-area: v4;
-            }
-            li .vid5 {
-                grid-area: v5;
-            }
-            li .vid6 {
-                grid-area: v6;
-            }
-            li .vid7 {
-                grid-area: v7;
-            }
-            li .vid8 {
-                grid-area: v8;
+            .article__content {
+                width: 1200px;
+                margin: 0rem 2rem;
+                display: grid;
+                grid-template-areas:
+                    "v1 v2"
+                    "v3 v4"
+                    "v5 v6"
+                    "v7 v8";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 25% 25% 25% 25%;
+                color: $lightgray;
+                .content__title {
+                    font-size: 0.8em;
+                    font-weight: 100;
+                    text-align: start;
+                }
+                li .vid1 {
+                    margin: 0rem 2rem;
+                    grid-area: v1;
+                }
+                li .vid2 {
+                    margin: 0rem 2rem;
+                    grid-area: v2;
+                }
+                li .vid3 {
+                    margin: 0rem 2rem;
+                    grid-area: v3;
+                }
+                li .vid4 {
+                    margin: 0rem 2rem;
+                    grid-area: v4;
+                }
+                li .vid5 {
+                    margin: 0rem 2rem;
+                    grid-area: v5;
+                }
+                li .vid6 {
+                    margin: 0rem 2rem;
+                    grid-area: v6;
+                }
+                li .vid7 {
+                    margin: 0rem 2rem;
+                    grid-area: v7;
+                }
+                li .vid8 {
+                    margin: 0rem 2rem;
+                    grid-area: v8;
+                }
             }
         }
     }

@@ -48,11 +48,10 @@
             <!-- logo -->
             <div class="header__logo">
                 <a href="index.html"> <img src="img/logoheader.png" alt="Logo de Librería Digital Elelivros"></a>
-                <h1><a href="index.html"><span class="header__tagline">ELE</span>LIVROS</a></h1>
+                <h1><a href="index.html"><em>ele</em>livros</a></h1>
             </div>
         </div>
     </header>
-
     <!-- nav -->
     <nav>
         <div class="nav">
@@ -67,624 +66,907 @@
                 <input type="search" name="search" placeholder=". . .">
                 <input type="submit" class="button" value="Buscar">
             </form>
-            <ul class="bottomnav">
-                <li><a href="catalogo.html">Autor</a></li>
-                <li><a href="catalogo.html">Título</a></li>
-                <li><a href="catalogo.html">Género</a></li>
-                <li><a href="catalogo.html">No ficción</a></li>
-                <li><a href="catalogo.html">Índice alfabético</a></li>
-            </ul>
         </div>
     </nav>
-
     <!-- main -->
     <main>
-        <blockquote>
-            <section class="quote">
-                <p><strong>"Para viajar lejos, no hay mejor nave que un libro"</strong></p>
-                <p><em>Emily Dickinson, poeta estadounidense (1830-1886)</em></p>
-                <!-- modificando para ver cambios en git!! -->
-            </section>
-        </blockquote>
-        <div class="main">
-            <!--main/SECTION -->
-            <section>
-                <div class="section">
+        <div class="index">
+            <blockquote>
+                <section class="quote">
+                    <p><strong>"Para viajar lejos, no hay mejor nave que un libro"</strong></p>
+                    <p><em>Emily Dickinson, poeta estadounidense (1830-1886)</em></p>
+                </section>
+            </blockquote>
+            <div class="main">
+                <!--main/SECTION -->
+                <section class="section">
                     <!-- section1 -->
-                    <div class="navbar navbar-dark bg-dark w-100 mx-auto container-fluid m-0 p-1">
-                        <a class="navbar-brand text-warning fs-6" href="catalogo.html">
-                            <h2>Los más vendidos del mes</h2>
-                        </a>
-                    </div>
-                    <div class="container-fluid p-1">
-                        <div class="row g-1 p-1">
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro1.jpg" class="card-img-top w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Asymmetry de Lisa Halliday">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">"Asymmetry"de Lisa
-                                        Halliday
-                                    </p>
+                    <div class="heading"><a href="catalogo.html">
+                            <h2 class="heading__title">Los más vendidos del mes</h2>
+                        </a></div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro1.jpg" class="card-img-top"
+                                            alt="Libro: Asymmetry de Lisa Halliday">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Asymmetry</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1433,50</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro2.jpg" class="card-img-top"
+                                            alt="Libro: Golden Child de Claire Adam">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Golden Child</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1289,14</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro3.jpg" class="card-img-top"
+                                            alt="Libro: The largesse of the sea maiden de Denis Johnson">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The largesse of the
+                                                    sea maiden</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1564,49</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro2.jpg" class="card-img-top w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Golden Child de Claire Adam">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">"Golden Child" de
-                                        Claire
-                                        Adam</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro4.jpg" class="card-img-top"
+                                            alt="Libro: Red Clocks de Leni Zumas">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small> Red Clocks</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1718,48</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro5.jpg" class="card-img-top"
+                                            alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Genesis for normal
+                                                    people</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1879,67</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro6.jpg" class="card-img-top"
+                                            alt="Libro: Los Testamentos de Margaret Atwood">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Los Testamentos</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1774,30</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro3.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The largesse of the sea maiden de Denis Johnson">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">The largesse of the
-                                        sea
-                                        maiden de Denis
-                                        Johnson</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro7.jpg" class="card-img-top"
+                                            alt="Libro: Girl, Woman, Other de Bernardine Evaristo">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small> Girl, Woman, Other</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2007,93</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro8.jpg" class="card-img-top"
+                                            alt="Libro: The Overstory: a Novel de Richard Powers">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The Overstory: a Novel</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1679,06</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro9.jpg" class="card-img-top"
+                                            alt="Libro: Milman de Anna Burns">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Milman</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1605,05</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro4.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Red Clocks de Leni Zumas">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Red Clocks de Leni
-                                        Zumas
-                                    </p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro10.jpg" class="card-img-top"
+                                            alt="Libro: The Silence of the Girls de Pat Barker">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The Silence of the
+                                                    Girls</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1580,18 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro11.jpg" class="card-img-top"
+                                            alt="Libro: Hyperbole and a Half de Allie Brosh">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Hyperbole and a Half</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2365,99</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro12.jpg" class="card-img-top"
+                                            alt="Libro: How to Avoid a Climate Disaster de Bill Gates">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>How to Avoid a Climate
+                                                    Disaster</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2854,24</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro5.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Genesis for normal
-                                        people
-                                        de Peter Enns &
-                                        Jared Byas</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro6.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Los Testamentos de Margaret Atwood">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Los Testamentos de
-                                        Margaret
-                                        Atwood</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro7.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Girl, Woman, Other de Bernardine Evaristo">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Girl, Woman, Other
-                                        de
-                                        Bernardine Evaristo</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro8.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The Overstory: a Novel de Richard Powers">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center"> The Overstory: a
-                                        Novel
-                                        de
-                                        Richard Powers</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro9.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Milman de Anna Burns">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Milman de Anna
-                                        Burns
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro10.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The Silence of the Girls de Pat Barker">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">The Silence of the
-                                        Girls de
-                                        Pat Barker</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro19.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Un Cuento Perfecto de Elisabet Benavent">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">Un Cuento Perfecto
-                                        de
-                                        Elisabet Benavent</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro20.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Historias de Terror de Tiktak Draw">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">Historias de Terror
-                                        de
-                                        Tiktak Draw</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro13.jpg" class="card-img-top"
+                                            alt="Libro: El sutil arte de que te importe un carajo de Mark Manson">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>El sutil arte de que te importe
+                                                    un carajo</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1836,07</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro14.jpg" class="card-img-top"
+                                            alt="Libro: All our shimmering skies de Trent Dalton">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>All our shimmering
+                                                    skies</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$3913,01 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro15.jpg" class="card-img-top"
+                                            alt="Libro: The Queen's Gambit de Walter Tevis">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The Queen's Gambit</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1386,32</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                     <!-- section 2 -->
-                    <div class="navbar navbar-dark bg-dark w-100 mx-auto container-fluid m-0 p-1">
-                        <a class="navbar-brand text-warning col-1 fs-6" href="catalogo.html">
-                            <h2>Los más
-                                descargados</h2>
-                        </a>
-                    </div>
-                    <div class="container-fluid p-1">
-                        <div class="row g-1 p-1">
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro11.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Hyperbole and a Half de Allie Brosh">
-                                    <p class="card-text d-none d-lg-block  fs-6 fw-light text-center">Hyperbole and a
-                                        Half
-                                        de
-                                        Allie Brosh</p>
+                    <div class="heading"><a href="catalogo.html">
+                            <h2 class="heading__title">Los más descargados</h2>
+                        </a></div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro16.jpg" class="card-img-top"
+                                            alt="Libro: Good night stories for rebel girls de Elena Favilli">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Good night stories for rebel
+                                                    girls</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$3706,36 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro17.jpg" class="card-img-top"
+                                            alt="Libro: The midnight library de Matt Haig">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The midnight library</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1471,62</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro18.jpg" class="card-img-top"
+                                            alt="Libro: Women don´t owe you pretty de Florence Given">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Women don´t owe you
+                                                    pretty</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1577,32 </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro12.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: How to Avoid a Climate Disaster de Bill Gates">
-                                    <p class="card-text d-none d-lg-block  fs-6 fw-light text-center">How to Avoid a
-                                        Climate
-                                        Disaster de Bill Gates
-                                    </p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro19.jpg" class="card-img-top"
+                                            alt="Libro: Un Cuento Perfecto de Elisabet Benavent">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Un Cuento Perfecto</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2159,47</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro20.jpg" class="card-img-top"
+                                            alt="Libro:  Historias de Terror de Tiktak Draw">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Historias de Terror</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$3301,88 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro21.jpg" class="card-img-top"
+                                            alt="Libro: Francis Bacon de Mark Stevens">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Francis Bacon</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$5071,81</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro13.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: El sutil arte de que te importe un carajo de Mark Manson">
-                                    <p class="card-text d-none d-lg-block  fs-6 fw-light text-center">El sutil arte de
-                                        que
-                                        te
-                                        importe un carajo de
-                                        Mark Manson</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro22.jpg" class="card-img-top"
+                                            alt="Libro: Utopia Avenue de David Mitchell">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Utopia Avenue</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2959,29 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro23.jpg" class="card-img-top"
+                                            alt="Libro: The hate you give de Angie Thomas">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The hate you give
+                                                </small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1491,49</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro24.jpg" class="card-img-top"
+                                            alt="Libro: The invisible string de Patrice Karst">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The invisiblestring</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2007,33 </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro14.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: All our shimmering skies de Trent Dalton">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">All our shimmering
-                                        skies de
-                                        Trent Dalton</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro25.jpg" class="card-img-top"
+                                            alt="Libro: Sapiens de Yuval Noah Harari">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Sapiens</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1523,26</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro26.jpg" class="card-img-top"
+                                            alt="Libro: El inversor inteligente: Un libro de Asesoramiento Practico de Benjamin Graham">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>El inversor inteligente</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2504,28 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro27.jpg" class="card-img-top"
+                                            alt="Libro: They both die at the end de Adam Silvera">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>They both die at the
+                                                    end</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1428,79</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2 ">
-                                <div class="card">
-                                    <img src="img/libro15.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The Queen's Gambit de Walter Tevis">
-                                    <p class="card-text d-none d-lg-block  fw-light fs-6 text-center">The Queen's Gambit
-                                        de
-                                        Walter Tevis</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro16.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Good night stories for rebel girls de Elena Favilli">
-                                    <p class="card-text d-none d-lg-block  fs-6 fw-light text-center"> Good night
-                                        stories
-                                        for
-                                        rebel girls de Elena
-                                        Favilli</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro17.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The midnight library de Matt Haig">
-                                    <p class="card-text d-none d-lg-block  fs-6 fw-light text-center">The midnight
-                                        library
-                                        de
-                                        Matt Haig</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro18.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Women don´t owe you pretty de Florence Given">
-                                    <p class="card-text d-none d-lg-block  fs-6 fw-light text-center">Women don´t owe
-                                        you
-                                        pretty
-                                        de Florence
-                                        Given</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro21.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Francis Bacon de Mark Stevens">
-                                    <p class="card-text d-none d-lg-block  fw-light fs-6 text-center">Francis Bacon de
-                                        Mark
-                                        Stevens</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro22.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Utopia Avenue de David Mitchell">
-                                    <p class="card-text d-none d-lg-block  fw-light fs-6 text-center">Utopia Avenue de
-                                        David
-                                        Mitchell</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro23.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The hate you give de Angie Thomas">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center"> The hate you give
-                                        de
-                                        Angie
-                                        Thomas
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro24.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The invisible string de Patrice Karst">
-                                    <p class="card-text d-none d-lg-block  fw-light fs-6 text-center">The invisible
-                                        string
-                                        de
-                                        Patrice Karst
-                                    </p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro28.jpg" class="card-img-top"
+                                            alt="Libro: Medieval Military Combat : Battle Tactics and Fighting Techniques of the Wars of the Roses de Tom Lewis">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Medieval Military
+                                                    Combat</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$3202,65</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro29.jpg" class="card-img-top"
+                                            alt="Libro: Unruly Waters: How Mountain Rivers and Monsoons Have Shaped South Asia's History de Sunil Amrith">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Unruly Waters</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1830,54</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro30.jpg" class="card-img-top"
+                                            alt="Libro: Cilka's Journey : The Sunday Times bestselling sequel to The Tattooist of Auschwitz de Heather Morris">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small> Cilka's
+                                                    Journey</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1662,35 </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                     <!-- section 3 -->
-                    <div class="navbar navbar-dark bg-dark w-100 mx-auto container-fluid m-0 p-1">
-                        <a class="navbar-brand text-warning col-1 fs-6" href="catalogo.html">
-                            <h2>Bestsellers</h2>
-                        </a>
-                    </div>
-                    <div class="container-fluid p-1">
-                        <div class="row g-1 p-1">
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro19.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Un Cuento Perfecto de Elisabet Benavent">
-                                    <p class="card-text d-none d-lg-block  fs-6 fw-light text-center">Un Cuento Perfecto
-                                        de
-                                        Elisabet Benavent</p>
+                    <div class="heading"><a href="catalogo.html">
+                            <h2 class="heading__title">Bestsellers</h2>
+                        </a></div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro31.jpg" class="card-img-top"
+                                            alt="Libro: Good night stories for rebel girls de Elena Favilli">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Good night stories
+                                                    for rebel girls</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2752,58</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro32.jpg" class="card-img-top"
+                                            alt="Libro: The midnight library de Matt Haig">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The midnight
+                                                    library</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2213,82 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro33.jpg" class="card-img-top"
+                                            alt="Libro: Women don´t owe you pretty de Florence Given">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Women don´t owe you
+                                                    pretty</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$3328,77</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro24.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The invisible string de Patrice Karst">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">The invisible
-                                        string de
-                                        Patrice Karst
-                                    </p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro34.jpg" class="card-img-top"
+                                            alt="Libro: Un Cuento Perfecto de Elisabet Benavent">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Un Cuento
+                                                    Perfecto</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1316,89 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro35.jpg" class="card-img-top"
+                                            alt="Libro:  Historias de Terror de Tiktak Draw">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Historias de
+                                                    Terror</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1852,67</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro36.jpg" class="card-img-top"
+                                            alt="Libro: Francis Bacon de Mark Stevens">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Francis Bacon</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1385,17 </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro16.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Good night stories for rebel girls de Elena Favilli">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center"> Good night stories
-                                        for
-                                        rebel girls de Elena
-                                        Favilli</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro37.jpg" class="card-img-top"
+                                            alt="Libro: Utopia Avenue de David Mitchell">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Utopia Avenue</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1451,74</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro38.jpg" class="card-img-top"
+                                            alt="Libro: The hate you give de Angie Thomas">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The hate you
+                                                    give</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1133,22 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro39.jpg" class="card-img-top"
+                                            alt="Libro: The invisible string de Patrice Karst">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The invisible
+                                                    string</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1509,61</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro17.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The midnight library de Matt Haig">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">The midnight
-                                        library de
-                                        Matt Haig</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro40.jpg" class="card-img-top"
+                                            alt="Libro: Sapiens de Yuval Noah Harari">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Sapiens</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1544,84 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro41.jpg" class="card-img-top"
+                                            alt="Libro: El inversor inteligente: Un libro de Asesoramiento Practico de Benjamin Graham">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>El inversor
+                                                    inteligente</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1120,64</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro42.jpg" class="card-img-top"
+                                            alt="Libro: They both die at the end de Adam Silvera">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>They both die at
+                                                    the end</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1458,60 </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro3.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The largesse of the sea maiden de Denis Johnson">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">The largesse of the
-                                        sea
-                                        maiden de Denis
-                                        Johnson</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro4.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Red Clocks de Leni Zumas">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Red Clocks de Leni
-                                        Zumas
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro18.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Women don´t owe you pretty de Florence Given">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">Women don´t owe you
-                                        pretty
-                                        de Florence
-                                        Given</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro21.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Francis Bacon de Mark Stevens">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Francis Bacon de
-                                        Mark
-                                        Stevens</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro12.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: How to Avoid a Climate Disaster de Bill Gates">
-                                    <p class="card-text d-none d-lg-block  fs-6 fw-light text-center">How to Avoid a
-                                        Climate
-                                        Disaster de Bill Gates
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro13.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: El sutil arte de que te importe un carajo de Mark Manson">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">El sutil arte de
-                                        que te
-                                        importe un carajo de
-                                        Mark Manson</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro14.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: All our shimmering skies de Trent Dalton">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">All our shimmering
-                                        skies de
-                                        Trent Dalton</p>
-                                </div>
-                            </div>
-                            <div class="col-2 ">
-                                <div class="card">
-                                    <img src="img/libro15.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The Queen's Gambit de Walter Tevis">
-                                    <p class="card-text d-none d-lg-block  fw-light fs-6 text-center">The Queen's Gambit
-                                        de
-                                        Walter Tevis</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro43.jpg" class="card-img-top"
+                                            alt="Libro: Medieval Military Combat : Battle Tactics and Fighting Techniques of the Wars of the Roses de Tom Lewis">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Medieval Military
+                                                    Combat</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1964,68</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro44.jpg" class="card-img-top"
+                                            alt="Libro: Unruly Waters: How Mountain Rivers and Monsoons Have Shaped South Asia's History de Sunil Amrith">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Unruly Waters</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1591,50 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro45.jpg" class="card-img-top"
+                                            alt="Libro: Cilka's Journey : The Sunday Times bestselling sequel to The Tattooist of Auschwitz de Heather Morris">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Cilka's Journey</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1315,74</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                     <!-- section 4 -->
-                    <div class="navbar navbar-dark bg-dark w-100 mx-auto container-fluid m-0 p-1">
-                        <a class="navbar-brand text-warning col-1 fs-6" href="catalogo.html">
-                            <h2>Nuevos
-                                lanzamientos</h2>
-                        </a>
-                    </div>
-                    <div class="container-fluid p-1">
-                        <div class="row g-1 p-1">
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro11.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Hyperbole and a Half de Allie Brosh">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">Hyperbole and a
-                                        Half de
-                                        Allie Brosh</p>
+                    <div class="heading"><a href="catalogo.html">
+                            <h2 class="heading__title">Nuevos lanzamientos</h2>
+                        </a></div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro5.jpg" class="card-img-top"
+                                            alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Genesis for normal
+                                                    people</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1879,67 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro10.jpg" class="card-img-top"
+                                            alt="Libro: The Silence of the Girls de Pat Barker">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The Silence of the
+                                                    Girls</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1580,18</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro15.jpg" class="card-img-top"
+                                            alt="Libro: The Queen's Gambit de Walter Tevis">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The Queen's
+                                                    Gambit</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1386,32 </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro12.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: How to Avoid a Climate Disaster de Bill Gates">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">How to Avoid a
-                                        Climate
-                                        Disaster de Bill Gates
-                                    </p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro20.jpg" class="card-img-top"
+                                            alt="Libro:  Historias de Terror de Tiktak Draw">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Historias de
+                                                    Terror</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$3301,88</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro25.jpg" class="card-img-top"
+                                            alt="Libro: Sapiens de Yuval Noah Harari">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Sapiens</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$5071,81 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro30.jpg" class="card-img-top"
+                                            alt="Libro: Cilka's Journey : The Sunday Times bestselling sequel to The Tattooist of Auschwitz de Heather Morris">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Cilka's Journey</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1662,35 </p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro13.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: El sutil arte de que te importe un carajo de Mark Manson">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">El sutil arte de
-                                        que te
-                                        importe un carajo de
-                                        Mark Manson</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro35.jpg" class="card-img-top"
+                                            alt="Libro: Do Androids Dream Of Electric Sheep? de Philip K. Dick">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Do Androids Dream Of
+                                                    Electric Sheep?</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1852,67 </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro40.jpg" class="card-img-top"
+                                            alt="Libro: Miss Peregrine's Home For Peculiar Children de Ransom Riggs">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Miss Peregrine's Home
+                                                    For Peculiar Children</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1544,84</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro45.jpg" class="card-img-top"
+                                            alt="Libro: Before the Coffee Gets Cold de Toshikazu Kawaguchi">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Before the Coffee Gets
+                                                    Cold</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1315,74</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro14.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: All our shimmering skies de Trent Dalton">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center">All our shimmering
-                                        skies de
-                                        Trent Dalton</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro21.jpg" class="card-img-top"
+                                            alt="Libro: Francis Bacon de Mark Stevens">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Francis Bacon</small>
+                                            </p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$5071,81</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro27.jpg" class="card-img-top"
+                                            alt="Libro: They both die at the end de Adam Silvera">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>They both die at the
+                                                    end</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1428,79</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro31.jpg" class="card-img-top"
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The Invisible Life of
+                                                    Addie LaRue</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$2752,58</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-2 ">
-                                <div class="card">
-                                    <img src="img/libro15.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The Queen's Gambit de Walter Tevis">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">The Queen's Gambit
-                                        de
-                                        Walter Tevis</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro16.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Good night stories for rebel girls de Elena Favilli">
-                                    <p class="card-text d-none d-lg-block fs-6 fw-light text-center"> Good night stories
-                                        for
-                                        rebel girls de Elena
-                                        Favilli</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro1.jpg" class="card-img-top w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Asymmetry de Lisa Halliday">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">"Asymmetry"de Lisa
-                                        Halliday
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro2.jpg" class="card-img-top w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Golden Child de Claire Adam">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">"Golden Child" de
-                                        Claire
-                                        Adam</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro3.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: The largesse of the sea maiden de Denis Johnson">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">The largesse of the
-                                        sea
-                                        maiden de Denis
-                                        Johnson</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro4.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Red Clocks de Leni Zumas">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Red Clocks de Leni
-                                        Zumas
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro5.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Genesis for normal
-                                        people
-                                        de Peter Enns &
-                                        Jared Byas</p>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="card">
-                                    <img src="img/libro6.jpg" class="card-img-top  w-50 h-50 mx-auto d-block"
-                                        alt="Libro: Los Testamentos de Margaret Atwood">
-                                    <p class="card-text d-none d-lg-block fw-light fs-6 text-center">Los Testamentos de
-                                        Margaret
-                                        Atwood</p>
+                            <div class="carousel-item">
+                                <div class="card-group w-50 mx-auto">
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro37.jpg" class="card-img-top"
+                                            alt="Libro: The Boy Who Made Everyone Laugh de Helen Rutter">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The Boy Who Made
+                                                    Everyone Laugh</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1451,74</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro41.jpg" class="card-img-top"
+                                            alt="Libro: Matilda de Roald Dahl">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>Matilda</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1120,64</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card text-dark bg-light m-1">
+                                        <img src="img/libro43.jpg" class="card-img-top"
+                                            alt="Libro: The Dictionary of Lost Words de Pip Williams">
+                                        <div class="card-body">
+                                            <p class="card-text fs-6 text-center"><small>The Dictionary of Lost
+                                                    Words</small></p>
+                                            <a href="catalogo.html">
+                                                <p class="card-text text-center">$1964,68</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                </div>
-            </section>
-            <!-- main/ASIDE -->
-            <aside>
-                <div class="aside">
-                    <div class="card">
-                        <a class="card__title" href="nosotros.html">
-                            <h4>Novedades</h4>
-                        </a>
-                        <p>Enterate de los últimos lanzamientos y de lo que está por venir.</p>
+                </section>
+                <!-- main/ASIDE -->
+                <aside>
+                    <div class="aside">
+                        <div class="news">
+                            <a href="nosotros.html">
+                                <h4 class="news__title">Novedades</h4>
+                            </a>
+                            <p>Enterate de los últimos lanzamientos y de lo que está por venir.</p>
+                        </div>
+                        <div class="news">
+                            <a href="contaco.html">
+                                <h4 class="news__title">Eventos</h4>
+                            </a>
+                            <p>Suscribite a nuestro newsletter!</p>
+                        </div>
+                        <div class="news">
+                            <a href=" catalogo.html">
+                                <h4 class="news__title">Entrevistas</h4>
+                            </a>
+                            <p>No te pierdas de nuestra selección de entrevistas a grandes autores y
+                                muchas cosas más</p>
+                        </div>
+                        <div class="news">
+                            <a href="nosotros.html">
+                                <h4 class="news__title">Promociones</h4>
+                            </a>
+                            <p>Aprovecha las promociones de elelivros.com</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <a class=" card__title" href="contaco.html">
-                            <h4>Eventos</h4>
-                        </a>
-                        <p>Suscribite a nuestro newsletter!</p>
-                    </div>
-                    <div class="card">
-                        <a class="card__title" href=" catalogo.html">
-                            <h4>Entrevistas</h4>
-                        </a>
-                        <p>No te pierdas de nuestra selección de entrevistas a grandes autores y
-                            muchas cosas más</p>
-                    </div>
-                    <div class="card">
-                        <a class="card__title" href="nosotros.html">
-                            <h4>Promociones</h4>
-                        </a>
-                        <p>Aprovecha las promociones de elelivros.com</p>
-                    </div>
-                </div>
-            </aside>
+                </aside>
+            </div>
         </div>
     </main>
-
-
     <!-- article -->
     <article>
         <div class="article">
             <h2 class="article__title">Entrevistas destacadas</h2>
             <ul class="article__content">
                 <li class="vid1">
-                    <p class="content__title">Lorem ipsum amet:</p>
-                    <iframe src="https://www.youtube.com/embed/fDkbyyPRKFY" frameborder="1"
+                    <p class="content__title">Margaret Atwood's Top 5 Writing Tips</p>
+                    <iframe src="https://www.youtube.com/embed/fDkbyyPRKFY" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </li>
                 <li class="vid2">
-                    <p class="content__title">Lorem ipsum amet:</p>
-                    <iframe src="https://www.youtube.com/embed/xPN7vDu9Rsk" frameborder="1"
+                    <p class="content__title">Creative Writing Advice from Neil Gaiman</p>
+                    <iframe src="https://www.youtube.com/embed/xPN7vDu9Rsk" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </li>
                 <li class="vid3">
-                    <p class="content__title">Lorem ipsum amet:</p>
-                    <iframe src="https://www.youtube.com/embed/rF8jXTZgQhM" frameborder="1"
+                    <p class="content__title">La importancia de la lectura y la escritura</p>
+                    <iframe src="https://www.youtube.com/embed/rF8jXTZgQhM" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </li>
                 <li class="vid4">
-                    <p class="content__title">Lorem ipsum amet:</p>
-                    <iframe src="https://www.youtube.com/embed/beqbhd7q5Xw" frameborder="1"
+                    <p class="content__title">¿Por qué es importante la lectura?</p>
+                    <iframe src="https://www.youtube.com/embed/beqbhd7q5Xw" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </li>
                 <li class="vid5">
-                    <p class="content__title">Lorem ipsum amet:</p>
-                    <iframe src="https://www.youtube.com/embed/jFklK9CERHI" frameborder="1"
+                    <p class="content__title">La importancia de la lectura</p>
+                    <iframe src="https://www.youtube.com/embed/jFklK9CERHI" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </li>
                 <li class="vid6">
-                    <p class="content__title">Lorem ipsum amet:</p>
-                    <iframe src="https://www.youtube.com/embed/YxQL2socaG0" frameborder="1"
+                    <p class="content__title">Read Aloud Books for Pre-K</p>
+                    <iframe src="https://www.youtube.com/embed/YxQL2socaG0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </li>
                 <li class="vid7">
-                    <p class="content__title">Lorem ipsum amet:</p>
-                    <iframe src="https://www.youtube.com/embed/p_LeUSA-qIg" frameborder="1"
+                    <p class="content__title">El cuento de Peter el conejo leído por Rose Byrne</p>
+                    <iframe src="https://www.youtube.com/embed/p_LeUSA-qIg" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </li>
                 <li class="vid8">
-                    <p class="content__title">Lorem ipsum amet:</p>
-                    <iframe src="https://www.youtube.com/embed/cutROw_NJvE" frameborder="1"
+                    <p class="content__title">Historia de dos bestias leído por Sarah Silverman</p>
+                    <iframe src="https://www.youtube.com/embed/cutROw_NJvE" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </li>
             </ul>
         </div>
     </article>
-
-
     <!-- footer -->
     <footer>
         <div class="footer">
@@ -720,11 +1002,9 @@
             </div>
         </div>
     </footer>
-
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

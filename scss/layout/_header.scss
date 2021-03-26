@@ -1,4 +1,4 @@
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     .header {
         background-color: $black;
         display: flex;
@@ -14,80 +14,84 @@
                 li {
                     text-align: center;
                     a {
-                        font-size: 1.5em;
+                        font-size: 1em;
                     }
                 }
             }
         }
         .header__logo {
-            color: $saffron;
-            width: 100%;
             display: flex;
             flex-flow: column nowrap;
             text-align: center;
-            text-transform: lowercase;
-            h1{
+            img {
+                width: 85px;
+                height: 60px;
+            }
+            h1 {
                 color: $saffron;
-                font-size: 1.2em;
+                font-size: 1.6em;
+                font-weight: bold;
             }
-            span {
+            em {
                 color: $sinopia;
-                font-size: 1.21em;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        background-color: $black;
-        display: flex;
-        flex-flow: column nowrap;
-        .header__icons {
-            color: $darkgray;
-            font-size: xx-small;
-            padding: 0%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            .header__icons--social {
-                display: none;
-            }
-            .header__icons--account {
-                margin: 0;
-                padding: 0;
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-around;
-                li {
-                    font-size: xx-small;
-                    text-align: center;
-                    padding: 0.5rem 0.1rem;
-                    a {
-                        padding: 0rem 0.2rem;
-                    }
-                }
-            }
-        }
-        .header__logo {
-            color: $saffron;
-            font-family: "Courier New", Courier, monospace;
-            font-size: small;
-            font-weight: light;
-            display: flex;
-            flex-flow: column nowrap;
-            text-align: center;
-            span {
-                color: $sinopia;
-                font-family: "Courier New", Courier, monospace;
-                font-size: normal;
+                font-size: 1em;
                 font-weight: bold;
             }
         }
     }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+    .header {
+        background-color: $black;
+        display: flex;
+        flex-flow: column nowrap;
+        .header__icons {
+            color: $darkgray;
+            font-size: 1rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            .header__icons--social {
+                display: none;
+            }
+            .header__icons--account {
+                margin: 0;
+                padding: 0.5rem 0rem;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                li {
+                    text-align: center;
+                    padding: 0rem 0.4rem;
+                }
+            }
+        }
+        .header__logo {
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: center;
+            img {
+                width: 100px;
+                height: 80px;
+            }
+            h1 {
+                font-family: $font;
+                color: $saffron;
+                font-size: 1.6em;
+                font-weight: bold;
+            }
+            em {
+                font-family: $font;
+                color: $sinopia;
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
     .header {
         background-color: $black;
         display: flex;
@@ -103,9 +107,7 @@
                 flex-flow: row nowrap;
                 justify-content: flex-start;
                 li {
-                    font-size: 1em;
-                    padding-left: 0.4rem;
-                    padding-right: 0.4rem;
+                    padding: 0rem 0.4rem;
                 }
             }
             .header__icons--account {
@@ -113,33 +115,35 @@
                 flex-flow: row nowrap;
                 justify-content: flex-end;
                 li {
-                    font-size: 1em;
-                    padding-left: 0.4rem;
-                    padding-right: 0.4rem;
+                    padding: 0rem 0.4rem;
                 }
             }
         }
         .header__logo {
-            color: $saffron;
-            font-family: "Courier New", Courier, monospace;
-            font-size: small;
-            font-weight: light;
             display: flex;
             flex-flow: column nowrap;
             text-align: center;
-            span {
+            img {
+                width: 150px;
+                height: 120px;
+            }
+            h1 {
+                font-family: $font;
+                color: $saffron;
+                font-size: 2em;
+            }
+            em {
+                font-family: $font;
                 color: $sinopia;
-                font-family: "Courier New", Courier, monospace;
-                font-size: normal;
-                font-weight: bold;
+                font-size: 1.3em;
             }
             animation-name: logo;
             animation-iteration-count: 1;
             animation-duration: 3s;
             animation-delay: 0s;
-            animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
             @keyframes logo {
-                0%{
+                0% {
                     transform: translatey(-800px);
                 }
                 25% {
@@ -148,10 +152,10 @@
                 50% {
                     transform: translatey(-10px);
                 }
-                75%{
+                75% {
                     transform: translatey(30px);
                 }
-                100%{
+                100% {
                     transform: translatey(0px);
                 }
             }

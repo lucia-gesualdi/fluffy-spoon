@@ -1,53 +1,46 @@
 @media screen and (max-width: 768px) {
-    .nav{
+    .nav {
         display: flex;
         flex-flow: column nowrap;
         .topnav {
+            width: 100%;
             background-color: $black;
             color: $saffron;
-            font-size: small;
-            font-weight: 0.1em;
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: 550;
             margin: 0;
-            padding: 0.25rem 0rem;
+            padding: 0.5rem 0rem;
             letter-spacing: 0.1em;
-            word-spacing: 0em;
+            word-spacing: 0.1em;
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
+            flex-flow: column;
+            align-items: center;
             li {
-                font-size: smaller;
-                padding: 0rem 0.2rem;
+                padding: 0.2rem;
+            }
+            a:hover {
+                color: $sinopia;
             }
         }
         .searchbar {
-            margin: 0;
-            padding: 0.5rem 0rem;
-            background-color: $black;
-            text-align: center;
-            .button {
-                color: $black;
-                background-color: $saffron;
-                padding: 0.1rem;
-                border-radius: 0.2rem;
-                font-size: xx-small;
-                font-weight: bold;
-                text-align: center;
-            }
-        }
-        .bottomnav {
-            background-color: $saffron;
-            color: $black;
-            margin: 0;
-            padding: 0.5rem 0rem;
-            font-size: small;
-            font-weight: 0.1em;
-            letter-spacing: 0em;
-            word-spacing: 0em;
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
-            li{
-                padding: 0rem 0.2rem;
+            padding-bottom: 0.5rem;
+            background-color: $black;
+            text-align: center;
+            .button {
+                width: auto;
+                color: $saffron;
+                background-color: $sinopia;
+                text-shadow: 0rem 0rem 1rem $black;
+                border: none;
+                padding: 0rem;
+                border-radius: 0.4rem;
+                font-size: 1em;
+                font-weight: bold;
+                text-align: center;
             }
         }
     }
@@ -72,6 +65,9 @@
                 padding-left: 1.2rem;
                 padding-right: 1.2rem;
             }
+            a:hover {
+                color: $sinopia;
+            }
         }
         .searchbar {
             margin: 0;
@@ -80,38 +76,20 @@
             background-color: $black;
             text-align: center;
             .button {
-                color: $black;
-                background-color: $saffron;
-                padding: 0.3rem;
-                border-radius: 0.3rem;
-                font-size: small;
+                width: auto;
+                color: $saffron;
+                background-color: $sinopia;
+                text-shadow: 0rem 0rem 1rem $black;
+                border: none;
+                padding: 0.2rem 0.3rem;
+                border-radius: 0.4rem;
+                font-size: 1.2em;
                 font-weight: bold;
                 text-align: center;
-                letter-spacing: 0.1rem;
-            }
-        }
-        .bottomnav {
-            background-color: $saffron;
-            color: $black;
-            margin: 0;
-            padding: 0.8rem;
-            font-size: 1.2em;
-            font-weight: 600;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            li {
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
             }
         }
     }
-    
 }
-li a:hover{
-    color: $sinopia;
+.active {
+    color: $lightgray;
 }
-.active{
-    color: $darkgray
-}
-
