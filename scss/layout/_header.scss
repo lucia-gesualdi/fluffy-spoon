@@ -90,73 +90,94 @@
         }
     }
 }
+@media only screen and (min-width:768px){
+    
+}
 
-@media only screen and (min-width: 768px) {
-    .header {
+
+@media only screen and (min-width: 992px) {
+    header {
         background-color: $black;
-        display: flex;
-        flex-flow: column nowrap;
-        .header__icons {
-            color: $darkgray;
-            font-size: 1.2rem;
+        
+        /* top */
+        .header__top {
+            padding: 0.5rem 1rem 1.2rem 1rem;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-evenly;
-            .header__icons--social {
+            justify-content: space-between;
+            .header__logo {
                 display: flex;
-                flex-flow: row nowrap;
-                justify-content: flex-start;
-                li {
-                    padding: 0rem 0.4rem;
+                flex-flow: row;
+                img{
+                    width: 100px;
+                    height: 90px;
+                }
+                h1{
+                    font-family: $font;
+                    padding-top: 1.5rem;
+                    color: $saffron;
+                    font-size: 2.2em;
+                    font-weight: 500;
+                    em{
+                        color: $sinopia;
+                    }
                 }
             }
-            .header__icons--account {
+            .header__icons {
+                padding: 0.4rem 2.5rem 0.5rem 0rem;
+                color: $saffron;
                 display: flex;
                 flex-flow: row nowrap;
-                justify-content: flex-end;
-                li {
-                    padding: 0rem 0.4rem;
+                font-size: 1.3em;
+                li a{
+                    padding: 0.4rem;
+                }
+                a:hover{
+                    color: $sinopia;
                 }
             }
         }
-        .header__logo {
+        
+        /* bottom */
+        .header__bottom {
             display: flex;
-            flex-flow: column nowrap;
-            text-align: center;
-            img {
-                width: 150px;
-                height: 120px;
-            }
-            h1 {
-                font-family: $font;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            .header__nav {
+                padding: 1rem;
                 color: $saffron;
-                font-size: 2em;
+                .topnav {
+                    font-size: 1em;
+                    font-weight: 600;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    li a{
+                        padding: 0rem 1.2rem;
+                    }
+                    .active {
+                        color: $lightgray;
+                    }
+                    a:hover{
+                        color: $sinopia;
+                    }
+                }
             }
-            em {
-                font-family: $font;
-                color: $sinopia;
-                font-size: 1.3em;
-            }
-            animation-name: logo;
-            animation-iteration-count: 1;
-            animation-duration: 3s;
-            animation-delay: 0s;
-            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            @keyframes logo {
-                0% {
-                    transform: translatey(-800px);
+            .header__searchbar {
+                padding: 1rem 2rem;
+                .button {
+                    padding: 0.3rem 0.5rem;
+                    border-radius: 0.5rem;
+                    border: none;
+                    background-color: $sinopia;
+                    color: $saffron;
+                    text-shadow: 0rem 0rem 0.15rem $black;
                 }
-                25% {
-                    transform: translatey(80px);
-                }
-                50% {
-                    transform: translatey(-10px);
-                }
-                75% {
-                    transform: translatey(30px);
-                }
-                100% {
-                    transform: translatey(0px);
+                .input{
+                    margin-right: 0.8rem;
+                    width: 350px;
+                    height: 40px;
+                    border-radius: 0.3rem;
+                    background-color: lightgrey;
                 }
             }
         }

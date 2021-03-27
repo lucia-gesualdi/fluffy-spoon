@@ -18,56 +18,46 @@
 </head>
 
 <body>
+
     <!-- header -->
     <header>
-        <div class="header">
-            <!-- Icons -->
-            <div class="header__icons">
-                <ul class="header__icons--social">
-                    <li><a href="https://www.whatsapp.com/"><span class="iconify" data-icon="bi:whatsapp"
-                                data-inline="false"></span></a>
-                    </li>
-                    <li><a href="contacto@elelivros.com"><span class="iconify" data-icon="ant-design:mail-outlined"
-                                data-inline="false"></span></a></li>
-                    <li><a href="https://www.instagram.com/"><span class="iconify" data-icon="akar-icons:instagram-fill"
-                                data-inline="false"></span></a></li>
-                </ul>
-                <ul class="header__icons--account">
-                    <li><a href="contaco.html"><span class="iconify" data-icon="ant-design:login-outlined"
-                                data-inline="false"></span></a></li>
-                    <li><a href="contaco.html"><span class="iconify" data-icon="codicon:account"
-                                data-inline="false"></span></a>
-                    </li>
-                    <li><a href="index.html"><span class="iconify" data-icon="ph-bookmarks-bold"
-                                data-inline="false"></span></a>
-                    </li>
-                    <li><a href="index.html"><span class="iconify" data-icon="fe-cart" data-inline="false"></span></a>
-                    </li>
-                </ul>
-            </div>
+        <!-- top -->
+        <div class="header__top">
             <!-- logo -->
             <div class="header__logo">
                 <a href="index.html"> <img src="img/logoheader.png" alt="Logo de Librería Digital Elelivros"></a>
-                <h1><a href="index.html"><em>ele</em>livros</a></h1>
+                <h1><em>ele</em>livros</h1>
             </div>
-        </div>
-    </header>
-    <!-- nav -->
-    <nav>
-        <div class="nav">
-            <ul class="topnav">
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="dominiopublico.html">Dominio Público</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contaco.html">Contacto</a></li>
+            <!-- Icons -->
+            <ul class="header__icons">
+                <li><a href="contaco.html"><span class="iconify" data-icon="codicon:account"
+                            data-inline="false"></span></a>
+                </li>
+                <li><a href="index.html"><span class="iconify" data-icon="fe-cart" data-inline="false"></span></a>
+                </li>
             </ul>
-            <form class="searchbar">
-                <input type="search" name="search" placeholder=". . .">
+        </div>
+        <!-- bottom -->
+        <div class="header__bottom">
+            <!-- nav -->
+            <nav class="header__nav">
+                <ul class="topnav">
+                    <li><a class="active" href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="dominiopublico.html">Dominio Público</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contaco.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- searchbar -->
+            <form class="header__searchbar">
+                <input type="search" name="search" class="input" placeholder="...">
                 <input type="submit" class="button" value="Buscar">
             </form>
         </div>
-    </nav>
+    </header>
+
+
     <!-- main -->
     <main>
         <div class="index">
@@ -87,7 +77,7 @@
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro1.jpg" class="card-img-top"
                                             alt="Libro: Asymmetry de Lisa Halliday">
@@ -123,7 +113,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro4.jpg" class="card-img-top"
                                             alt="Libro: Red Clocks de Leni Zumas">
@@ -158,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro7.jpg" class="card-img-top"
                                             alt="Libro: Girl, Woman, Other de Bernardine Evaristo">
@@ -193,7 +183,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro10.jpg" class="card-img-top"
                                             alt="Libro: The Silence of the Girls de Pat Barker">
@@ -230,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro13.jpg" class="card-img-top"
                                             alt="Libro: El sutil arte de que te importe un carajo de Mark Manson">
@@ -284,26 +274,24 @@
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro16.jpg" class="card-img-top"
-                                            alt="Libro: Good night stories for rebel girls de Elena Favilli">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Good night stories for rebel
-                                                    girls</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$3706,36 </p>
+                                            <p class="card-text fs-6 text-centeThe Invisible Life of Addie LaRue de V.E. Schwab</small></p>
+                                            <a href=" catalogo.html">
+                                            <p class="card-text text-center">$3706,36 </p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro17.jpg" class="card-img-top"
-                                            alt="Libro: The midnight library de Matt Haig">
+                                            alt="Libro: The Lamplighters de Emma Stonex">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>The midnight library</small>
-                                            </p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$1471,62</p>
+                                            <p class="card-text fsLibro: The Lamplighters de Emma Stonex        </p>
+                                            <a href=" catalogo.html">
+                                            <p class="card-text text-center">$1471,62</p>
                                             </a>
                                         </div>
                                     </div>
@@ -321,24 +309,24 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro19.jpg" class="card-img-top"
-                                            alt="Libro: Un Cuento Perfecto de Elisabet Benavent">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Un Cuento Perfecto</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$2159,47</p>
+                                            <p
+                                                class="card-text fs-6 text-centThe Invisible Life of Addie LaRue de V.E. Schwabalogo.html">
+                                            <p class="card-text text-center">$2159,47</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro20.jpg" class="card-img-top"
                                             alt="Libro:  Historias de Terror de Tiktak Draw">
-                                        <div class="card-body">
+                                        <div Libro: The Lamplighters de Emma Stonex">
                                             <p class="card-text fs-6 text-center"><small>Historias de Terror</small></p>
                                             <a href="catalogo.html">
-                                                <p class="card-text text-center">$3301,88 </p>
+                                                Libro: The Lamplighters de Emma Stonext-center">$3301,88 </p>
                                             </a>
                                         </div>
                                     </div>
@@ -355,25 +343,25 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro22.jpg" class="card-img-top"
-                                            alt="Libro: Utopia Avenue de David Mitchell">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Utopia Avenue</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$2959,29 </p>
+                                            <p
+                                                class="card-text fs-6 text-centThe Invisible Life of Addie LaRue de V.E. Schwabalogo.html">
+                                            <p class="card-text text-center">$2959,29 </p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro23.jpg" class="card-img-top"
                                             alt="Libro: The hate you give de Angie Thomas">
-                                        <div class="card-body">
+                                        <div Libro: The Lamplighters de Emma Stonex">
                                             <p class="card-text fs-6 text-center"><small>The hate you give
                                                 </small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$1491,49</p>
+                                            Libro: The Lamplighters de Emma Stonexalogo.html">
+                                            <p class="card-text text-center">$1491,49</p>
                                             </a>
                                         </div>
                                     </div>
@@ -390,25 +378,25 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro25.jpg" class="card-img-top"
-                                            alt="Libro: Sapiens de Yuval Noah Harari">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Sapiens</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$1523,26</p>
+                                            <p
+                                                class="card-text fs-6 text-centThe Invisible Life of Addie LaRue de V.E. Schwabalogo.html">
+                                            <p class="card-text text-center">$1523,26</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro26.jpg" class="card-img-top"
                                             alt="Libro: El inversor inteligente: Un libro de Asesoramiento Practico de Benjamin Graham">
-                                        <div class="card-body">
+                                        <div Libro: The Lamplighters de Emma Stonex-body">
                                             <p class="card-text fs-6 text-center"><small>El inversor inteligente</small>
                                             </p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$2504,28 </p>
+                                            Libro: The Lamplighters de Emma Stonexalogo.html">
+                                            <p class="card-text text-center">$2504,28 </p>
                                             </a>
                                         </div>
                                     </div>
@@ -426,26 +414,24 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro28.jpg" class="card-img-top"
-                                            alt="Libro: Medieval Military Combat : Battle Tactics and Fighting Techniques of the Wars of the Roses de Tom Lewis">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Medieval Military
-                                                    Combat</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$3202,65</p>
+                                            <p class="card-text fs-6 text-centerThe Invisible Life of Addie LaRue de V.E. Schwab</small></p>
+                                            <a href=" catalogo.html">
+                                            <p class="card-text text-center">$3202,65</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro29.jpg" class="card-img-top"
-                                            alt="Libro: Unruly Waters: How Mountain Rivers and Monsoons Have Shaped South Asia's History de Sunil Amrith">
+                                            alt="Libro: The Lamplighters de Emma Stonexhaped South Asia's History de Sunil Amrith">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Unruly Waters</small>
-                                            </p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$1830,54</p>
+                                            <p class="card-text fsLibro: The Lamplighters de Emma Stonex        </p>
+                                            <a href=" catalogo.html">
+                                            <p class="card-text text-center">$1830,54</p>
                                             </a>
                                         </div>
                                     </div>
@@ -481,13 +467,13 @@
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro31.jpg" class="card-img-top"
-                                            alt="Libro: Good night stories for rebel girls de Elena Favilli">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Good night stories
-                                                    for rebel girls</small></p>
+                                            <p class="card-text fs-6 text-center"><small>The Invisible Life of Addie
+                                                    LaRue de V.E. Schwab</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$2752,58</p>
                                             </a>
@@ -495,10 +481,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro32.jpg" class="card-img-top"
-                                            alt="Libro: The midnight library de Matt Haig">
+                                            alt="Libro: The Lamplighters de Emma Stonex">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>The midnight
-                                                    library</small></p>
+                                            <p class="card-text fs-6 text-center"><small>The Lamplighters de Emma
+                                                    Stonex</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$2213,82 </p>
                                             </a>
@@ -506,10 +492,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro33.jpg" class="card-img-top"
-                                            alt="Libro: Women don´t owe you pretty de Florence Given">
+                                            alt="Libro: House of Earth and Blood de Sarah J. Maas">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Women don´t owe you
-                                                    pretty</small></p>
+                                            <p class="card-text fs-6 text-center"><small>House of Earth and Blood de
+                                                    Sarah J. Maas</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$3328,77</p>
                                             </a>
@@ -518,13 +504,13 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro34.jpg" class="card-img-top"
-                                            alt="Libro: Un Cuento Perfecto de Elisabet Benavent">
+                                            alt="Libro: Do Androids Dream Of Electric Sheep? de Philip K. Dick">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Un Cuento
-                                                    Perfecto</small></p>
+                                            <p class="card-text fs-6 text-center"><small>Do Androids Dream Of Electric
+                                                    Sheep? de Philip K. Dick</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1316,89 </p>
                                             </a>
@@ -532,10 +518,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro35.jpg" class="card-img-top"
-                                            alt="Libro:  Historias de Terror de Tiktak Draw">
+                                            alt="Libro: The House in the Cerulean Sea de TJ Klune">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Historias de
-                                                    Terror</small></p>
+                                            <p class="card-text fs-6 text-center"><small>The House in the Cerulean Sea
+                                                    de TJ Klune</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1852,67</p>
                                             </a>
@@ -543,9 +529,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro36.jpg" class="card-img-top"
-                                            alt="Libro: Francis Bacon de Mark Stevens">
+                                            alt="Libro: The Midnight Hour de  Benjamin Read y Laura Trinder">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Francis Bacon</small>
+                                            <p class="card-text fs-6 text-center"><small>The Midnight Hour de Benjamin
+                                                    Read y Laura Trinder</small>
                                             </p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1385,17 </p>
@@ -555,13 +542,13 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro37.jpg" class="card-img-top"
-                                            alt="Libro: Utopia Avenue de David Mitchell">
+                                            alt="Libro: The Boy Who Made Everyone Laugh de Helen Rutter">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Utopia Avenue</small>
-                                            </p>
+                                            <p class="card-text fs-6 text-center"><small>The Boy Who Made Everyone Laugh
+                                                    de Helen Rutter</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1451,74</p>
                                             </a>
@@ -569,10 +556,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro38.jpg" class="card-img-top"
-                                            alt="Libro: The hate you give de Angie Thomas">
+                                            alt="Libro: Roald Dahl's Marvellous Joke Book de Roald Dahl">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>The hate you
-                                                    give</small></p>
+                                            <p class="card-text fs-6 text-center"><small>Libro: Roald Dahl's Marvellous
+                                                    Joke Book de Roald Dahl</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1133,22 </p>
                                             </a>
@@ -580,10 +567,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro39.jpg" class="card-img-top"
-                                            alt="Libro: The invisible string de Patrice Karst">
+                                            alt="Libro: Fantastic Beasts and Where to Find Them : The Original Screenplay de J.K. Rowling">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>The invisible
-                                                    string</small></p>
+                                            <p class="card-text fs-6 text-center"><small>Fantastic Beasts and Where to
+                                                    Find Them : The Original Screenplay de J.K. Rowling</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1509,61</p>
                                             </a>
@@ -592,34 +579,33 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro40.jpg" class="card-img-top"
-                                            alt="Libro: Sapiens de Yuval Noah Harari">
+                                            alt="Libro: Miss Peregrine's Home For Peculiar Children de Ransom Riggs">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Sapiens</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$1544,84 </p>
+                                            <p class="card-text fs-6 text-center"><small>Miss Peregrine's Home For
+                                                    Peculiar Children de Ransom Riggs</small></p>
+                                            <p class="card-text text-center">$1544,84 </p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro41.jpg" class="card-img-top"
-                                            alt="Libro: El inversor inteligente: Un libro de Asesoramiento Practico de Benjamin Graham">
+                                            alt="Libro: Matilda de Roald Dahl">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>El inversor
-                                                    inteligente</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$1120,64</p>
+                                            <p class="card-text fs-6 text-center"><small>Matilda de Roald Dahl</small>
+                                            </p>
+                                            <p class="card-text text-center">$1120,64</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro42.jpg" class="card-img-top"
-                                            alt="Libro: They both die at the end de Adam Silvera">
+                                            alt="Libro: Hamnet de Maggie O'Farrell">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>They both die at
-                                                    the end</small></p>
+                                            <p class="card-text fs-6 text-center"><small>Hamnet de Maggie
+                                                    O'Farrell</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1458,60 </p>
                                             </a>
@@ -628,13 +614,13 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro43.jpg" class="card-img-top"
-                                            alt="Libro: Medieval Military Combat : Battle Tactics and Fighting Techniques of the Wars of the Roses de Tom Lewis">
+                                            alt="Libro: The Dictionary of Lost Words de Pip Williams">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Medieval Military
-                                                    Combat</small></p>
+                                            <p class="card-text fs-6 text-center"><small>The Dictionary of Lost Words de
+                                                    Pip Williams</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1964,68</p>
                                             </a>
@@ -642,10 +628,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro44.jpg" class="card-img-top"
-                                            alt="Libro: Unruly Waters: How Mountain Rivers and Monsoons Have Shaped South Asia's History de Sunil Amrith">
+                                            alt="Libro: Small Pleasures de Clare Chambers">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Unruly Waters</small>
-                                            </p>
+                                            <p class="card-text fs-6 text-center"><small>Small Pleasures de Clare
+                                                    Chambers</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1591,50 </p>
                                             </a>
@@ -653,9 +639,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro45.jpg" class="card-img-top"
-                                            alt="Libro: Cilka's Journey : The Sunday Times bestselling sequel to The Tattooist of Auschwitz de Heather Morris">
+                                            alt="Libro: Before the Coffee Gets Cold de Toshikazu Kawaguchi">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Cilka's Journey</small>
+                                            <p class="card-text fs-6 text-center"><small>Before the Coffee Gets Cold de
+                                                    Toshikazu Kawaguchi</small>
                                             </p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1315,74</p>
@@ -683,24 +670,24 @@
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro5.jpg" class="card-img-top"
-                                            alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Genesis for normal
-                                                    people</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$1879,67 </p>
+                                            <p class="card-text fs-6 text-centerThe Invisible Life of Addie LaRue de V.E. Schwab</small></p>
+                                            <a href=" catalogo.html">
+                                            <p class="card-text text-center">$1879,67 </p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro10.jpg" class="card-img-top"
-                                            alt="Libro: The Silence of the Girls de Pat Barker">
+                                            alt="Libro: The Lamplighters de Emma Stonexarker">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>The Silence of the
-                                                    Girls</small></p>
+                                            <p class="card-text fs-6 text-center">
+                                                <smalLibro: The Lamplighters de Emma Stonex</small>
+                                            </p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1580,18</p>
                                             </a>
@@ -720,26 +707,25 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro20.jpg" class="card-img-top"
-                                            alt="Libro:  Historias de Terror de Tiktak Draw">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Historias de
-                                                    Terror</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$3301,88</p>
+                                            <p class="card-text fs-6 text-centerThe Invisible Life of Addie LaRue de V.E. Schwab</small></p>
+                                            <a href=" catalogo.html">
+                                            <p class="card-text text-center">$3301,88</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro25.jpg" class="card-img-top"
-                                            alt="Libro: Sapiens de Yuval Noah Harari">
+                                            alt="Libro: The Lamplighters de Emma Stonex">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Sapiens</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$5071,81 </p>
-                                            </a>
+                                            <p class="card-text fs-6 text-center">
+                                                <smaLibro: The Lamplighters de Emma Stonexalogo.html">
+                                                    <p class="card-text text-center">$5071,81 </p>
+                                                    </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
@@ -756,13 +742,13 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro35.jpg" class="card-img-top"
-                                            alt="Libro: Do Androids Dream Of Electric Sheep? de Philip K. Dick">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Do Androids Dream Of
-                                                    Electric Sheep?</small></p>
+                                            <p class="card-text fs-6 text-center"><small>The Invisible Life of Addie
+                                                    LaRue de V.E. Schwab</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1852,67 </p>
                                             </a>
@@ -770,10 +756,10 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro40.jpg" class="card-img-top"
-                                            alt="Libro: Miss Peregrine's Home For Peculiar Children de Ransom Riggs">
+                                            alt="Libro: The Lamplighters de Emma StonexChildren de Ransom Riggs">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Miss Peregrine's Home
-                                                    For Peculiar Children</small></p>
+                                            <p class="card-text fs-6 text-center"><small>Miss PeregrineLibro: The
+                                                    Lamplighters de Emma Stonex</small></p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1544,84</p>
                                             </a>
@@ -793,24 +779,24 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro21.jpg" class="card-img-top"
-                                            alt="Libro: Francis Bacon de Mark Stevens">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Francis Bacon</small>
-                                            </p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$5071,81</p>
+                                            <p class="cardThe Invisible Life of Addie LaRue de V.E. Schwab        </p>
+                                            <a href=" catalogo.html">
+                                            <p class="card-text text-center">$5071,81</p>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro27.jpg" class="card-img-top"
-                                            alt="Libro: They both die at the end de Adam Silvera">
+                                            alt="Libro: The Lamplighters de Emma StonexThey both die at the end de Adam Silvera">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>They both die at the
-                                                    end</small></p>
+                                            <p class="card-text fs-6 text-center">
+                                                <smLibro: The Lamplighters de Emma Stonex</small>
+                                            </p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1428,79</p>
                                             </a>
@@ -830,13 +816,14 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card-group w-50 mx-auto">
+                                <div class="card-group w-75 mx-auto">
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro37.jpg" class="card-img-top"
-                                            alt="Libro: The Boy Who Made Everyone Laugh de Helen Rutter">
+                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>The Boy Who Made
-                                                    Everyone Laugh</small></p>
+                                            <p class="card-text fs-6 text-center">
+                                                <smallThe Invisible Life of Addie LaRue de V.E. Schwab</small>
+                                            </p>
                                             <a href="catalogo.html">
                                                 <p class="card-text text-center">$1451,74</p>
                                             </a>
@@ -844,12 +831,12 @@
                                     </div>
                                     <div class="card text-dark bg-light m-1">
                                         <img src="img/libro41.jpg" class="card-img-top"
-                                            alt="Libro: Matilda de Roald Dahl">
+                                            alt="Libro: The Lamplighters de Emma Stonex">
                                         <div class="card-body">
-                                            <p class="card-text fs-6 text-center"><small>Matilda</small></p>
-                                            <a href="catalogo.html">
-                                                <p class="card-text text-center">$1120,64</p>
-                                            </a>
+                                            <p class="card-text fs-6 text-center">
+                                                <smaLibro: The Lamplighters de Emma Stonexalogo.html">
+                                                    <p class="card-text text-center">$1120,64</p>
+                                                    </a>
                                         </div>
                                     </div>
                                     <div class="card text-dark bg-light m-1">
@@ -1007,4 +994,5 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
