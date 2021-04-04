@@ -1,24 +1,24 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     article {
-        margin-top: 0.5rem;
-        background-image: url("/img/bgimage8.jpg");
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url(/img/vintage-paper.png);
+        background-repeat: repeat;
+        background-size: 10%;
         .article {
             display: flex;
             flex-flow: column nowrap;
             .article__title {
-                width: 100%;
+                max-width: 700px;
                 text-align: center;
                 background-color: $black;
                 color: $sinopia;
+                font-size: 1.1em;
                 padding: 0.5rem 0rem;
             }
             .article__content {
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: center;
+                background-color: transparentize($color: $black, $amount: 0.7);
                 .content__title {
                     font-size: 0.85em;
                     font-weight: 600;
@@ -32,23 +32,86 @@
         }
     }
 }
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     article {
-        margin-top: 0.5rem;
+        background-image: url(/img/vintage-paper.png);
+        background-repeat: repeat;
+        background-size: 20%;
+        padding: 1.5rem 0rem;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column;
         align-items: center;
+        align-content: center;
         .article {
-            width: 1200px;
-            margin: 0;
-            padding-bottom: 3rem;
-            background-image: url("/img/bgimage8.jpg");
-            background-position: left;
-            background-repeat: repeat;
-            background-size: cover;
+            width: 990px;
+            height: auto;
             .article__title {
-                width: 1200px;
+                text-align: center;
+                background-color: $black;
+                color: $sinopia;
+                padding: 0.5rem 0rem;
+                font-family: $font;
+                font-size: 1.2em;
+                font-weight: 700;
+                letter-spacing: 0.1rem;
+            }
+            .article__content {
+                width: auto;
+                height: auto;
+                padding: 1rem 0.2rem;
+                display: grid;
+                grid-template-areas:
+                    "v1 v2"
+                    "v3 v4"
+                    "v5 v6";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: repeat(3 1fr);
+                justify-items: center;
+                background-color: transparentize($color: $black, $amount: 0.8);
+                border-radius: 0.5rem;
+                color: $darkgray;
+                .content__title {
+                    font-size: 0.8em;
+                    font-weight: 500;
+                    text-align: start;
+                    text-decoration: underline;
+                }
+                li .vid1 {
+                    grid-area: v1;
+                }
+                li .vid2 {
+                    grid-area: v2;
+                }
+                li .vid3 {
+                    grid-area: v3;
+                }
+                li .vid4 {
+                    grid-area: v4;
+                }
+                li .vid5 {
+                    grid-area: v5;
+                }
+                li .vid6 {
+                    grid-area: v6;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1400px) {
+    article {
+        background-image: url(/img/vintage-paper.png);
+        background-repeat: repeat;
+        background-size: 20%;
+        padding: 2rem 0rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        align-content: center;
+        .article {
+            width: 1400px;
+            height: auto;
+            .article__title {
                 text-align: center;
                 background-color: $black;
                 color: $sinopia;
@@ -59,53 +122,43 @@
                 letter-spacing: 0.1rem;
             }
             .article__content {
-                width: 1200px;
-                margin: 0rem 2rem;
+                width: auto;
+                height: auto;
+                padding: 2rem 0.5rem;
                 display: grid;
                 grid-template-areas:
                     "v1 v2"
                     "v3 v4"
-                    "v5 v6"
-                    "v7 v8";
+                    "v5 v6";
                 grid-template-columns: 50% 50%;
-                grid-template-rows: 25% 25% 25% 25%;
-                color: $lightgray;
+                grid-template-rows: repeat(3 1fr);
+                justify-items: center;
+                background-color: transparentize($color: $black, $amount: 0.8);
+                border-radius: 1rem;
+                color: $darkgray;
                 .content__title {
                     font-size: 0.8em;
-                    font-weight: 100;
+                    font-weight: 500;
                     text-align: start;
+                    text-decoration: underline;
                 }
                 li .vid1 {
-                    margin: 0rem 2rem;
                     grid-area: v1;
                 }
                 li .vid2 {
-                    margin: 0rem 2rem;
                     grid-area: v2;
                 }
                 li .vid3 {
-                    margin: 0rem 2rem;
                     grid-area: v3;
                 }
                 li .vid4 {
-                    margin: 0rem 2rem;
                     grid-area: v4;
                 }
                 li .vid5 {
-                    margin: 0rem 2rem;
                     grid-area: v5;
                 }
                 li .vid6 {
-                    margin: 0rem 2rem;
                     grid-area: v6;
-                }
-                li .vid7 {
-                    margin: 0rem 2rem;
-                    grid-area: v7;
-                }
-                li .vid8 {
-                    margin: 0rem 2rem;
-                    grid-area: v8;
                 }
             }
         }

@@ -1,104 +1,8 @@
-@media only screen and (max-width: 576px) {
-    .header {
-        background-color: $black;
-        display: flex;
-        flex-flow: column nowrap;
-        .header__icons {
-            color: $darkgray;
-            .header__icons--social {
-                display: none;
-            }
-            .header__icons--account {
-                display: flex;
-                flex-flow: row nowrap;
-                li {
-                    text-align: center;
-                    a {
-                        font-size: 1em;
-                    }
-                }
-            }
-        }
-        .header__logo {
-            display: flex;
-            flex-flow: column nowrap;
-            text-align: center;
-            img {
-                width: 85px;
-                height: 60px;
-            }
-            h1 {
-                color: $saffron;
-                font-size: 1.6em;
-                font-weight: bold;
-            }
-            em {
-                color: $sinopia;
-                font-size: 1em;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 768px) {
-    .header {
-        background-color: $black;
-        display: flex;
-        flex-flow: column nowrap;
-        .header__icons {
-            color: $darkgray;
-            font-size: 1rem;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-            .header__icons--social {
-                display: none;
-            }
-            .header__icons--account {
-                margin: 0;
-                padding: 0.5rem 0rem;
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-around;
-                li {
-                    text-align: center;
-                    padding: 0rem 0.4rem;
-                }
-            }
-        }
-        .header__logo {
-            display: flex;
-            flex-flow: column nowrap;
-            text-align: center;
-            img {
-                width: 100px;
-                height: 80px;
-            }
-            h1 {
-                font-family: $font;
-                color: $saffron;
-                font-size: 1.6em;
-                font-weight: bold;
-            }
-            em {
-                font-family: $font;
-                color: $sinopia;
-                font-size: 1em;
-                font-weight: bold;
-            }
-        }
-    }
-}
-@media only screen and (min-width:768px){
-    
-}
-
-
-@media only screen and (min-width: 992px) {
     header {
         background-color: $black;
-        
+        width: auto;
+        height: 150px;
         /* top */
         .header__top {
             padding: 0.5rem 1rem 1.2rem 1rem;
@@ -108,76 +12,193 @@
             .header__logo {
                 display: flex;
                 flex-flow: row;
-                img{
-                    width: 100px;
-                    height: 90px;
+                img {
+                    width: 60px;
+                    height: 55px;
                 }
-                h1{
+                h1 {
                     font-family: $font;
-                    padding-top: 1.5rem;
+                    padding-top: 0.8rem;
                     color: $saffron;
-                    font-size: 2.2em;
+                    font-size: 1.25em;
                     font-weight: 500;
-                    em{
+                    em {
                         color: $sinopia;
                     }
                 }
             }
             .header__icons {
-                padding: 0.4rem 2.5rem 0.5rem 0rem;
+                padding: 0.1rem 0.1rem;
                 color: $saffron;
                 display: flex;
                 flex-flow: row nowrap;
-                font-size: 1.3em;
-                li a{
-                    padding: 0.4rem;
+                font-size: 0.8em;
+                li a {
+                    padding: 0.25rem;
                 }
-                a:hover{
+                a:hover {
                     color: $sinopia;
                 }
             }
         }
-        
         /* bottom */
         .header__bottom {
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
             justify-content: space-between;
             .header__nav {
-                padding: 1rem;
+                padding: 0rem 0rem 2.5rem 0.5rem;
                 color: $saffron;
-                .topnav {
-                    font-size: 1em;
-                    font-weight: 600;
-                    display: flex;
-                    flex-flow: row nowrap;
-                    li a{
-                        padding: 0rem 1.2rem;
+                .collapsible-menu {
+                    font-size: 1.2em;
+                    a {
+                        display: block;
                     }
-                    .active {
-                        color: $lightgray;
+                    label {
+                        display: block;
+                        cursor: pointer;
+                        background: url(/img/menu.svg) no-repeat left;
+                        padding: 0px 0px 10px 25px;
                     }
-                    a:hover{
-                        color: $sinopia;
+                    input#menu {
+                        display: none;
+                    }
+                    input:checked + label {
+                        background-image: url(/img/close-fill.svg);
+                    }
+                    .menu-content {
+                        background-color: $black;
+                        border-radius: 0.5rem;
+                        font-size: 0.8em;
+                        overflow: hidden;
+                        max-height: 0;
+                        li a {
+                            padding: 0.4rem 1rem;
+                        }
+                        a:hover {
+                            color: $sinopia;
+                        }
+                    }
+                    input:checked ~ label {
+                        background-image: url(/img/close-fill.svg);
+                    }
+                    input:checked ~ .menu-content {
+                        max-height: 100%;
+                        position: absolute;
                     }
                 }
             }
             .header__searchbar {
-                padding: 1rem 2rem;
+                margin: 0rem;
+                padding: 0rem;
+                font-size: 0.8em;
                 .button {
-                    padding: 0.3rem 0.5rem;
-                    border-radius: 0.5rem;
+                    border-radius: 0.15rem;
                     border: none;
                     background-color: $sinopia;
                     color: $saffron;
                     text-shadow: 0rem 0rem 0.15rem $black;
                 }
-                .input{
-                    margin-right: 0.8rem;
-                    width: 350px;
-                    height: 40px;
+                .input {
+                    height: 25px;
+                    border-radius: 0.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        background-color: $black;
+        width: auto;
+        height: auto;
+        /* top */
+        .header__top {
+            padding: 0.5rem 1rem 1.2rem 1rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            .header__logo {
+                display: flex;
+                flex-flow: row;
+                img {
+                    width: 95px;
+                    height: 75px;
+                }
+                h1 {
+                    font-family: $font;
+                    padding-top: 1.2rem;
+                    color: $saffron;
+                    font-size: 1.8em;
+                    font-weight: 500;
+                    em {
+                        color: $sinopia;
+                    }
+                }
+            }
+            .header__icons {
+                padding: 0.1rem 0.1rem;
+                color: $saffron;
+                display: flex;
+                flex-flow: row nowrap;
+                font-size: 1.2em;
+                li a {
+                    padding: 0.25rem;
+                }
+                a:hover {
+                    color: $sinopia;
+                }
+            }
+        }
+        /* bottom */
+        .header__bottom {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            .header__nav {
+                padding: 0rem;
+                color: $saffron;
+                .collapsible-menu {
+                    .menu-content {
+                        display: flex;
+                        flex-flow: row wrap;
+                        font-size: 1em;
+                        font-weight: 500;
+                        li a{
+                            padding: 0rem 0.8rem;
+                        }
+                        a:hover {
+                            color: $sinopia;
+                        }
+                    }
+                    input {
+                        display: none;
+                    }
+                    label {
+                        display: none;
+                    }
+                }
+            }
+            .header__searchbar {
+                padding: 1.5rem;
+                .button {
+                    margin: 0;
+                    padding: 0.2rem;
+                    border-radius: 0.2rem;
+                    border: none;
+                    background-color: $sinopia;
+                    color: $saffron;
+                    font-size: 0.8em;
+                    text-shadow: 0rem 0rem 0.15rem $black;
+                }
+                .input {
+                    margin: 0rem;
+                    width: 320px;
+                    height: 30px;
                     border-radius: 0.3rem;
                     background-color: lightgrey;
+                    font-size: 0.8em;
                 }
             }
         }

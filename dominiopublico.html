@@ -19,54 +19,46 @@
 <body>
     <!-- header -->
     <header>
-        <div class="header">
-            <!-- Icons -->
-            <div class="header__icons">
-                <ul class="header__icons--social">
-                    <li><a href="https://www.whatsapp.com/"><span class="iconify" data-icon="bi:whatsapp"
-                                data-inline="false"></span></a>
-                    </li>
-                    <li><a href="contacto@elelivros.com"><span class="iconify" data-icon="ant-design:mail-outlined"
-                                data-inline="false"></span></a></li>
-                    <li><a href="https://www.instagram.com/"><span class="iconify" data-icon="akar-icons:instagram-fill"
-                                data-inline="false"></span></a></li>
-                </ul>
-                <ul class="header__icons--account">
-                    <li><a href="contaco.html"><span class="iconify" data-icon="ant-design:login-outlined"
-                                data-inline="false"></span></a></li>
-                    <li><a href="contaco.html"><span class="iconify" data-icon="codicon:account"
-                                data-inline="false"></span></a>
-                    </li>
-                    <li><a href="index.html"><span class="iconify" data-icon="ph-bookmarks-bold"
-                                data-inline="false"></span></a>
-                    </li>
-                    <li><a href="index.html"><span class="iconify" data-icon="fe-cart" data-inline="false"></span></a>
-                    </li>
-                </ul>
-            </div>
+        <!-- top -->
+        <div class="header__top">
             <!-- logo -->
             <div class="header__logo">
                 <a href="index.html"> <img src="img/logoheader.png" alt="Logo de Librería Digital Elelivros"></a>
-                <h1><a href="index.html"><em>ele</em>livros</a></h1>
+                <h1><em>ele</em>livros</h1>
             </div>
-        </div>
-    </header>
-    <!-- nav -->
-    <nav>
-        <div class="nav">
-            <ul class="topnav">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a class="active" href="dominiopublico.html">Dominio Público</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contaco.html">Contacto</a></li>
+            <!-- Icons -->
+            <ul class="header__icons">
+                <li><a href="contaco.html"><span class="iconify" data-icon="codicon:account"
+                            data-inline="false"></span></a>
+                </li>
+                <li><a href="index.html"><span class="iconify" data-icon="fe-cart" data-inline="false"></span></a>
+                </li>
             </ul>
-            <form class="searchbar">
-                <input type="search" name="search" placeholder=". . .">
+        </div>
+        <!-- bottom -->
+        <div class="header__bottom">
+            <!-- nav -->
+            <nav class="header__nav">
+                <div class="collapsible-menu">
+                    <input type="checkbox" id="menu">
+                    <label for="menu">Menu</label>
+                    <ul class="menu-content">
+                        <li><a class="active" href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Categorías</a></li>
+                        <li><a href="dominiopublico.html">BibliotecaDigital</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contaco.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- searchbar -->
+            <form class="header__searchbar">
+                <input type="search" name="search" class="input" placeholder="...">
                 <input type="submit" class="button" value="Buscar">
             </form>
         </div>
-    </nav>
+    </header>
+
     <!-- main -->
     <main>
         <div class="mainpubdomain">
@@ -203,4 +195,5 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

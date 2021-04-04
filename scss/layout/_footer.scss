@@ -8,13 +8,13 @@
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            letter-spacing: 0.2rem;
-            word-spacing: 0.1rem;
-            line-height: 2.1rem;
+            letter-spacing: 0.1rem;
+            word-spacing: 0.12rem;
+            line-height: 1.8rem;
             .links__contact {
                 text-align: center;
                 padding: 0.4rem 1rem;
-                font-size: 0.8em;
+                font-size: 0.7em;
                 li a {
                     padding: 0.5rem 0rem;
                 }
@@ -22,7 +22,7 @@
             .links__tandc {
                 text-align: center;
                 padding: 0rem 1rem;
-                font-size: 0.8em;
+                font-size: 0.7em;
                 li a {
                     padding: 0.5rem 0rem;
                 }
@@ -37,10 +37,13 @@
                     padding: 0rem 3rem;
                 }
             }
+            a:hover{
+                color: $saffron;
+            }
         }
         .copyright {
-            color: $darkgray;
-            font-size: 0.8em;
+            color: $sinopia;
+            font-size: 0.7em;
             margin: 0rem;
             padding: 0rem;
             text-align: center;
@@ -61,18 +64,18 @@
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
-            letter-spacing: 0.2rem;
+            letter-spacing: 0.1rem;
             word-spacing: 0.1rem;
-            line-height: 2.1rem;
+            line-height: 1.5rem;
             .links__contact {
-                font-size: 0.9em;
+                font-size: 0.75em;
                 padding: 0.4rem 1rem;
                 li {
                     padding: 0.1rem;
                 }
             }
             .links__tandc {
-                font-size: 0.9em;
+                font-size: 0.75em;
                 padding: 0.4rem 1rem;
                 li {
                     padding: 0.1rem;
@@ -80,6 +83,7 @@
             }
             .links__social {
                 padding: 1rem;
+                font-size: 1em;
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: space-evenly;
@@ -87,10 +91,13 @@
                     padding: 0rem 0.5rem;
                 }
             }
+            a:hover{
+                color: $saffron;
+            }
         }
         .copyright {
-            font-size: 0.8em;
-            color: $darkgray;
+            font-size: 0.7em;
+            color: $sinopia;
             padding: 0rem 1rem;
             text-align: center;
         }
