@@ -173,9 +173,7 @@ a {
 
 @media only screen and (max-width: 992px) {
   main {
-    background-image: url(/img/vintage-paper.png);
-    background-repeat: repeat;
-    background-size: 10%;
+    background-color: #e0dbb4;
     /* index */
     /* catalogo */
     /* PublicDomain */
@@ -228,7 +226,8 @@ a {
             text-align: center;
             color: #eaf1ec; }
         main .index .main .section {
-          width: 100%;
+          max-width: 700px;
+          min-width: auto;
           height: auto;
           background-color: rgba(24, 24, 24, 0.7); }
           main .index .main .section .heading {
@@ -244,12 +243,11 @@ a {
           main .index .main .section .card {
             background-color: rgba(24, 24, 24, 0.2);
             position: relative;
-            width: 250px;
-            height: auto; }
+            width: 200px; }
           main .index .main .section img {
             opacity: 1;
             backface-visibility: hidden;
-            width: 120px;
+            max-width: 120px;
             height: auto;
             align-self: center; }
           main .index .main .section .texto {
@@ -401,59 +399,100 @@ a {
     main .mainpubdomain {
       margin: 0;
       padding: 2rem;
-      background-color: #eaf1ec;
       display: flex;
       flex-flow: column nowrap;
       align-items: center; }
       main .mainpubdomain .pubdomain {
-        background-image: url(/img/bgimage7.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 1rem;
-        padding: 1rem;
-        border: 0.5rem solid #c3073f;
-        border-radius: 0.5rem; }
+        background-color: rgba(24, 24, 24, 0.2);
+        border: none;
+        border-radius: 0.3rem;
+        max-width: 700px;
+        min-width: auto; }
         main .mainpubdomain .pubdomain .pubdomain__title {
-          text-align: center;
-          padding: 0.5rem 0.5rem;
-          background-color: #181818;
-          border-radius: 0.2rem;
-          color: #ecbd25; }
+          margin: 0;
+          padding: 0.4rem;
+          background-color: #2c2c2c;
+          box-shadow: 0rem 0rem 1.5rem #181818;
+          border-radius: 0.3rem 0.3rem 0rem 0rem;
+          color: #ecbd25;
+          font-size: 1.5em;
+          text-align: center; }
         main .mainpubdomain .pubdomain .pubdomain__body {
           padding: 1rem 0rem;
-          text-align: start;
-          font-size: normal;
-          font-weight: 300;
-          color: #eaf1ec; }
-      main .mainpubdomain .pubdomain__links {
-        background-image: url(/img/bgimage7.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 1rem;
-        padding: 1rem;
-        border: 0.5rem solid #c3073f;
-        border-radius: 0.5rem; }
-        main .mainpubdomain .pubdomain__links .pubdomain__links--title {
+          color: #181818;
           text-align: center;
-          padding: 0.5rem 0.5rem;
-          background-color: #181818;
-          border-radius: 0.2rem;
-          color: #ecbd25; }
-        main .mainpubdomain .pubdomain__links .pubdomain__links--links {
-          padding: 1rem 0rem;
-          text-align: start;
-          font-size: normal;
-          font-weight: 300;
-          color: #eaf1ec; }
-          main .mainpubdomain .pubdomain__links .pubdomain__links--links li a {
-            color: #c3073f;
-            text-shadow: 0.1rem 0.1rem 0.1rem #181818;
-            padding-left: 3rem;
-            font-weight: bold; }
-          main .mainpubdomain .pubdomain__links .pubdomain__links--links a:hover {
-            color: #ecbd25; }
+          font-size: 1em;
+          font-weight: 500; }
+      main .mainpubdomain .pubdomain__catalog {
+        margin: 1rem;
+        max-width: 950px;
+        min-width: auto;
+        border: 0.3rem solid #181818;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center; }
+        main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--title {
+          width: 100%;
+          margin: 0.3rem;
+          text-align: center;
+          background-color: #790427;
+          box-shadow: 0rem 0rem 1rem #181818;
+          color: #ecbd25;
+          text-shadow: 0rem 0.25rem 0.5rem #181818; }
+        main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body {
+          margin: 0.5rem;
+          padding: 0;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-content: center; }
+          main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card {
+            width: 150px;
+            height: 280px;
+            margin: 0.25rem;
+            padding: 0.3rem;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c2c2c;
+            color: #eaf1ec;
+            border: 0.1rem solid #790427;
+            border-radius: 0.2rem;
+            text-align: center; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card .pd-card-title {
+              margin: 0;
+              padding: 0.8rem;
+              color: #eaf1ec;
+              text-shadow: 0rem 0rem 1rem #181818;
+              font-size: 0.6rem;
+              font-weight: 500; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card .pd-card-author {
+              margin: 0;
+              padding: 0.2rem;
+              color: #eaf1ec;
+              text-shadow: 0rem 0rem 1rem #181818;
+              font-size: 0.6rem;
+              font-weight: 400; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card img {
+              max-width: 90px;
+              max-height: 120px;
+              border: 0.15rem solid #181818;
+              box-shadow: 0rem 0rem 1.5rem #181818; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card button {
+              margin: 0rem 0.1rem;
+              padding: 0.1rem;
+              background-color: #181818;
+              border: none;
+              color: #eaf1ec;
+              font-size: 0.65em; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card button:hover {
+              background-color: #eaf1ec;
+              color: #181818; }
+          main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card:hover {
+            background-color: #790427;
+            border: 0.1rem solid #181818; }
     main .info {
       margin: 0;
       padding: 0.5rem;
@@ -510,14 +549,12 @@ a {
 
 @media only screen and (min-width: 992px) {
   main {
-    background-image: url(/img/vintage-paper.png);
-    background-repeat: repeat;
-    background-size: 15%;
+    background-color: #e0dbb4;
     /* index */
     /* catalogo */
+    /* PublicDomain */
     /* nosotros*/
-    /* contacto*/
-    /* PublicDomain */ }
+    /* contacto*/ }
     main .index {
       display: flex;
       flex-flow: column;
@@ -727,6 +764,102 @@ a {
             font-weight: 400; }
         main .catalog .library img {
           min-width: 108px; }
+    main .mainpubdomain {
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      main .mainpubdomain .pubdomain {
+        background-color: rgba(24, 24, 24, 0.2);
+        border: none;
+        border-radius: 0.3rem;
+        width: 850px; }
+        main .mainpubdomain .pubdomain .pubdomain__title {
+          margin: 0;
+          padding: 0.4rem;
+          background-color: #2c2c2c;
+          box-shadow: 0rem 0rem 1.5rem #181818;
+          border-radius: 0.3rem 0.3rem 0rem 0rem;
+          color: #ecbd25;
+          font-size: 1.75em;
+          text-align: center; }
+        main .mainpubdomain .pubdomain .pubdomain__body {
+          padding: 1rem 0rem;
+          color: #181818;
+          text-align: center;
+          font-size: 1em;
+          font-weight: 500; }
+      main .mainpubdomain .pubdomain__catalog {
+        margin: 1rem;
+        width: 990px;
+        border: 0.5rem solid #181818;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center; }
+        main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--title {
+          width: 970px;
+          margin: 0.8rem 0rem;
+          padding: 0.3em 0rem;
+          text-align: center;
+          background-color: #790427;
+          box-shadow: 0rem 0rem 1rem #181818;
+          color: #ecbd25;
+          text-shadow: 0rem 0.25rem 0.5rem #181818; }
+        main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body {
+          margin: 0.5rem;
+          padding: 0;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-content: center; }
+          main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card {
+            width: 200px;
+            height: 280px;
+            margin: 0.25rem;
+            padding: 0.3rem;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c2c2c;
+            color: #eaf1ec;
+            border: 0.1rem solid #790427;
+            border-radius: 0.2rem;
+            text-align: center; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card .pd-card-title {
+              margin: 0;
+              padding: 0.8rem;
+              color: #eaf1ec;
+              text-shadow: 0rem 0rem 1rem #181818;
+              font-size: 0.7rem;
+              font-weight: 500; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card .pd-card-author {
+              margin: 0;
+              padding: 0.2rem;
+              color: #eaf1ec;
+              text-shadow: 0rem 0rem 1rem #181818;
+              font-size: 0.6rem;
+              font-weight: 500; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card img {
+              max-width: 120px;
+              max-height: 130px;
+              border: 0.25rem solid #181818;
+              box-shadow: 0rem 0rem 1.5rem #181818; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card button {
+              margin: 0rem 0.1rem;
+              padding: 0.1rem;
+              background-color: #181818;
+              border: none;
+              color: #eaf1ec;
+              font-size: 0.75em; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card button:hover {
+              background-color: #eaf1ec;
+              color: #181818; }
+          main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card:hover {
+            background-color: #790427;
+            border: 0.1rem solid #181818; }
     main .info {
       background-image: url(/img/bgimage2.jpg);
       background-position: center;
@@ -804,69 +937,16 @@ a {
             border-radius: 0.2rem;
             background-color: #c3073f;
             color: #ecbd25;
-            text-shadow: 0.1rem 0.1rem 0rem #181818; }
-    main .mainpubdomain {
-      margin: 0;
-      padding: 2rem;
-      background-image: url(/img/bgimage7.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center; }
-      main .mainpubdomain .pubdomain {
-        background-color: #eaf1ec;
-        width: 990px;
-        margin: 1rem;
-        padding: 2rem;
-        border: 0.5rem solid #c3073f;
-        border-radius: 0.5rem; }
-        main .mainpubdomain .pubdomain .pubdomain__title {
-          text-align: center;
-          padding: 0.5rem 0.5rem;
-          background-color: #181818;
-          border-radius: 0.2rem;
-          color: #ecbd25; }
-        main .mainpubdomain .pubdomain .pubdomain__body {
-          padding: 1rem 0rem;
-          text-align: start;
-          font-size: large;
-          font-weight: 500; }
-      main .mainpubdomain .pubdomain__links {
-        background-color: #eaf1ec;
-        width: 990px;
-        text-align: start;
-        margin: 1rem;
-        padding: 2rem;
-        border: 0.5rem solid #c3073f;
-        border-radius: 0.5rem; }
-        main .mainpubdomain .pubdomain__links .pubdomain__links--title {
-          text-align: center;
-          padding: 0.5rem 0.5rem;
-          background-color: #181818;
-          border-radius: 0.2rem;
-          color: #ecbd25; }
-        main .mainpubdomain .pubdomain__links .pubdomain__links--links {
-          padding: 1rem 0rem;
-          text-align: start;
-          font-size: large;
-          font-weight: 500; }
-          main .mainpubdomain .pubdomain__links .pubdomain__links--links li a {
-            color: #c3073f;
-            text-shadow: 0.1rem 0rem 0.1rem #181818;
-            padding-left: 3rem; } }
+            text-shadow: 0.1rem 0.1rem 0rem #181818; } }
 
 @media only screen and (min-width: 1400px) {
   main {
-    background-image: url(/img/vintage-paper.png);
-    background-repeat: repeat;
-    background-size: 20%;
+    background-image: radial-gradient(beige 20%, #e0dbb4 80%);
     /* index */
     /* catalogo */
+    /* PublicDomain */
     /* nosotros*/
-    /* contacto*/
-    /* PublicDomain */ }
+    /* contacto*/ }
     main .index {
       display: flex;
       flex-flow: column;
@@ -1081,6 +1161,97 @@ a {
             font-weight: 600; }
         main .catalog .library img {
           min-width: 108px; }
+    main .mainpubdomain {
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      main .mainpubdomain .pubdomain {
+        background-color: rgba(24, 24, 24, 0.2);
+        border: none;
+        width: 1200px;
+        border-radius: 0.3rem; }
+        main .mainpubdomain .pubdomain .pubdomain__title {
+          margin: 0;
+          padding: 0.4rem;
+          background-color: #2c2c2c;
+          box-shadow: 0rem 0rem 1.5rem #181818;
+          color: #ecbd25;
+          font-size: 1.8em;
+          text-align: center; }
+        main .mainpubdomain .pubdomain .pubdomain__body {
+          color: #181818;
+          text-align: center;
+          font-size: large;
+          font-weight: 500; }
+      main .mainpubdomain .pubdomain__catalog {
+        margin: 1rem;
+        width: 1400px;
+        border: 0.5rem solid #181818;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center; }
+        main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--title {
+          width: 1380px;
+          margin: 1rem 0rem 2rem 0rem;
+          padding: 0.5em 0rem;
+          text-align: center;
+          background-color: #790427;
+          box-shadow: 0rem 0rem 1rem #181818;
+          color: #ecbd25;
+          text-shadow: 0rem 0.25rem 0.5rem #181818; }
+        main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body {
+          margin: 1rem;
+          padding: 0;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-content: center; }
+          main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card {
+            width: 280px;
+            height: 320px;
+            margin: 0.5rem 1rem;
+            padding: 0.8rem;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c2c2c;
+            color: #eaf1ec;
+            border: 0.2rem solid #790427;
+            border-radius: 0.3rem;
+            text-align: center; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card .pd-card-title {
+              color: #eaf1ec;
+              text-shadow: 0rem 0rem 1rem #181818;
+              font-size: 0.75rem;
+              font-weight: 600;
+              letter-spacing: 0.1rem; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card .pd-card-author {
+              color: #eaf1ec;
+              text-shadow: 0rem 0rem 1rem #181818;
+              font-size: 0.75rem;
+              font-weight: 400; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card img {
+              max-width: 120px;
+              max-height: 180px;
+              border: 0.5rem solid #181818;
+              box-shadow: 0rem 0rem 1.5rem #181818; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card button {
+              margin: 0rem 0.5rem;
+              padding: 0.05rem 0.3rem;
+              background-color: #181818;
+              border: none;
+              color: #eaf1ec;
+              font-size: 0.85em; }
+            main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card button:hover {
+              background-color: #eaf1ec;
+              color: #181818; }
+          main .mainpubdomain .pubdomain__catalog .pubdomain__catalog--body .pd-card:hover {
+            background-color: #790427;
+            border: 0.2rem solid #181818; }
     main .info {
       background-image: url(/img/bgimage2.jpg);
       background-position: center;
@@ -1158,58 +1329,7 @@ a {
             border-radius: 0.2rem;
             background-color: #c3073f;
             color: #ecbd25;
-            text-shadow: 0.1rem 0.1rem 0rem #181818; }
-    main .mainpubdomain {
-      margin: 0;
-      padding: 2rem;
-      background-image: url(/img/bgimage7.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center; }
-      main .mainpubdomain .pubdomain {
-        background-color: #eaf1ec;
-        width: 990px;
-        margin: 1rem;
-        padding: 2rem;
-        border: 0.5rem solid #c3073f;
-        border-radius: 0.5rem; }
-        main .mainpubdomain .pubdomain .pubdomain__title {
-          text-align: center;
-          padding: 0.5rem 0.5rem;
-          background-color: #181818;
-          border-radius: 0.2rem;
-          color: #ecbd25; }
-        main .mainpubdomain .pubdomain .pubdomain__body {
-          padding: 1rem 0rem;
-          text-align: start;
-          font-size: large;
-          font-weight: 500; }
-      main .mainpubdomain .pubdomain__links {
-        background-color: #eaf1ec;
-        width: 990px;
-        text-align: start;
-        margin: 1rem;
-        padding: 2rem;
-        border: 0.5rem solid #c3073f;
-        border-radius: 0.5rem; }
-        main .mainpubdomain .pubdomain__links .pubdomain__links--title {
-          text-align: center;
-          padding: 0.5rem 0.5rem;
-          background-color: #181818;
-          border-radius: 0.2rem;
-          color: #ecbd25; }
-        main .mainpubdomain .pubdomain__links .pubdomain__links--links {
-          padding: 1rem 0rem;
-          text-align: start;
-          font-size: large;
-          font-weight: 500; }
-          main .mainpubdomain .pubdomain__links .pubdomain__links--links li a {
-            color: #c3073f;
-            text-shadow: 0.1rem 0rem 0.1rem #181818;
-            padding-left: 3rem; } }
+            text-shadow: 0.1rem 0.1rem 0rem #181818; } }
 
 @media screen and (max-width: 768px) {
   article {

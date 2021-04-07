@@ -1,8 +1,6 @@
 @media only screen and (max-width: 992px) {
     main {
-        background-image: url(/img/vintage-paper.png);
-        background-repeat: repeat;
-        background-size: 10%;
+        background-color: rgb(224, 219, 180);
         /* index */
         .index {
             display: flex;
@@ -55,7 +53,8 @@
                     }
                 }
                 .section {
-                    width: 100%;
+                    max-width: 700px;
+                    min-width: auto;
                     height: auto;
                     background-color: transparentize($color: $black, $amount: 0.3);
                     .heading {
@@ -73,13 +72,12 @@
                     .card {
                         background-color: transparentize($color: $black, $amount: 0.8);
                         position: relative;
-                        width: 250px;
-                        height: auto;
+                        width: 200px;
                     }
                     img {
                         opacity: 1;
                         backface-visibility: hidden;
-                        width: 120px;
+                        max-width: 120px;
                         height: auto;
                         align-self: center;
                     }
@@ -135,7 +133,6 @@
                 }
             }
         }
-
         /* catalogo */
         .catalog {
             display: flex;
@@ -258,74 +255,118 @@
                 }
             }
         }
-
         /* PublicDomain */
         .mainpubdomain {
             margin: 0;
             padding: 2rem;
-            background-color: $lightgray;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
             .pubdomain {
-                background-image: url(/img/bgimage7.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                margin: 1rem;
-                padding: 1rem;
-                border: 0.5rem solid $sinopia;
-                border-radius: 0.5rem;
+                background-color: transparentize($color: $black, $amount: 0.8);
+                border: none;
+                border-radius: 0.3rem;
+                max-width: 700px;
+                min-width: auto;
                 .pubdomain__title {
-                    text-align: center;
-                    padding: 0.5rem 0.5rem;
-                    background-color: $black;
-                    border-radius: 0.2rem;
+                    margin: 0;
+                    padding: 0.4rem;
+                    background-color: $darkgray;
+                    box-shadow: 0rem 0rem 1.5rem $black;
+                    border-radius: 0.3rem 0.3rem 0rem 0rem;
                     color: $saffron;
+                    font-size: 1.5em;
+                    text-align: center;
                 }
                 .pubdomain__body {
                     padding: 1rem 0rem;
-                    text-align: start;
-                    font-size: normal;
-                    font-weight: 300;
-                    color: $lightgray;
+                    color: $black;
+                    text-align: center;
+                    font-size: 1em;
+                    font-weight: 500;
                 }
             }
-            .pubdomain__links {
-                background-image: url(/img/bgimage7.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+            .pubdomain__catalog {
                 margin: 1rem;
-                padding: 1rem;
-                border: 0.5rem solid $sinopia;
+                max-width: 950px;
+                min-width: auto;
+                border: 0.3rem solid $black;
                 border-radius: 0.5rem;
-                .pubdomain__links--title {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                .pubdomain__catalog--title {
+                    width: 100%;
+                    margin: 0.3rem;
                     text-align: center;
-                    padding: 0.5rem 0.5rem;
-                    background-color: $black;
-                    border-radius: 0.2rem;
+                    background-color: $darksinopia;
+                    box-shadow: 0rem 0rem 1rem $black;
                     color: $saffron;
+                    text-shadow: 0rem 0.25rem 0.5rem $black;
                 }
-                .pubdomain__links--links {
-                    padding: 1rem 0rem;
-                    text-align: start;
-                    font-size: normal;
-                    font-weight: 300;
-                    color: $lightgray;
-                    li a {
-                        color: $sinopia;
-                        text-shadow: 0.1rem 0.1rem 0.1rem $black;
-                        padding-left: 3rem;
-                        font-weight: bold;
+                .pubdomain__catalog--body {
+                    margin: 0.5rem;
+                    padding: 0;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: center;
+                    .pd-card {
+                        width: 150px;
+                        height: 280px;
+                        margin: 0.25rem;
+                        padding: 0.3rem;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: $darkgray;
+                        color: $lightgray;
+                        border: 0.1rem solid $darksinopia;
+                        border-radius: 0.2rem;
+                        text-align: center;
+                        .pd-card-title {
+                            margin: 0;
+                            padding: 0.8rem;
+                            color: $lightgray;
+                            text-shadow: 0rem 0rem 1rem $black;
+                            font-size: 0.6rem;
+                            font-weight: 500;
+                        }
+                        .pd-card-author {
+                            margin: 0;
+                            padding: 0.2rem;
+                            color: $lightgray;
+                            text-shadow: 0rem 0rem 1rem $black;
+                            font-size: 0.6rem;
+                            font-weight: 400;
+                        }
+                        img {
+                            max-width: 90px;
+                            max-height: 120px;
+                            border: 0.15rem solid $black;
+                            box-shadow: 0rem 0rem 1.5rem $black;
+                        }
+                        button {
+                            margin: 0rem 0.1rem;
+                            padding: 0.1rem;
+                            background-color: $black;
+                            border: none;
+                            color: $lightgray;
+                            font-size: 0.65em;
+                        }
+                        button:hover {
+                            background-color: $lightgray;
+                            color: $black;
+                        }
                     }
-                    a:hover {
-                        color: $saffron;
+                    .pd-card:hover {
+                        background-color: $darksinopia;
+                        border: 0.1rem solid $black;
                     }
                 }
             }
         }
-
         /* nosotros */
         .info {
             margin: 0;
@@ -352,7 +393,6 @@
                 }
             }
         }
-
         /* contacto */
         .form {
             .form__title {
@@ -402,9 +442,7 @@
 
 @media only screen and (min-width: 992px) {
     main {
-        background-image: url(/img/vintage-paper.png);
-        background-repeat: repeat;
-        background-size: 15%;
+        background-color: rgb(224, 219, 180);
         /* index */
         .index {
             display: flex;
@@ -652,6 +690,117 @@
                 }
             }
         }
+        /* PublicDomain */
+        .mainpubdomain {
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .pubdomain {
+                background-color: transparentize($color: $black, $amount: 0.8);
+                border: none;
+                border-radius: 0.3rem;
+                width: 850px;
+                .pubdomain__title {
+                    margin: 0;
+                    padding: 0.4rem;
+                    background-color: $darkgray;
+                    box-shadow: 0rem 0rem 1.5rem $black;
+                    border-radius: 0.3rem 0.3rem 0rem 0rem;
+                    color: $saffron;
+                    font-size: 1.75em;
+                    text-align: center;
+                }
+                .pubdomain__body {
+                    padding: 1rem 0rem;
+                    color: $black;
+                    text-align: center;
+                    font-size: 1em;
+                    font-weight: 500;
+                }
+            }
+            .pubdomain__catalog {
+                margin: 1rem;
+                width: 990px;
+                border: 0.5rem solid $black;
+                border-radius: 0.5rem;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                .pubdomain__catalog--title {
+                    width: 970px;
+                    margin: 0.8rem 0rem;
+                    padding: 0.3em 0rem;
+                    text-align: center;
+                    background-color: $darksinopia;
+                    box-shadow: 0rem 0rem 1rem $black;
+                    color: $saffron;
+                    text-shadow: 0rem 0.25rem 0.5rem $black;
+                }
+                .pubdomain__catalog--body {
+                    margin: 0.5rem;
+                    padding: 0;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: center;
+                    .pd-card {
+                        width: 200px;
+                        height: 280px;
+                        margin: 0.25rem;
+                        padding: 0.3rem;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $darkgray;
+                        color: $lightgray;
+                        border: 0.1rem solid $darksinopia;
+                        border-radius: 0.2rem;
+                        text-align: center;
+                        .pd-card-title {
+                            margin: 0;
+                            padding: 0.8rem;
+                            color: $lightgray;
+                            text-shadow: 0rem 0rem 1rem $black;
+                            font-size: 0.7rem;
+                            font-weight: 500;
+                        }
+                        .pd-card-author {
+                            margin: 0;
+                            padding: 0.2rem;
+                            color: $lightgray;
+                            text-shadow: 0rem 0rem 1rem $black;
+                            font-size: 0.6rem;
+                            font-weight: 500;
+                        }
+                        img {
+                            max-width: 120px;
+                            max-height: 130px;
+                            border: 0.25rem solid $black;
+                            box-shadow: 0rem 0rem 1.5rem $black;
+                        }
+                        button {
+                            margin: 0rem 0.1rem;
+                            padding: 0.1rem;
+                            background-color: $black;
+                            border: none;
+                            color: $lightgray;
+                            font-size: 0.75em;
+                        }
+                        button:hover {
+                            background-color: $lightgray;
+                            color: $black;
+                        }
+                    }
+                    .pd-card:hover {
+                        background-color: $darksinopia;
+                        border: 0.1rem solid $black;
+                    }
+                }
+            }
+        }
         /* nosotros*/
         .info {
             background-image: url(/img/bgimage2.jpg);
@@ -745,74 +894,12 @@
                 }
             }
         }
-        /* PublicDomain */
-        .mainpubdomain {
-            margin: 0;
-            padding: 2rem;
-            background-image: url(/img/bgimage7.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            .pubdomain {
-                background-color: $lightgray;
-                width: 990px;
-                margin: 1rem;
-                padding: 2rem;
-                border: 0.5rem solid $sinopia;
-                border-radius: 0.5rem;
-                .pubdomain__title {
-                    text-align: center;
-                    padding: 0.5rem 0.5rem;
-                    background-color: $black;
-                    border-radius: 0.2rem;
-                    color: $saffron;
-                }
-                .pubdomain__body {
-                    padding: 1rem 0rem;
-                    text-align: start;
-                    font-size: large;
-                    font-weight: 500;
-                }
-            }
-            .pubdomain__links {
-                background-color: $lightgray;
-                width: 990px;
-                text-align: start;
-                margin: 1rem;
-                padding: 2rem;
-                border: 0.5rem solid $sinopia;
-                border-radius: 0.5rem;
-                .pubdomain__links--title {
-                    text-align: center;
-                    padding: 0.5rem 0.5rem;
-                    background-color: $black;
-                    border-radius: 0.2rem;
-                    color: $saffron;
-                }
-                .pubdomain__links--links {
-                    padding: 1rem 0rem;
-                    text-align: start;
-                    font-size: large;
-                    font-weight: 500;
-                    li a {
-                        color: $sinopia;
-                        text-shadow: 0.1rem 0rem 0.1rem $black;
-                        padding-left: 3rem;
-                    }
-                }
-            }
-        }
     }
 }
 
 @media only screen and (min-width: 1400px) {
     main {
-        background-image: url(/img/vintage-paper.png);
-        background-repeat: repeat;
-        background-size: 20%;
+        background-image: radial-gradient(beige 20%, rgb(224, 219, 180) 80%);
         /* index */
         .index {
             display: flex;
@@ -1062,6 +1149,112 @@
                 }
             }
         }
+        /* PublicDomain */
+        .mainpubdomain {
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .pubdomain {
+                background-color: transparentize($color: $black, $amount: 0.8);
+                border: none;
+                width: 1200px;
+                border-radius: 0.3rem;
+                .pubdomain__title {
+                    margin: 0;
+                    padding: 0.4rem;
+                    background-color: $darkgray;
+                    box-shadow: 0rem 0rem 1.5rem $black;
+                    color: $saffron;
+                    font-size: 1.8em;
+                    text-align: center;
+                }
+                .pubdomain__body {
+                    color: $black;
+                    text-align: center;
+                    font-size: large;
+                    font-weight: 500;
+                }
+            }
+            .pubdomain__catalog {
+                margin: 1rem;
+                width: 1400px;
+                border: 0.5rem solid $black;
+                border-radius: 0.5rem;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                .pubdomain__catalog--title {
+                    width: 1380px;
+                    margin: 1rem 0rem 2rem 0rem;
+                    padding: 0.5em 0rem;
+                    text-align: center;
+                    background-color: $darksinopia;
+                    box-shadow: 0rem 0rem 1rem $black;
+                    color: $saffron;
+                    text-shadow: 0rem 0.25rem 0.5rem $black;
+                }
+                .pubdomain__catalog--body {
+                    margin: 1rem;
+                    padding: 0;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: center;
+                    .pd-card {
+                        width: 280px;
+                        height: 320px;
+                        margin: 0.5rem 1rem;
+                        padding: 0.8rem;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $darkgray;
+                        color: $lightgray;
+                        border: 0.2rem solid $darksinopia;
+                        border-radius: 0.3rem;
+                        text-align: center;
+                        .pd-card-title {
+                            color: $lightgray;
+                            text-shadow: 0rem 0rem 1rem $black;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            letter-spacing: 0.1rem;
+                        }
+                        .pd-card-author {
+                            color: $lightgray;
+                            text-shadow: 0rem 0rem 1rem $black;
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                        }
+                        img {
+                            max-width: 120px;
+                            max-height: 180px;
+                            border: 0.5rem solid $black;
+                            box-shadow: 0rem 0rem 1.5rem $black;
+                        }
+                        button {
+                            margin: 0rem 0.5rem;
+                            padding: 0.05rem 0.3rem;
+                            background-color: $black;
+                            border: none;
+                            color: $lightgray;
+                            font-size: 0.85em;
+                        }
+                        button:hover {
+                            background-color: $lightgray;
+                            color: $black;
+                        }
+                    }
+                    .pd-card:hover {
+                        background-color: $darksinopia;
+                        border: 0.2rem solid $black;
+                    }
+                }
+            }
+        }
         /* nosotros*/
         .info {
             background-image: url(/img/bgimage2.jpg);
@@ -1151,66 +1344,6 @@
                         background-color: $sinopia;
                         color: $saffron;
                         text-shadow: 0.1rem 0.1rem 0rem $black;
-                    }
-                }
-            }
-        }
-        /* PublicDomain */
-        .mainpubdomain {
-            margin: 0;
-            padding: 2rem;
-            background-image: url(/img/bgimage7.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            .pubdomain {
-                background-color: $lightgray;
-                width: 990px;
-                margin: 1rem;
-                padding: 2rem;
-                border: 0.5rem solid $sinopia;
-                border-radius: 0.5rem;
-                .pubdomain__title {
-                    text-align: center;
-                    padding: 0.5rem 0.5rem;
-                    background-color: $black;
-                    border-radius: 0.2rem;
-                    color: $saffron;
-                }
-                .pubdomain__body {
-                    padding: 1rem 0rem;
-                    text-align: start;
-                    font-size: large;
-                    font-weight: 500;
-                }
-            }
-            .pubdomain__links {
-                background-color: $lightgray;
-                width: 990px;
-                text-align: start;
-                margin: 1rem;
-                padding: 2rem;
-                border: 0.5rem solid $sinopia;
-                border-radius: 0.5rem;
-                .pubdomain__links--title {
-                    text-align: center;
-                    padding: 0.5rem 0.5rem;
-                    background-color: $black;
-                    border-radius: 0.2rem;
-                    color: $saffron;
-                }
-                .pubdomain__links--links {
-                    padding: 1rem 0rem;
-                    text-align: start;
-                    font-size: large;
-                    font-weight: 500;
-                    li a {
-                        color: $sinopia;
-                        text-shadow: 0.1rem 0rem 0.1rem $black;
-                        padding-left: 3rem;
                     }
                 }
             }
