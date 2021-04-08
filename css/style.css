@@ -186,7 +186,7 @@ a {
       align-items: center; }
       main .index .quote {
         width: 700px;
-        background-image: url(/img/bgquote-sm.jpg);
+        background-image: url(img/bgquote-sm.jpg);
         background-color: #181818;
         background-size: cover;
         display: flex;
@@ -565,7 +565,7 @@ a {
         padding: 4rem 1rem;
         width: 900px;
         height: 250px;
-        background-image: url(/img/bgquote-md.jpg);
+        background-image: url(img/bgquote-md.jpg);
         background-color: #181818;
         background-position: center;
         background-size: cover;
@@ -583,7 +583,9 @@ a {
         width: 900px;
         align-self: center;
         display: grid;
-        grid-template-areas: "aside1 section" "aside2 section" "none section";
+        grid-template-areas: "aside1 section"
+ "aside2 section"
+ "none section";
         grid-template-columns: 25% 75%;
         grid-template-rows: auto; }
         main .index .main .section {
@@ -1386,7 +1388,9 @@ a {
         height: auto;
         padding: 1rem 0.2rem;
         display: grid;
-        grid-template-areas: "v1 v2" "v3 v4" "v5 v6";
+        grid-template-areas: "v1 v2"
+ "v3 v4"
+ "v5 v6";
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(3 1fr);
         justify-items: center;
@@ -1438,7 +1442,9 @@ a {
         height: auto;
         padding: 2rem 0.5rem;
         display: grid;
-        grid-template-areas: "v1 v2" "v3 v4" "v5 v6";
+        grid-template-areas: "v1 v2"
+ "v3 v4"
+ "v5 v6";
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(3 1fr);
         justify-items: center;
