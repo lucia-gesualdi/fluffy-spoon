@@ -70,13 +70,13 @@ a {
           header .header__bottom .header__nav .collapsible-menu label {
             display: block;
             cursor: pointer;
-            background: url(/img/menu.svg) no-repeat center left;
+            background: url(../img/menu.svg) no-repeat center left;
             background-size: 30%;
             padding: 8px 0px 10px 25px; }
           header .header__bottom .header__nav .collapsible-menu input#menu {
             display: none; }
           header .header__bottom .header__nav .collapsible-menu input:checked + label {
-            background-image: url(/img/close-fill.svg); }
+            background-image: url(../img/close-fill.svg); }
           header .header__bottom .header__nav .collapsible-menu .menu-content {
             background-color: #181818;
             border-radius: 0.5rem;
@@ -88,7 +88,7 @@ a {
             header .header__bottom .header__nav .collapsible-menu .menu-content a:hover {
               color: #c3073f; }
           header .header__bottom .header__nav .collapsible-menu input:checked ~ label {
-            background-image: url(/img/close-fill.svg); }
+            background-image: url(../img/close-fill.svg); }
           header .header__bottom .header__nav .collapsible-menu input:checked ~ .menu-content {
             max-height: 100%;
             position: absolute; }
@@ -216,7 +216,7 @@ a {
         min-width: auto;
         margin: 0.5rem 0rem;
         padding: 2rem;
-        background-image: url(/img/bgquote-sm.jpg);
+        background-image: url(../img/bgquote-sm.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: rgba(24, 24, 24, 0.75);
@@ -606,7 +606,7 @@ a {
         min-width: 760px;
         max-width: 900px;
         height: 200px;
-        background-image: url(/img/bgquote-md.jpg);
+        background-image: url(../img/bgquote-md.jpg);
         background-color: rgba(24, 24, 24, 0.75);
         background-position: center;
         background-size: cover;
@@ -912,7 +912,7 @@ a {
             background-color: #790427;
             border: 0.1rem solid #181818; }
     main .info {
-      background-image: url(/img/bgimage2.jpg);
+      background-image: url(../img/bgimage2.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -949,7 +949,7 @@ a {
       align-items: center;
       margin: 0rem;
       padding: 2rem;
-      background-image: url(/img/bgimage2.jpg);
+      background-image: url(../img/bgimage2.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -1009,7 +1009,7 @@ a {
         max-width: 1200px;
         min-width: 1000px;
         height: 250px;
-        background-image: url(/img/bgquote-xl.jpg);
+        background-image: url(../img/bgquote-xl.jpg);
         background-color: rgba(24, 24, 24, 0.75);
         background-position: center;
         background-size: cover;
@@ -1308,7 +1308,7 @@ a {
             background-color: #790427;
             border: 0.2rem solid #181818; }
     main .info {
-      background-image: url(/img/bgimage2.jpg);
+      background-image: url(../img/bgimage2.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -1345,7 +1345,7 @@ a {
       align-items: center;
       margin: 0rem;
       padding: 2rem;
-      background-image: url(/img/bgimage2.jpg);
+      background-image: url(../img/bgimage2.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
