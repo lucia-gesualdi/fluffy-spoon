@@ -12,12 +12,6 @@
             .header__logo {
                 display: flex;
                 flex-flow: row;
-                animation-name: glow;
-                animation-duration: 10s;
-                animation-timing-function:ease-in-out;
-                animation-delay: 0;
-                animation-iteration-count: infinite;
-                animation-direction:alternate;
                 img {
                     width: 50px;
                     height: 45px;
@@ -55,7 +49,7 @@
             .header__nav {
                 align-self: flex-start;
                 padding: 0rem 0rem 1rem 0.5rem;
-                color: $saffron;
+                color: $sinopia;
                 width: 100px;
                 height: 50px;
                 .collapsible-menu {
@@ -86,7 +80,7 @@
                             padding: 0.4rem 1rem;
                         }
                         a:hover {
-                            color: $sinopia;
+                            color: $saffron;
                         }
                     }
                     input:checked ~ label {
@@ -103,15 +97,18 @@
                 padding: 0.4rem;
                 width: auto;
                 .button-search {
-                    width: 35px;
+                    width: 50px;
                     height: 35px;
                     border-radius: 25%;
                     border: none;
-                    background-color: $sinopia;
+                    background-color: $darksinopia;
                     color: $saffron;
                     .iconify {
                         font-size: 1.5em;
                     }
+                }
+                .button-search:hover {
+                    color: $black;
                 }
                 .input {
                     height: auto;
@@ -136,15 +133,16 @@
             .header__logo {
                 display: flex;
                 flex-flow: row;
-                animation-name: glow;
-                animation-duration: 10s;
-                animation-timing-function:ease-in-out;
-                animation-delay: 0;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
                 img {
                     width: 95px;
                     height: 75px;
+                }
+                img:hover {
+                    animation-name: logo;
+                    animation-duration: 0.8s;
+                    animation-timing-function: ease-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: 1;
                 }
                 h1 {
                     font-family: $font;
@@ -179,7 +177,7 @@
             justify-content: space-between;
             .header__nav {
                 padding: 0rem;
-                color: $saffron;
+                color: $sinopia;
                 .collapsible-menu {
                     .menu-content {
                         display: flex;
@@ -190,7 +188,7 @@
                             padding: 0rem 0.8rem;
                         }
                         a:hover {
-                            color: $sinopia;
+                            color: $saffron;
                         }
                     }
                     input {
@@ -210,11 +208,14 @@
                     height: 35px;
                     border-radius: 25%;
                     border: none;
-                    background-color: $sinopia;
+                    background-color: $darksinopia;
                     color: $saffron;
                     .iconify {
                         font-size: 1.5em;
                     }
+                }
+                .button-search:hover {
+                    color: $black;
                 }
                 .input {
                     height: auto;
@@ -225,22 +226,38 @@
     }
 }
 
-@keyframes glow {
+@keyframes logo {
     0% {
-        text-shadow: 0 0 0.1rem #458626, 0 0 0.2rem #458626, 0 0 0.3rem #458626, 0 0 0.4rem #458626, 0 0 0.5rem #458626,
-            0 0 0.6rem #458626, 0 0 0.7rem #458626;
+        transform: scale(1, 1);
     }
-
-    33% {
-        text-shadow: 0 0 0.2rem #0b729b, 0 0 0.3rem #0b729b, 0 0 0.4rem #0b729b, 0 0 0.5rem #0b729b, 0 0 0.6rem #0b729b,
-            0 0 0.7rem #0b729b, 0 0 0.8rem #0b729b;
+    10% {
+        transform: scale(1.05, 1.05);
     }
-    66% {
-        text-shadow: 0 0 0.1rem #458626, 0 0 0.2rem #458626, 0 0 0.3rem #458626, 0 0 0.4rem #458626, 0 0 0.5rem #458626,
-            0 0 0.6rem #458626, 0 0 0.7rem #458626;
+    20% {
+        transform: scale(1.1, 1.1);
+    }
+    30% {
+        transform: scale(1.15, 1.15);
+    }
+    40% {
+        transform: scale(1.2, 1.2);
+    }
+    50% {
+        transform: scale(1.25, 1.25);
+    }
+    60% {
+        transform: scale(1.2, 1.2);
+    }
+    70% {
+        transform: scale(1.15, 1.15);
+    }
+    80% {
+        transform: scale(1.1, 1.1);
+    }
+    90% {
+        transform: scale(1.05, 1.05);
     }
     100% {
-        text-shadow: 0 0 0.2rem #0b729b, 0 0 0.3rem #0b729b, 0 0 0.4rem #0b729b, 0 0 0.5rem #0b729b, 0 0 0.6rem #0b729b,
-            0 0 0.7rem #0b729b, 0 0 0.8rem #0b729b;
+        transform: scale(1, 1);
     }
 }

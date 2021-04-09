@@ -105,13 +105,14 @@
 }
 @media screen and (min-width: 992px) {
     article {
+        background-color: rgb(224, 219, 180);
         padding-top: 2rem;
         display: flex;
         flex-flow: column;
         align-items: center;
         align-content: center;
         .article {
-            width: 1350px;
+            width: 1200px;
             height: auto;
             .article__title {
                 width: auto;
@@ -124,7 +125,7 @@
                 text-shadow: 0rem 0rem 0.1rem $black;
                 font-size: 1.8em;
                 font-weight: 900;
-            } 
+            }
             .article__content {
                 width: auto;
                 height: auto;
