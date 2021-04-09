@@ -10,6 +10,7 @@
     <meta name="description"
         content="Elelivros es una librería digital que actúa también como biblioteca que recopila obras en dominio público.">
     <title>Elelivros | Biblioteca digital | Home</title>
+    <link rel="shortcut icon" href="img\logoheader.png">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -55,8 +56,9 @@
             </nav>
             <!-- searchbar -->
             <form class="header__searchbar">
-                <input type="search" name="search" class="input" placeholder="...">
-                <input type="submit" class="button" value="Buscar">
+                <input type="search" name="search" class="input" placeholder=". . .">
+                <button class="button-search" type="submit"><span class="iconify" data-icon="dashicons:search"
+                        data-inline="false"></span></button>
             </form>
         </div>
     </header>
@@ -66,616 +68,622 @@
         <div class="index">
             <blockquote>
                 <section class="quote">
-                    <p><strong>"Para viajar lejos, no hay mejor nave que un libro"</strong></p>
-                    <p><em>Emily Dickinson, poeta estadounidense (1830-1886)</em></p>
+                    <p class="quote__text">"Para viajar lejos, no hay mejor nave que un libro"</p>
+                    <p class="author">Emily Dickinson, poeta estadounidense (1830-1886)</p>
                 </section>
             </blockquote>
             <div class="main">
-                <!-- main/ASIDE1 -->
-                <aside>
-                    <div class="aside-bd">
-                        <a href="dominiopublico.html">
-                            <h4 class="bd-title">Biblioteca Digital</h4>
-                        </a>
-                        <p class="bd-text">Elelivros, además de ser una librería digital, es una biblioteca que ofrece
-                            una gran variedad de libros clásicos de la literatura que se encuentran en dominio público y
-                            que están disponibles para su descarga gratuita, sin la necesidad de registrarse.</p>
-                    </div>
-                </aside>
                 <!--main/SECTION -->
-                <section class="section">
-                    <!-- section1 -->
-                    <div class="heading"><a href="catalogo.html">
-                            <h2 class="heading__title">Los más vendidos del mes</h2>
-                        </a></div>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card">
-                                        <img src="img/libro1.jpg" class="card-img-top"
-                                            alt="Libro: Asymmetry de Lisa Halliday">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Asymmetry<button>$1433,50</button></p>
-                                        </a>
+                <section>
+                    <!-- article: PublicLibrary -->
+                    <article class="aside-bd">
+                        <a href="dominiopublico.html">
+                            <h4>Biblioteca Digital</h4>
+                        </a>
+                        <p class="bd-text">Elelivros, además de ser una librería digital, es una biblioteca que
+                            ofrece
+                            una gran variedad de libros clásicos de la literatura que se encuentran en dominio
+                            público y
+                            que están disponibles para su descarga gratuita, sin la necesidad de registrarse.</p>
+                    </article>
+
+                    <!-- article: main section book/catalog -->
+                    <article class="index-catalog">
+                        <!-- section1 -->
+                        <div class="heading"><a href="catalogo.html">
+                                <h2 class="heading__title">Los más vendidos del mes</h2>
+                            </a></div>
+                        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card">
+                                            <img src="img/libro1.jpg" class="card-img-top"
+                                                alt="Libro: Asymmetry de Lisa Halliday">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Asymmetry<button>$1433,50</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="img/libro2.jpg" class="card-img-top"
+                                                alt="Libro: Golden Child de Claire Adam">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Golden Child<button>$1289,14</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="img/libro3.jpg" class="card-img-top"
+                                                alt="Libro: The largesse of the sea maiden de Denis Johnson">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The largesse of the sea maiden<button>$1564,49</button>
+                                                </p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card">
-                                        <img src="img/libro2.jpg" class="card-img-top"
-                                            alt="Libro: Golden Child de Claire Adam">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Golden Child<button>$1289,14</button></p>
-                                        </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card">
+                                            <img src="img/libro4.jpg" class="card-img-top"
+                                                alt="Libro: Red Clocks de Leni Zumas">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Red Clocks<button>$1718,48</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro5.jpg" class="card-img-top"
+                                                alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Genesis for normal people<button>$1879,67</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro6.jpg" class="card-img-top"
+                                                alt="Libro: Los Testamentos de Margaret Atwood">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Los Testamentos<button>$1774,30</button></p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card">
-                                        <img src="img/libro3.jpg" class="card-img-top"
-                                            alt="Libro: The largesse of the sea maiden de Denis Johnson">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The largesse of the sea maiden<button>$1564,49</button>
-                                            </p>
-                                        </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card">
+                                            <img src="img/libro7.jpg" class="card-img-top"
+                                                alt="Libro: Girl, Woman, Other de Bernardine Evaristo">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Girl, Woman, Other<button>$2007,93</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="img/libro8.jpg" class="card-img-top"
+                                                alt="Libro: The Overstory: a Novel de Richard Powers">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Overstory: a Novel<button>$1679,06</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="img/libro9.jpg" class="card-img-top"
+                                                alt="Libro: Milman de Anna Burns">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Milman<button>$1605,05</button></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card">
+                                            <img src="img/libro10.jpg" class="card-img-top"
+                                                alt="Libro: The Silence of the Girls de Pat Barker">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Silence of the Girls<button>$1580,18</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="img/libro11.jpg" class="card-img-top"
+                                                alt="Libro: Hyperbole and a Half de Allie Brosh">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Hyperbole and a Half<button>$2365,99 </button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro12.jpg" class="card-img-top"
+                                                alt="Libro: How to Avoid a Climate Disaster de Bill Gates">
+                                            <a href="catalogo.html">
+                                                <p class="texto">How to Avoid a Climate
+                                                    Disaster<button>$2854,24</button>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro13.jpg" class="card-img-top"
+                                                alt="Libro: El sutil arte de que te importe un carajo de Mark Manson">
+                                            <a href="catalogo.html">
+                                                <p class="texto">El sutil arte de que te importe un
+                                                    carajo<button>$1836,07</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro14.jpg" class="card-img-top"
+                                                alt="Libro: All our shimmering skies de Trent Dalton">
+                                            <a href="catalogo.html">
+                                                <p class="texto">All our shimmering skies<button>$3913,01</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card">
+                                            <img src="img/libro15.jpg" class="card-img-top"
+                                                alt="Libro: The Queen's Gambit de Walter Tevis">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Queen's Gambit<button>$1386,32</button></p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card">
-                                        <img src="img/libro4.jpg" class="card-img-top"
-                                            alt="Libro: Red Clocks de Leni Zumas">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Red Clocks<button>$1718,48</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro5.jpg" class="card-img-top"
-                                            alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Genesis for normal people<button>$1879,67</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro6.jpg" class="card-img-top"
-                                            alt="Libro: Los Testamentos de Margaret Atwood">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Los Testamentos<button>$1774,30</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card">
-                                        <img src="img/libro7.jpg" class="card-img-top"
-                                            alt="Libro: Girl, Woman, Other de Bernardine Evaristo">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Girl, Woman, Other<button>$2007,93</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card">
-                                        <img src="img/libro8.jpg" class="card-img-top"
-                                            alt="Libro: The Overstory: a Novel de Richard Powers">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Overstory: a Novel<button>$1679,06</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card">
-                                        <img src="img/libro9.jpg" class="card-img-top"
-                                            alt="Libro: Milman de Anna Burns">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Milman<button>$1605,05</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card">
-                                        <img src="img/libro10.jpg" class="card-img-top"
-                                            alt="Libro: The Silence of the Girls de Pat Barker">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Silence of the Girls<button>$1580,18</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card">
-                                        <img src="img/libro11.jpg" class="card-img-top"
-                                            alt="Libro: Hyperbole and a Half de Allie Brosh">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Hyperbole and a Half<button>$2365,99 </button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro12.jpg" class="card-img-top"
-                                            alt="Libro: How to Avoid a Climate Disaster de Bill Gates">
-                                        <a href="catalogo.html">
-                                            <p class="texto">How to Avoid a Climate Disaster<button>$2854,24</button>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro13.jpg" class="card-img-top"
-                                            alt="Libro: El sutil arte de que te importe un carajo de Mark Manson">
-                                        <a href="catalogo.html">
-                                            <p class="texto">El sutil arte de que te importe un
-                                                carajo<button>$1836,07</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro14.jpg" class="card-img-top"
-                                            alt="Libro: All our shimmering skies de Trent Dalton">
-                                        <a href="catalogo.html">
-                                            <p class="texto">All our shimmering skies<button>$3913,01</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card">
-                                        <img src="img/libro15.jpg" class="card-img-top"
-                                            alt="Libro: The Queen's Gambit de Walter Tevis">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Queen's Gambit<button>$1386,32</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <!-- section 2 -->
-                    <div class="heading"><a href="catalogo.html">
-                            <h2 class="heading__title">Los más descargados</h2>
-                        </a></div>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro16.jpg" class="card-img-top"
-                                            alt="Libro: Good night stories for rebel girls de Elena Favilli">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Good night stories for rebel
-                                                girls<button>>$3706,36</button></p>
-                                        </a>
+                        <!-- section 2 -->
+                        <div class="heading"><a href="catalogo.html">
+                                <h2 class="heading__title">Los más descargados</h2>
+                            </a></div>
+                        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro16.jpg" class="card-img-top"
+                                                alt="Libro: Good night stories for rebel girls de Elena Favilli">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Good night stories for rebel
+                                                    girls<button>>$3706,36</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro17.jpg" class="card-img-top"
+                                                alt="Libro: The midnight library de Matt Haig">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The midnight library<button>$1471,62</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro18.jpg" class="card-img-top"
+                                                alt="Libro: Women don´t owe you pretty de Florence Given">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Women don´t owe you pretty<button>$1577,32</button></p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card ">
-                                        <img src="img/libro17.jpg" class="card-img-top"
-                                            alt="Libro: The midnight library de Matt Haig">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The midnight library<button>$1471,62</button></p>
-                                        </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro19.jpg" class="card-img-top"
+                                                alt="Libro: Un Cuento Perfecto de Elisabet Benavent">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Un Cuento Perfecto<button>$2159,47</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro20.jpg" class="card-img-top"
+                                                alt="Libro:  Historias de Terror de Tiktak Draw">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Historias de Terror<button>$3301,88</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro21.jpg" class="card-img-top"
+                                                alt="Libro: Francis Bacon de Mark Stevens">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Francis Bacon<button>$5071,81</button></p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card ">
-                                        <img src="img/libro18.jpg" class="card-img-top"
-                                            alt="Libro: Women don´t owe you pretty de Florence Given">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Women don´t owe you pretty<button>$1577,32</button></p>
-                                        </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro22.jpg" class="card-img-top"
+                                                alt="Libro: Utopia Avenue de David Mitchell">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Utopia Avenue<button>$2959,29</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro23.jpg" class="card-img-top"
+                                                alt="Libro: The hate you give de Angie Thomas">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The hate you give<button>$1491,49</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro24.jpg" class="card-img-top"
+                                                alt="Libro: The invisible string de Patrice Karst">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The invisible string<button>$2007,33</button></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro25.jpg" class="card-img-top"
+                                                alt="Libro: Sapiens de Yuval Noah Harari">
+                                            <a href="catalogo.html"></a>
+                                            <p class="texto">Sapiens<button>$1523,26</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro26.jpg" class="card-img-top"
+                                                alt="Libro: El inversor inteligente: Un libro de Asesoramiento Practico de Benjamin Graham">
+                                            <a href="catalogo.html">
+                                                <p class="texto">El inversor inteligente<button>$2504,28</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro27.jpg" class="card-img-top"
+                                                alt="Libro: They both die at the end de Adam Silvera">
+                                            <a href="catalogo.html">
+                                                <p class="texto">They both die at the end<button>$1428,79</button></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro28.jpg" class="card-img-top"
+                                                alt="Libro: Medieval Military Combat : Battle Tactics and Fighting Techniques of the Wars of the Roses de Tom Lewis">
+                                            <a href=" catalogo.html">
+                                                <p class="texto">Medieval Military Combat<button>$3202,65</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro29.jpg" class="card-img-top"
+                                                alt="Libro: Unruly Waters : How Mountain Rivers and Monsoons Have Shaped South Asia's History de  Sunil Amrith">
+                                            <a href=" catalogo.html">
+                                                <p class="texto">Unruly Waters<button>$1830,54</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro30.jpg" class="card-img-top"
+                                                alt="Libro: Cilka's Journey de Heather Morris">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Cilka's Journey<button>$1662,35</button></p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro19.jpg" class="card-img-top"
-                                            alt="Libro: Un Cuento Perfecto de Elisabet Benavent">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Un Cuento Perfecto<button>$2159,47</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro20.jpg" class="card-img-top"
-                                            alt="Libro:  Historias de Terror de Tiktak Draw">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Historias de Terror<button>$3301,88</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro21.jpg" class="card-img-top"
-                                            alt="Libro: Francis Bacon de Mark Stevens">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Francis Bacon<button>$5071,81</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro22.jpg" class="card-img-top"
-                                            alt="Libro: Utopia Avenue de David Mitchell">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Utopia Avenue<button>$2959,29</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro23.jpg" class="card-img-top"
-                                            alt="Libro: The hate you give de Angie Thomas">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The hate you give<button>$1491,49</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro24.jpg" class="card-img-top"
-                                            alt="Libro: The invisible string de Patrice Karst">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The invisible string<button>$2007,33</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro25.jpg" class="card-img-top"
-                                            alt="Libro: Sapiens de Yuval Noah Harari">
-                                        <a href="catalogo.html"></a>
-                                        <p class="texto">Sapiens<button>$1523,26</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro26.jpg" class="card-img-top"
-                                            alt="Libro: El inversor inteligente: Un libro de Asesoramiento Practico de Benjamin Graham">
-                                        <a href="catalogo.html">
-                                            <p class="texto">El inversor inteligente<button>$2504,28</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro27.jpg" class="card-img-top"
-                                            alt="Libro: They both die at the end de Adam Silvera">
-                                        <a href="catalogo.html">
-                                            <p class="texto">They both die at the end<button>$1428,79</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro28.jpg" class="card-img-top"
-                                            alt="Libro: Medieval Military Combat : Battle Tactics and Fighting Techniques of the Wars of the Roses de Tom Lewis">
-                                        <a href=" catalogo.html">
-                                            <p class="texto">Medieval Military Combat<button>$3202,65</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro29.jpg" class="card-img-top"
-                                            alt="Libro: Unruly Waters : How Mountain Rivers and Monsoons Have Shaped South Asia's History de  Sunil Amrith">
-                                        <a href=" catalogo.html">
-                                            <p class="texto">Unruly Waters<button>$1830,54</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro30.jpg" class="card-img-top"
-                                            alt="Libro: Cilka's Journey de Heather Morris">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Cilka's Journey<button>$1662,35</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <!-- section 3 -->
-                    <div class="heading"><a href="catalogo.html">
-                            <h2 class="heading__title">Bestsellers</h2>
-                        </a></div>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card">
-                                        <img src="img/libro31.jpg" class="card-img-top"
-                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Invisible Life of Addie
-                                                LaRue<button>$2752,58</button></p>
-                                        </a>
+                        <!-- section 3 -->
+                        <div class="heading"><a href="catalogo.html">
+                                <h2 class="heading__title">Bestsellers</h2>
+                            </a></div>
+                        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card">
+                                            <img src="img/libro31.jpg" class="card-img-top"
+                                                alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Invisible Life of Addie
+                                                    LaRue<button>$2752,58</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro32.jpg" class="card-img-top"
+                                                alt="Libro: The Lamplighters de Emma Stonex">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Lamplighters<button>$2213,82</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro33.jpg" class="card-img-top"
+                                                alt="Libro: House of Earth and Blood de Sarah J. Maas">
+                                            <a href="catalogo.html">
+                                                <p class="texto">House of Earth and Blood<button>$3328,77</button></p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card ">
-                                        <img src="img/libro32.jpg" class="card-img-top"
-                                            alt="Libro: The Lamplighters de Emma Stonex">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Lamplighters<button>$2213,82</button></p>
-                                        </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro34.jpg" class="card-img-top"
+                                                alt="Libro: Do Androids Dream Of Electric Sheep? de Philip K. Dick">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Do Androids Dream Of Electric
+                                                    Sheep?<button>$1316,89</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro35.jpg" class="card-img-top"
+                                                alt="Libro: The House in the Cerulean Sea de TJ Klune">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The House in the Cerulean Sea<button>$1852,67</button>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro36.jpg" class="card-img-top"
+                                                alt="Libro: The Midnight Hour de  Benjamin Read y Laura Trinder">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Midnight Hour<button>$1385,17</button></p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card ">
-                                        <img src="img/libro33.jpg" class="card-img-top"
-                                            alt="Libro: House of Earth and Blood de Sarah J. Maas">
-                                        <a href="catalogo.html">
-                                            <p class="texto">House of Earth and Blood<button>$3328,77</button></p>
-                                        </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro37.jpg" class="card-img-top"
+                                                alt="Libro: The Boy Who Made Everyone Laugh de Helen Rutter">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Boy Who Made Everyone
+                                                    Laugh<button>$1451,74</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro38.jpg" class="card-img-top"
+                                                alt="Libro: Roald Dahl's Marvellous Joke Book de Roald Dahl">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Roald Dahl's Marvellous Joke
+                                                    Book<button>$1133,22</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro39.jpg" class="card-img-top"
+                                                alt="Libro: Fantastic Beasts and Where to Find Them : The Original Screenplay de J.K. Rowling">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Fantastic Beasts and Where to Find
+                                                    Them<button>$1509,61</button></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro40.jpg" class="card-img-top"
+                                                alt="Libro: Miss Peregrine's Home For Peculiar Children de Ransom Riggs">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Miss Peregrine's Home For Peculiar
+                                                    Children<button>$1544,84</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro41.jpg" class="card-img-top"
+                                                alt="Libro: Matilda de Roald Dahl">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Matilda<button>$1120,64</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro42.jpg" class="card-img-top"
+                                                alt="Libro: Hamnet de Maggie O'Farrell">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Hamnet<button>$1458,60</button></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro43.jpg" class="card-img-top"
+                                                alt="Libro: The Dictionary of Lost Words de Pip Williams">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Dictionary of Lost Words<button>$1964,68</button>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro44.jpg" class="card-img-top"
+                                                alt="Libro: Small Pleasures de Clare Chambers">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Small Pleasures<button>$1591,50</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro45.jpg" class="card-img-top"
+                                                alt="Libro: Before the Coffee Gets Cold de Toshikazu Kawaguchi">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Before the Coffee Gets Cold<button>$1315,74</button>
+                                                </p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro34.jpg" class="card-img-top"
-                                            alt="Libro: Do Androids Dream Of Electric Sheep? de Philip K. Dick">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Do Androids Dream Of Electric
-                                                Sheep?<button>$1316,89</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro35.jpg" class="card-img-top"
-                                            alt="Libro: The House in the Cerulean Sea de TJ Klune">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The House in the Cerulean Sea<button>$1852,67</button>
-                                            </p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro36.jpg" class="card-img-top"
-                                            alt="Libro: The Midnight Hour de  Benjamin Read y Laura Trinder">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Midnight Hour<button>$1385,17</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro37.jpg" class="card-img-top"
-                                            alt="Libro: The Boy Who Made Everyone Laugh de Helen Rutter">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Boy Who Made Everyone
-                                                Laugh<button>$1451,74</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro38.jpg" class="card-img-top"
-                                            alt="Libro: Roald Dahl's Marvellous Joke Book de Roald Dahl">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Roald Dahl's Marvellous Joke
-                                                Book<button>$1133,22</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro39.jpg" class="card-img-top"
-                                            alt="Libro: Fantastic Beasts and Where to Find Them : The Original Screenplay de J.K. Rowling">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Fantastic Beasts and Where to Find
-                                                Them<button>$1509,61</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro40.jpg" class="card-img-top"
-                                            alt="Libro: Miss Peregrine's Home For Peculiar Children de Ransom Riggs">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Miss Peregrine's Home For Peculiar
-                                                Children<button>$1544,84</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro41.jpg" class="card-img-top"
-                                            alt="Libro: Matilda de Roald Dahl">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Matilda<button>$1120,64</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro42.jpg" class="card-img-top"
-                                            alt="Libro: Hamnet de Maggie O'Farrell">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Hamnet<button>$1458,60</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro43.jpg" class="card-img-top"
-                                            alt="Libro: The Dictionary of Lost Words de Pip Williams">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Dictionary of Lost Words<button>$1964,68</button>
-                                            </p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro44.jpg" class="card-img-top"
-                                            alt="Libro: Small Pleasures de Clare Chambers">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Small Pleasures<button>$1591,50</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro45.jpg" class="card-img-top"
-                                            alt="Libro: Before the Coffee Gets Cold de Toshikazu Kawaguchi">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Before the Coffee Gets Cold<button>$1315,74</button>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <!-- section 4 -->
-                    <div class="heading"><a href="catalogo.html">
-                            <h2 class="heading__title">Nuevos lanzamientos</h2>
-                        </a></div>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro5.jpg" class="card-img-top"
-                                            alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Genesis for normal people<button>$1879,67</button></p>
-                                        </a>
+                        <!-- section 4 -->
+                        <div class="heading"><a href="catalogo.html">
+                                <h2 class="heading__title">Nuevos lanzamientos</h2>
+                            </a></div>
+                        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro5.jpg" class="card-img-top"
+                                                alt="Libro: Genesis for normal people de Peter Enns y Jared Byas">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Genesis for normal people<button>$1879,67</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro10.jpg" class="card-img-top"
+                                                alt="Libro: The Silence of the Girls de Pat Barker">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Silence of the Girls<button>$1580,18</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro15.jpg" class="card-img-top"
+                                                alt="Libro: The Queen's Gambit de Walter Tevis">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Queen's Gambit<button>$1386,32</button></p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card ">
-                                        <img src="img/libro10.jpg" class="card-img-top"
-                                            alt="Libro: The Silence of the Girls de Pat Barker">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Silence of the Girls<button>$1580,18</button></p>
-                                        </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro20.jpg" class="card-img-top"
+                                                alt="Libro:  Historias de Terror de Tiktak Draw">
+                                            <a href=" catalogo.html">
+                                                <p class="texto">Historias de Terror<button>$3301,88</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro25.jpg" class="card-img-top"
+                                                alt="Libro: Sapiens de Yuval Noah Harari">
+                                            <a href=" catalogo.html">
+                                                <p class="texto">Sapiens<button>$5071,81</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro30.jpg" class="card-img-top"
+                                                alt="Libro: Cilka's Journey : The Sunday Times bestselling sequel to The Tattooist of Auschwitz de Heather Morris">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Cilka's Journey<button>$1662,35</button></p>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card ">
-                                        <img src="img/libro15.jpg" class="card-img-top"
-                                            alt="Libro: The Queen's Gambit de Walter Tevis">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Queen's Gambit<button>$1386,32</button></p>
-                                        </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro35.jpg" class="card-img-top"
+                                                alt="Libro: The House in the Cerulean Sea de TJ Klune">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The House in the Cerulean Sea<button>$1852,67</button>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro40.jpg" class="card-img-top"
+                                                alt="Libro: Miss Peregrine's Home For Peculiar Children de Ransom Riggs">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Miss Peregrine's Home For Peculiar
+                                                    Children<button>$1544,84</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro45.jpg" class="card-img-top"
+                                                alt="Libro: Before the Coffee Gets Cold de Toshikazu Kawaguchi">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Before the Coffee Gets Cold<button>$1315,74</button>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro21.jpg" class="card-img-top"
+                                                alt="Libro: Francis Bacon de Mark Stevens">
+                                            <a href=" catalogo.html">
+                                                <p class="texto">Francis Bacon<button>$5071,81</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro27.jpg" class="card-img-top"
+                                                alt="Libro: They both die at the end de Adam Silvera">
+                                            <a href="catalogo.html">
+                                                <p class="texto">They both die at the end<button>$1428,79</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro31.jpg" class="card-img-top"
+                                                alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Invisible Life of Addie
+                                                    LaRue<button>$2752,58</button></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card-group w-75 mx-auto my-4">
+                                        <div class="card ">
+                                            <img src="img/libro37.jpg" class="card-img-top"
+                                                alt="Libro: The Boy Who Made Everyone Laugh de Helen Rutter">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Boy Who Made Everyone
+                                                    Laugh<button>$1451,74</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro41.jpg" class="card-img-top"
+                                                alt="Libro: Matilda de Roald Dahl">
+                                            <a href="catalogo.html">
+                                                <p class="texto">Matilda<button>$1120,64</button></p>
+                                            </a>
+                                        </div>
+                                        <div class="card ">
+                                            <img src="img/libro43.jpg" class="card-img-top"
+                                                alt="Libro: The Dictionary of Lost Words de Pip Williams">
+                                            <a href="catalogo.html">
+                                                <p class="texto">The Dictionary of Lost Words<button>$1964,68</button>
+                                                </p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro20.jpg" class="card-img-top"
-                                            alt="Libro:  Historias de Terror de Tiktak Draw">
-                                        <a href=" catalogo.html">
-                                            <p class="texto">Historias de Terror<button>$3301,88</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro25.jpg" class="card-img-top"
-                                            alt="Libro: Sapiens de Yuval Noah Harari">
-                                        <a href=" catalogo.html">
-                                            <p class="texto">Sapiens<button>$5071,81</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro30.jpg" class="card-img-top"
-                                            alt="Libro: Cilka's Journey : The Sunday Times bestselling sequel to The Tattooist of Auschwitz de Heather Morris">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Cilka's Journey<button>$1662,35</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro35.jpg" class="card-img-top"
-                                            alt="Libro: The House in the Cerulean Sea de TJ Klune">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The House in the Cerulean Sea<button>$1852,67</button>
-                                            </p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro40.jpg" class="card-img-top"
-                                            alt="Libro: Miss Peregrine's Home For Peculiar Children de Ransom Riggs">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Miss Peregrine's Home For Peculiar
-                                                Children<button>$1544,84</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro45.jpg" class="card-img-top"
-                                            alt="Libro: Before the Coffee Gets Cold de Toshikazu Kawaguchi">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Before the Coffee Gets Cold<button>$1315,74</button>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro21.jpg" class="card-img-top"
-                                            alt="Libro: Francis Bacon de Mark Stevens">
-                                        <a href=" catalogo.html">
-                                            <p class="texto">Francis Bacon<button>$5071,81</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro27.jpg" class="card-img-top"
-                                            alt="Libro: They both die at the end de Adam Silvera">
-                                        <a href="catalogo.html">
-                                            <p class="texto">They both die at the end<button>$1428,79</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro31.jpg" class="card-img-top"
-                                            alt="Libro: The Invisible Life of Addie LaRue de V.E. Schwab">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Invisible Life of Addie
-                                                LaRue<button>$2752,58</button></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-group w-75 mx-auto my-4">
-                                    <div class="card ">
-                                        <img src="img/libro37.jpg" class="card-img-top"
-                                            alt="Libro: The Boy Who Made Everyone Laugh de Helen Rutter">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Boy Who Made Everyone
-                                                Laugh<button>$1451,74</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro41.jpg" class="card-img-top"
-                                            alt="Libro: Matilda de Roald Dahl">
-                                        <a href="catalogo.html">
-                                            <p class="texto">Matilda<button>$1120,64</button></p>
-                                        </a>
-                                    </div>
-                                    <div class="card ">
-                                        <img src="img/libro43.jpg" class="card-img-top"
-                                            alt="Libro: The Dictionary of Lost Words de Pip Williams">
-                                        <a href="catalogo.html">
-                                            <p class="texto">The Dictionary of Lost Words<button>$1964,68</button>
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    </article>
                 </section>
+
                 <!-- main/ASIDE2 -->
                 <aside>
                     <div class="aside">

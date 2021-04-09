@@ -2,7 +2,7 @@
     header {
         background-color: $black;
         width: auto;
-        height: 150px;
+        height: auto;
         /* top */
         .header__top {
             padding: 0.5rem 1rem 1.2rem 1rem;
@@ -12,9 +12,15 @@
             .header__logo {
                 display: flex;
                 flex-flow: row;
+                animation-name: glow;
+                animation-duration: 10s;
+                animation-timing-function:ease-in-out;
+                animation-delay: 0;
+                animation-iteration-count: infinite;
+                animation-direction:alternate;
                 img {
-                    width: 60px;
-                    height: 55px;
+                    width: 50px;
+                    height: 45px;
                 }
                 h1 {
                     font-family: $font;
@@ -28,7 +34,7 @@
                 }
             }
             .header__icons {
-                padding: 0.1rem 0.1rem;
+                padding: 0.5rem 0.2rem;
                 color: $saffron;
                 display: flex;
                 flex-flow: row nowrap;
@@ -43,12 +49,15 @@
         }
         /* bottom */
         .header__bottom {
+            padding-bottom: 0.5rem;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
             .header__nav {
-                padding: 0rem 0rem 2.5rem 0.5rem;
+                align-self: flex-start;
+                padding: 0rem 0rem 1rem 0.5rem;
                 color: $saffron;
+                width: 100px;
+                height: 50px;
                 .collapsible-menu {
                     font-size: 1.2em;
                     a {
@@ -57,8 +66,9 @@
                     label {
                         display: block;
                         cursor: pointer;
-                        background: url(/img/menu.svg) no-repeat left;
-                        padding: 0px 0px 10px 25px;
+                        background: url(/img/menu.svg) no-repeat center left;
+                        background-size: 30%;
+                        padding: 8px 0px 10px 25px;
                     }
                     input#menu {
                         display: none;
@@ -69,7 +79,7 @@
                     .menu-content {
                         background-color: $black;
                         border-radius: 0.5rem;
-                        font-size: 0.8em;
+                        font-size: 1em;
                         overflow: hidden;
                         max-height: 0;
                         li a {
@@ -89,19 +99,23 @@
                 }
             }
             .header__searchbar {
-                margin: 0rem;
-                padding: 0rem;
-                font-size: 0.8em;
-                .button {
-                    border-radius: 0.15rem;
+                margin-left: auto;
+                padding: 0.4rem;
+                width: auto;
+                .button-search {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 25%;
                     border: none;
                     background-color: $sinopia;
                     color: $saffron;
-                    text-shadow: 0rem 0rem 0.15rem $black;
+                    .iconify {
+                        font-size: 1.5em;
+                    }
                 }
                 .input {
-                    height: 25px;
-                    border-radius: 0.2rem;
+                    height: auto;
+                    border-radius: 0.4rem;
                 }
             }
         }
@@ -122,6 +136,12 @@
             .header__logo {
                 display: flex;
                 flex-flow: row;
+                animation-name: glow;
+                animation-duration: 10s;
+                animation-timing-function:ease-in-out;
+                animation-delay: 0;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
                 img {
                     width: 95px;
                     height: 75px;
@@ -153,6 +173,7 @@
         }
         /* bottom */
         .header__bottom {
+            padding-bottom: 0.5rem;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -165,7 +186,7 @@
                         flex-flow: row wrap;
                         font-size: 1em;
                         font-weight: 500;
-                        li a{
+                        li a {
                             padding: 0rem 0.8rem;
                         }
                         a:hover {
@@ -181,26 +202,45 @@
                 }
             }
             .header__searchbar {
-                padding: 1.5rem;
-                .button {
-                    margin: 0;
-                    padding: 0.2rem;
-                    border-radius: 0.2rem;
+                margin-left: auto;
+                padding: 0rem 0.5rem 1rem 0.5rem;
+                width: auto;
+                .button-search {
+                    width: 50px;
+                    height: 35px;
+                    border-radius: 25%;
                     border: none;
                     background-color: $sinopia;
                     color: $saffron;
-                    font-size: 0.8em;
-                    text-shadow: 0rem 0rem 0.15rem $black;
+                    .iconify {
+                        font-size: 1.5em;
+                    }
                 }
                 .input {
-                    margin: 0rem;
-                    width: 320px;
-                    height: 30px;
-                    border-radius: 0.3rem;
-                    background-color: lightgrey;
-                    font-size: 0.8em;
+                    height: auto;
+                    border-radius: 0.4rem;
                 }
             }
         }
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 0.1rem #458626, 0 0 0.2rem #458626, 0 0 0.3rem #458626, 0 0 0.4rem #458626, 0 0 0.5rem #458626,
+            0 0 0.6rem #458626, 0 0 0.7rem #458626;
+    }
+
+    33% {
+        text-shadow: 0 0 0.2rem #0b729b, 0 0 0.3rem #0b729b, 0 0 0.4rem #0b729b, 0 0 0.5rem #0b729b, 0 0 0.6rem #0b729b,
+            0 0 0.7rem #0b729b, 0 0 0.8rem #0b729b;
+    }
+    66% {
+        text-shadow: 0 0 0.1rem #458626, 0 0 0.2rem #458626, 0 0 0.3rem #458626, 0 0 0.4rem #458626, 0 0 0.5rem #458626,
+            0 0 0.6rem #458626, 0 0 0.7rem #458626;
+    }
+    100% {
+        text-shadow: 0 0 0.2rem #0b729b, 0 0 0.3rem #0b729b, 0 0 0.4rem #0b729b, 0 0 0.5rem #0b729b, 0 0 0.6rem #0b729b,
+            0 0 0.7rem #0b729b, 0 0 0.8rem #0b729b;
     }
 }

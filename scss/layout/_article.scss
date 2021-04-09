@@ -1,28 +1,35 @@
 @media screen and (max-width: 768px) {
     article {
-        background-image: url(/img/vintage-paper.png);
-        background-repeat: repeat;
-        background-size: 10%;
+        background-color: rgb(224, 219, 180);
         .article {
+            width: auto;
             display: flex;
             flex-flow: column nowrap;
+            margin: 0;
+            padding: 1rem 0.5rem;
             .article__title {
-                max-width: 700px;
+                width: auto;
                 text-align: center;
-                background-color: $black;
-                color: $sinopia;
-                font-size: 1.1em;
                 padding: 0.5rem 0rem;
+                background-color: $saffron;
+                box-shadow: 0em 0rem 1.5rem $black;
+                color: $darksinopia;
+                text-shadow: 0rem 0rem 0.1rem $black;
+                font-size: 1.25em;
+                font-weight: 900;
             }
             .article__content {
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: center;
-                background-color: transparentize($color: $black, $amount: 0.7);
+                background-color: transparentize($color: $black, $amount: 0.3);
+                border-radius: 0.1rem;
+                box-shadow: 0em 0rem 1.5rem $black;
                 .content__title {
                     font-size: 0.85em;
                     font-weight: 600;
-                    text-decoration: underline;
+                    color: $lightgray;
+                    text-shadow: 0rem 0.1rem 0.1rem $black;
                     text-align: center;
                 }
                 li .vid1 .vid2 .vid3 .vid4 .vid5 .vid6 .vid7 .vid8 {
@@ -34,26 +41,23 @@
 }
 @media screen and (min-width: 768px) {
     article {
-        background-image: url(/img/vintage-paper.png);
-        background-repeat: repeat;
-        background-size: 20%;
-        padding: 1.5rem 0rem;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        align-content: center;
+        background-color: rgb(224, 219, 180);
         .article {
-            width: 990px;
-            height: auto;
+            width: 900px;
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 0;
+            padding: 1rem 0.5rem;
             .article__title {
+                width: auto;
                 text-align: center;
-                background-color: $black;
-                color: $sinopia;
-                padding: 0.5rem 0rem;
-                font-family: $font;
-                font-size: 1.2em;
-                font-weight: 700;
-                letter-spacing: 0.1rem;
+                padding: 0.8rem 0rem;
+                background-color: $saffron;
+                box-shadow: 0em 0rem 1.5rem $black;
+                color: $darksinopia;
+                text-shadow: 0rem 0rem 0.1rem $black;
+                font-size: 1.25em;
+                font-weight: 900;
             }
             .article__content {
                 width: auto;
@@ -67,14 +71,15 @@
                 grid-template-columns: 50% 50%;
                 grid-template-rows: repeat(3 1fr);
                 justify-items: center;
-                background-color: transparentize($color: $black, $amount: 0.8);
-                border-radius: 0.5rem;
-                color: $darkgray;
+                background-color: transparentize($color: $black, $amount: 0.3);
+                border-radius: 0.1rem;
+                box-shadow: 0em 0rem 1.5rem $black;
                 .content__title {
-                    font-size: 0.8em;
-                    font-weight: 500;
-                    text-align: start;
-                    text-decoration: underline;
+                    font-size: 0.85em;
+                    font-weight: 600;
+                    color: $lightgray;
+                    text-shadow: 0rem 0.1rem 0.1rem $black;
+                    text-align: center;
                 }
                 li .vid1 {
                     grid-area: v1;
@@ -98,29 +103,28 @@
         }
     }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 992px) {
     article {
-        background-image: url(/img/vintage-paper.png);
-        background-repeat: repeat;
-        background-size: 20%;
-        padding: 2rem 0rem;
+        padding-top: 2rem;
         display: flex;
         flex-flow: column;
         align-items: center;
         align-content: center;
         .article {
-            width: 1400px;
+            width: 1350px;
             height: auto;
             .article__title {
+                width: auto;
                 text-align: center;
-                background-color: $black;
-                color: $sinopia;
                 padding: 1rem 0rem;
-                font-family: $font;
-                font-size: 1.5em;
-                font-weight: 800;
-                letter-spacing: 0.1rem;
-            }
+                background-color: $saffron;
+                box-shadow: 0em 0rem 1.5rem $black;
+                border-radius: 0.3rem 0.3rem 0rem 0rem;
+                color: $darksinopia;
+                text-shadow: 0rem 0rem 0.1rem $black;
+                font-size: 1.8em;
+                font-weight: 900;
+            } 
             .article__content {
                 width: auto;
                 height: auto;
@@ -133,9 +137,9 @@
                 grid-template-columns: 50% 50%;
                 grid-template-rows: repeat(3 1fr);
                 justify-items: center;
-                background-color: transparentize($color: $black, $amount: 0.8);
-                border-radius: 1rem;
-                color: $darkgray;
+                background-color: transparentize($color: $black, $amount: 0.3);
+                border-radius: 0.1rem;
+                box-shadow: 0em 0rem 1.5rem $black;
                 .content__title {
                     font-size: 0.8em;
                     font-weight: 500;

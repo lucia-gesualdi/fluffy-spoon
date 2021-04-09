@@ -1,6 +1,6 @@
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
     main {
-        background-color: rgb(224, 219, 180);
+        background-image: radial-gradient(beige 20%, rgb(224, 219, 180) 80%);
         /* index */
         .index {
             display: flex;
@@ -8,123 +8,140 @@
             justify-content: center;
             align-items: center;
             .quote {
-                width: 700px;
-                background-image: url(/img/bgquote-sm.jpg);
-                background-color: $black;
-                background-size: cover;
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                align-items: center;
-                margin: 0.5rem 0rem 0rem 0.2rem;
+                min-width: auto;
+                margin: 0.5rem 0rem;
                 padding: 2rem;
+                background-image: url(/img/bgquote-sm.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: transparentize($color: $black, $amount: 0.25);
+                border-radius: 0.2rem;
                 color: $lightgray;
                 text-shadow: 0.15rem 0.15rem 0.1rem $black;
-                font-family: serif;
-                letter-spacing: 0.1rem;
-                word-spacing: 0.1rem;
-                font-size: 0.8em;
-                font-weight: 500;
-                text-align: end;
+                text-align: center;
+                .quote__text {
+                    font-family: serif;
+                    letter-spacing: 0.1rem;
+                    font-size: 0.8em;
+                    font-weight: 500;
+                }
+                .author {
+                    font-size: 0.6em;
+                    font-weight: 100;
+                }
             }
             .main {
+                width: auto;
+                align-self: center;
                 display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                .aside-bd {
-                    margin: 0rem 1rem;
-                    max-width: 700px;
-                    background-color: $darksinopia;
-                    border-radius: 0.15rem;
-                    .bd-title {
-                        padding: 0.3rem;
-                        background-color: $black;
-                        border-radius: 0.15rem;
-                        color: $saffron;
-                        text-align: center;
-                        font-size: 1em;
-                        font-weight: light;
-                    }
-                    .bd-text {
-                        padding: 0.5rem 0.2rem;
-                        font-size: 0.8em;
-                        text-align: center;
-                        color: $lightgray;
-                    }
-                }
-                .section {
-                    max-width: 700px;
-                    min-width: auto;
-                    height: auto;
-                    background-color: transparentize($color: $black, $amount: 0.3);
-                    .heading {
-                        background-color: $black;
+                flex-flow: column;
+                width: auto;
+                section {
+                    margin: 0rem 0.5rem;
+                    .aside-bd {
+                        margin-bottom: 1rem;
+                        padding: 0;
+                        background-color: $saffron;
+                        border: 0.2rem inset $black;
                         border-radius: 0.3rem;
-                        .heading__title {
-                            padding: 0.5rem 0.2rem;
-                            color: $saffron;
-                            text-align: center;
-                            font-family: $font;
+                        h4 {
+                            display: none;
+                        }
+                        .bd-text {
+                            margin: 0;
+                            padding: 1rem;
                             font-size: 1em;
                             font-weight: 700;
+                            text-align: center;
+                            background-color: $saffron;
+                            color: $black;
                         }
                     }
-                    .card {
-                        background-color: transparentize($color: $black, $amount: 0.8);
-                        position: relative;
-                        width: 200px;
-                    }
-                    img {
-                        opacity: 1;
-                        backface-visibility: hidden;
-                        max-width: 120px;
-                        height: auto;
-                        align-self: center;
-                    }
-                    .texto {
-                        opacity: 0;
-                        top: 25%;
-                        left: 25%;
-                        right: 25%;
-                        bottom: 25%;
-                        position: absolute;
-                    }
-                    .card:hover img {
-                        opacity: 0.25;
-                    }
-                    .card:hover .texto {
-                        opacity: 1;
-                        color: $lightgray;
-                        font-size: 0.7em;
-                        font-weight: 600;
-                        text-shadow: 0rem 0rem 0.2rem $black;
-                        text-align: center;
-                        padding: 0.2rem;
-                        button {
-                            padding: 0.2rem 0rem;
-                            color: $saffron;
-                            text-shadow: 0.1rem 0.1rem 0rem $black;
-                            background-color: $darksinopia;
-                            box-shadow: 0rem 0.1rem 0.5rem $black;
-                            border-radius: 0.3rem;
-                            font-weight: lighter;
+                    .index-catalog {
+                        margin: 0;
+                        padding: 1rem 0.5rem;
+                        background-color: transparentize($color: $black, $amount: 0.2);
+                        .heading {
+                            background-color: $black;
+                            width: 100%;
+                            .heading__title {
+                                padding: 0.1rem 0.2rem;
+                                margin-bottom: 0.2rem;
+                                color: $saffron;
+                                text-align: center;
+                                font-family: $font;
+                                font-size: 1.1em;
+                                font-weight: 700;
+                            }
+                            .heading__title:hover {
+                                color: $sinopia;
+                            }
+                        }
+                        .card-group {
+                            display: flex;
+                            flex-flow: row;
+                            .card {
+                                background-color: transparentize($color: $black, $amount: 0.8);
+                                position: relative;
+                                width: 110px;
+                                height: auto;
+                                margin: 0.5rem;
+                            }
+                        }
+                        img {
+                            opacity: 1;
+                            backface-visibility: hidden;
+                            width: 100px;
+                            height: auto;
+                            align-self: center;
+                        }
+                        .texto {
+                            opacity: 0;
+                            top: 20%;
+                            left: 10%;
+                            right: 10%;
+                            bottom: 35%;
+                            position: absolute;
+                        }
+                        .card:hover img {
+                            opacity: 0.25;
+                        }
+                        .card:hover .texto {
+                            opacity: 1;
+                            color: $lightgray;
+                            font-size: 0.7em;
+                            font-weight: 400;
+                            text-shadow: 0rem 0rem 0.2rem $black;
+                            text-align: center;
+                            button {
+                                padding: 0.2rem 0rem;
+                                color: $saffron;
+                                text-shadow: 0.1rem 0.1rem 0rem $black;
+                                background-color: $darksinopia;
+                                box-shadow: 0rem 0.1rem 0.5rem $black;
+                                border-radius: 0.3rem;
+                                font-weight: 400;
+                            }
                         }
                     }
                 }
                 .aside {
-                    width: auto;
-                    padding: 1rem 1.5rem;
+                    margin: 1rem;
                     .news {
+                        margin: 0;
+                        padding: 0;
                         background-color: $darksinopia;
+                        border-radius: 0.1rem;
                         .news__title {
-                            font-family: $font;
+                            padding: 0.3rem;
                             background-color: $black;
+                            border-radius: 0.3rem;
                             color: $saffron;
                             text-align: center;
                             font-size: 1em;
+                            font-weight: light;
                         }
                         p {
-                            padding: 0.2rem;
                             font-size: 0.8em;
                             text-align: center;
                             color: $lightgray;
@@ -440,9 +457,9 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
     main {
-        background-color: rgb(224, 219, 180);
+        background-image: radial-gradient(beige 20%, rgb(224, 219, 180) 80%);
         /* index */
         .index {
             display: flex;
@@ -452,14 +469,15 @@
             .quote {
                 margin-top: 0.5rem;
                 padding: 4rem 1rem;
-                width: 900px;
-                height: 250px;
+                min-width: 760px;
+                max-width: 900px;
+                height: 200px;
                 background-image: url(/img/bgquote-md.jpg);
-                background-color: $black;
+                background-color: transparentize($color: $black, $amount: 0.25);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-                position: relative;
+                border-radius: 0.2rem;
                 color: $lightgray;
                 text-shadow: 0rem 0.1rem 0.5rem black;
                 font-family: serif;
@@ -470,114 +488,123 @@
                 text-align: right;
             }
             .main {
-                width: 900px;
+                margin: 0.5rem;
+                min-width: 760px;
                 align-self: center;
                 display: grid;
-                grid-template-areas:
-                    "aside1 section"
-                    "aside2 section"
-                    "none section";
-                grid-template-columns: 25% 75%;
+                grid-template-areas: "section aside";
+                grid-template-columns: 80% 20%;
                 grid-template-rows: auto;
-                .section {
-                    background-color: transparentize($color: $black, $amount: 0.3);
+                section {
                     grid-area: section;
-                    margin: 0.5rem 0rem;
-                    .heading {
-                        background-color: $black;
-                        .heading__title {
-                            padding: 0.5rem 0.2rem;
-                            margin-bottom: 0.2rem;
+                    margin: 1rem 0rem;
+                    .aside-bd {
+                        margin-bottom: 1rem;
+                        padding: 0;
+                        background-color: $saffron;
+                        border-radius: 0.3rem;
+                        h4 {
+                            width: 100%;
+                            padding: 0.2rem;
+                            background-color: $black;
+                            border-radius: 0.3rem 0.3rem 0rem 0rem;
                             color: $saffron;
                             text-align: center;
-                            font-family: $font;
-                            font-size: 1.3em;
+                            font-size: 1.25em;
+                            font-weight: light;
+                        }
+                        .bd-text {
+                            padding: 0.5rem 1rem;
+                            font-size: 0.8em;
                             font-weight: 700;
+                            text-align: center;
+                            color: $black;
                         }
                     }
-                    .card {
-                        background-color: transparentize($color: $black, $amount: 0.8);
-                        position: relative;
-                        width: 350px;
-                        height: auto;
-                        margin: 0rem 0.5rem;
-                    }
-                    img {
-                        opacity: 1;
-                        backface-visibility: hidden;
-                        width: 150px;
-                        height: auto;
-                        align-self: center;
-                    }
-                    .texto {
-                        opacity: 0;
-                        top: 20%;
-                        left: 10%;
-                        right: 10%;
-                        bottom: 35%;
-                        position: absolute;
-                    }
-                    .card:hover img {
-                        opacity: 0.25;
-                    }
-                    .card:hover .texto {
-                        opacity: 1;
-                        color: $lightgray;
-                        font-size: 1em;
-                        font-weight: 400;
-                        text-shadow: 0rem 0rem 0.2rem $black;
-                        text-align: center;
-                        button {
-                            padding: 0.2rem 0rem;
-                            color: $saffron;
-                            text-shadow: 0.1rem 0.1rem 0rem $black;
-                            background-color: $darksinopia;
-                            box-shadow: 0rem 0.1rem 0.5rem $black;
-                            border-radius: 0.3rem;
+                    .index-catalog {
+                        padding: 1rem 0.5rem;
+                        background-color: transparentize($color: $black, $amount: 0.3);
+                        .heading {
+                            background-color: $black;
+                            width: 100%;
+                            .heading__title {
+                                padding: 0.5rem 0.2rem;
+                                margin-bottom: 0.2rem;
+                                color: $saffron;
+                                text-align: center;
+                                font-family: $font;
+                                font-size: 1.3em;
+                                font-weight: 700;
+                            }
+                            .heading__title:hover {
+                                color: $sinopia;
+                            }
+                        }
+                        .card {
+                            background-color: transparentize($color: $black, $amount: 0.8);
+                            position: relative;
+                            width: 350px;
+                            height: auto;
+                            margin: 0rem 0.5rem;
+                        }
+                        img {
+                            opacity: 1;
+                            backface-visibility: hidden;
+                            width: 110px;
+                            height: auto;
+                            align-self: center;
+                        }
+                        .texto {
+                            opacity: 0;
+                            top: 20%;
+                            left: 10%;
+                            right: 10%;
+                            bottom: 35%;
+                            position: absolute;
+                        }
+                        .card:hover img {
+                            opacity: 0.25;
+                        }
+                        .card:hover .texto {
+                            opacity: 1;
+                            color: $lightgray;
+                            font-size: 0.75em;
                             font-weight: 400;
+                            text-shadow: 0rem 0rem 0.2rem $black;
+                            text-align: center;
+                            button {
+                                padding: 0rem;
+                                color: $saffron;
+                                text-shadow: 0.1rem 0.1rem 0rem $black;
+                                background-color: $darksinopia;
+                                box-shadow: 0rem 0.1rem 0.5rem $black;
+                                border-radius: 0.3rem;
+                                font-weight: 400;
+                            }
                         }
-                    }
-                }
-                .aside-bd {
-                    grid-area: aside1;
-                    margin: 0.5rem 1rem 0.5rem 0rem;
-                    background-color: $darksinopia;
-                    border-radius: 0.25rem;
-                    .bd-title {
-                        padding: 0.3rem;
-                        background-color: $black;
-                        border-radius: 0.2rem;
-                        color: $saffron;
-                        text-align: center;
-                        font-size: 1em;
-                        font-weight: light;
-                    }
-                    .bd-text {
-                        padding: 0.5rem 0.2rem;
-                        font-size: 0.8em;
-                        text-align: center;
-                        color: $lightgray;
                     }
                 }
                 .aside {
-                    grid-area: aside2;
-                    margin: 0.5rem 1rem 0.5rem 0rem;
-                    border-radius: 0.25rem;
+                    grid-area: aside;
+                    position: sticky;
+                    top: 0;
+                    margin: 1rem 0rem 1rem 1rem;
                     .news {
+                        margin: 0rem;
                         background-color: $darksinopia;
                         border-radius: 0.1rem;
                         .news__title {
                             padding: 0.3rem;
                             background-color: $black;
-                            border-radius: 0.2rem;
+                            border-radius: 0.3rem;
                             color: $saffron;
                             text-align: center;
-                            font-size: 1em;
+                            font-size: 0.8em;
                             font-weight: light;
                         }
                         p {
-                            padding: 0.2rem 0.2rem 0.3rem 0.2rem;
-                            font-size: 0.8em;
+                            padding: 0.5rem 0.1rem;
+                            font-size: 0.7em;
                             text-align: center;
                             color: $lightgray;
                         }
@@ -897,7 +924,7 @@
     }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 992px) {
     main {
         background-image: radial-gradient(beige 20%, rgb(224, 219, 180) 80%);
         /* index */
@@ -909,91 +936,120 @@
             .quote {
                 margin-top: 0.5rem;
                 padding: 5rem;
-                width: 1400px;
-                height: 300px;
+                max-width: 1200px;
+                min-width: 1000px;
+                height: 250px;
                 background-image: url(/img/bgquote-xl.jpg);
-                background-color: $black;
+                background-color: transparentize($color: $black, $amount: 0.25);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-                position: relative;
                 color: $lightgray;
                 text-shadow: 0rem 0.1rem 0.5rem black;
                 font-family: serif;
-                font-size: 1.4em;
+                font-size: 1.2em;
                 font-weight: 350;
                 letter-spacing: 0.15rem;
                 word-spacing: 0.2rem;
                 text-align: right;
             }
             .main {
-                width: 1400px;
+                max-width: 1200px;
+                min-width: 1000px;
                 align-self: center;
                 display: grid;
-                grid-template-areas: "aside1 section aside2";
-                grid-template-columns: 20% 60% 20%;
+                grid-template-areas: "section aside";
+                grid-template-columns: 80% 20%;
                 grid-template-rows: auto;
-                .section {
-                    background-color: transparentize($color: $black, $amount: 0.3);
+                section {
                     grid-area: section;
-                    margin: 1rem;
-                    .heading {
-                        background-color: $black;
-                        .heading__title {
-                            padding: 0.5rem 0.2rem;
-                            margin-bottom: 0.2rem;
+                    margin: 0rem 0.5rem;
+                    .aside-bd {
+                        margin: 1rem 0rem;
+                        padding: 0;
+                        background-color: $saffron;
+                        border-radius: 0.3rem;
+                        h4{
+                            padding: 0.2rem;
+                            background-color: $black;
                             color: $saffron;
                             text-align: center;
-                            font-family: $font;
-                            font-size: 1.3em;
+                            font-size: 1.25em;
+                            font-weight: light;
+                        }
+                        .bd-text {
+                            padding: 0.5rem 1rem;
+                            font-size: 1em;
                             font-weight: 700;
+                            text-align: center;
+                            color: $black;
                         }
                     }
-                    .card {
-                        background-color: transparentize($color: $black, $amount: 0.8);
-                        position: relative;
-                        width: 350px;
-                        height: auto;
-                        margin: 0rem 0.5rem;
-                    }
-                    img {
-                        opacity: 1;
-                        backface-visibility: hidden;
-                        width: 150px;
-                        height: auto;
-                        align-self: center;
-                    }
-                    .texto {
-                        opacity: 0;
-                        top: 20%;
-                        left: 10%;
-                        right: 10%;
-                        bottom: 35%;
-                        position: absolute;
-                    }
-                    .card:hover img {
-                        opacity: 0.25;
-                    }
-                    .card:hover .texto {
-                        opacity: 1;
-                        color: $lightgray;
-                        font-size: 1em;
-                        font-weight: 400;
-                        text-shadow: 0rem 0rem 0.2rem $black;
-                        text-align: center;
-                        button {
-                            padding: 0.2rem 0rem;
-                            color: $saffron;
-                            text-shadow: 0.1rem 0.1rem 0rem $black;
-                            background-color: $darksinopia;
-                            box-shadow: 0rem 0.1rem 0.5rem $black;
-                            border-radius: 0.3rem;
+                    .index-catalog {
+                        padding: 2rem 1.5rem;
+                        background-color: transparentize($color: $black, $amount: 0.3);
+                        .heading {
+                            background-color: $black;
+                            width: 100%;
+                            .heading__title {
+                                padding: 0.5rem 0.2rem;
+                                margin-bottom: 0.2rem;
+                                color: $saffron;
+                                text-align: center;
+                                font-family: $font;
+                                font-size: 1.3em;
+                                font-weight: 700;
+                            }
+                            .heading__title:hover {
+                                color: $sinopia;
+                            }
+                        }
+                        .card {
+                            background-color: transparentize($color: $black, $amount: 0.8);
+                            position: relative;
+                            width: 200px;
+                            height: auto;
+                            margin: 0rem 1rem;
+                        }
+                        img {
+                            opacity: 1;
+                            backface-visibility: hidden;
+                            width: 110px;
+                            height: auto;
+                            align-self: center;
+                        }
+                        .texto {
+                            opacity: 0;
+                            top: 20%;
+                            left: 10%;
+                            right: 10%;
+                            bottom: 35%;
+                            position: absolute;
+                        }
+                        .card:hover img {
+                            opacity: 0.25;
+                        }
+                        .card:hover .texto {
+                            opacity: 1;
+                            color: $lightgray;
+                            font-size: 0.8em;
                             font-weight: 400;
+                            text-shadow: 0rem 0rem 0.2rem $black;
+                            text-align: center;
+                            button {
+                                padding: 0.2rem 0rem;
+                                color: $saffron;
+                                text-shadow: 0.1rem 0.1rem 0rem $black;
+                                background-color: $darksinopia;
+                                box-shadow: 0rem 0.1rem 0.5rem $black;
+                                border-radius: 0.3rem;
+                                font-weight: 400;
+                            }
                         }
                     }
                 }
                 .aside {
-                    grid-area: aside2;
+                    grid-area: aside;
                     position: sticky;
                     top: 0;
                     margin: 1rem 0rem 1rem 1rem;
@@ -1012,33 +1068,10 @@
                         }
                         p {
                             padding: 0.5rem 0.1rem;
-                            font-size: 1em;
+                            font-size: 0.8em;
                             text-align: center;
                             color: $lightgray;
                         }
-                    }
-                }
-                .aside-bd {
-                    grid-area: aside1;
-                    position: sticky;
-                    top: 0;
-                    margin: 1rem 1rem 1rem 0rem;
-                    background-color: $darksinopia;
-                    border-radius: 0.3rem;
-                    .bd-title {
-                        padding: 0.3rem;
-                        background-color: $black;
-                        border-radius: 0.3rem;
-                        color: $saffron;
-                        text-align: center;
-                        font-size: 1.25em;
-                        font-weight: light;
-                    }
-                    .bd-text {
-                        padding: 0.5rem 0.2rem;
-                        font-size: 1em;
-                        text-align: center;
-                        color: $lightgray;
                     }
                 }
             }
