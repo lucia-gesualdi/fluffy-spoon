@@ -1,470 +1,496 @@
 @media only screen and (max-width: 768px) {
-    main {
-        background-image: radial-gradient(beige 20%, rgb(224, 219, 180) 80%);
-        /* index */
-        .index {
+    /* index */
+    .index {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .quote {
+            min-width: auto;
+            margin: 0.5rem 0rem;
+            padding: 2rem;
+            background-image: url(../img/bgquote-sm.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparentize($color: $black, $amount: 0.25);
+            border-radius: 0.2rem;
+            color: $lightgray;
+            font-family: $title;
+            text-shadow: 0.15rem 0.15rem 0.1rem $black;
+            text-align: center;
+            .quote__text {
+                letter-spacing: 0.1rem;
+                font-size: 0.8em;
+                font-weight: 400;
+            }
+            .author {
+                font-size: 0.75em;
+                font-weight: 200;
+            }
+        }
+        .main {
+            width: auto;
+            align-self: center;
             display: flex;
             flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            .quote {
-                min-width: auto;
-                margin: 0.5rem 0rem;
-                padding: 2rem;
-                background-image: url(../img/bgquote-sm.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: transparentize($color: $black, $amount: 0.25);
-                border-radius: 0.2rem;
-                color: $lightgray;
-                text-shadow: 0.15rem 0.15rem 0.1rem $black;
-                text-align: center;
-                .quote__text {
-                    font-family: serif;
-                    letter-spacing: 0.1rem;
-                    font-size: 0.8em;
-                    font-weight: 500;
-                }
-                .author {
-                    font-size: 0.6em;
-                    font-weight: 100;
-                }
-            }
-            .main {
-                width: auto;
-                align-self: center;
-                display: flex;
-                flex-flow: column;
-                width: auto;
-                section {
-                    margin: 0rem 0.5rem;
-                    .aside-bd {
-                        margin-bottom: 1rem;
-                        padding: 0;
-                        background-color: transparentize($color: $black, $amount: 0.6);
-                        box-shadow: 0rem 0rem 0.5rem $black;
-                        border-radius: 0.3rem;
-                        .aside-title {
-                            text-align: center;
-                            padding-top: 1rem;
-                            color: $saffron;
-                            text-shadow: 0rem 0.1rem 0.5rem $black;
-                            font-size: 1em;
-                            font-weight: 600;
-                        }
-                        .aside-title:hover {
-                            color: $darksinopia;
-                        }
-                        .bd-text {
-                            margin: 0;
-                            padding: 1rem;
-                            font-size: 0.9em;
-                            font-weight: 600;
-                            text-align: center;
-                            color: $black;
-                        }
+            width: auto;
+            section {
+                margin: 0rem 0.5rem;
+                .aside-bd {
+                    margin-bottom: 1rem;
+                    padding: 0;
+                    background-color: $black;
+                    box-shadow: 0rem 0rem 0.5rem $black;
+                    border-radius: 0.3rem;
+                    .aside-title {
+                        text-align: center;
+                        padding-top: 1rem;
+                        color: $saffron;
+                        font-family: $title;
+                        text-shadow: 0rem 0.1rem 0.5rem $black;
+                        font-size: 1em;
+                        font-weight: 600;
                     }
-                    .index-catalog {
+                    .aside-title:hover {
+                        color: $darksinopia;
+                    }
+                    .bd-text {
                         margin: 0;
-                        padding: 1rem 0.5rem;
-                        background-color: transparentize($color: $black, $amount: 0.2);
-                        .heading {
-                            background-color: $black;
-                            width: 100%;
-                            .heading__title {
-                                padding: 0.1rem 0.2rem;
-                                margin-bottom: 0.2rem;
-                                color: $saffron;
-                                text-align: center;
-                                font-family: $font;
-                                font-size: 1.1em;
-                                font-weight: 700;
-                            }
-                            .heading__title:hover {
-                                color: $sinopia;
-                            }
-                        }
-                        .card-group {
-                            display: flex;
-                            flex-flow: row;
-                            .card {
-                                background-color: transparentize($color: $black, $amount: 0.8);
-                                position: relative;
-                                width: 110px;
-                                height: auto;
-                                margin: 0.5rem;
-                            }
-                        }
-                        img {
-                            opacity: 1;
-                            backface-visibility: hidden;
-                            width: 100px;
-                            height: auto;
-                            align-self: center;
-                        }
-                        .texto {
-                            opacity: 0;
-                            top: 20%;
-                            left: 10%;
-                            right: 10%;
-                            bottom: 35%;
-                            position: absolute;
-                        }
-                        .card:hover img {
-                            opacity: 0.25;
-                        }
-                        .card:hover .texto {
-                            opacity: 1;
-                            color: $lightgray;
-                            font-size: 0.7em;
-                            font-weight: 400;
-                            text-shadow: 0rem 0rem 0.2rem $black;
-                            text-align: center;
-                            button {
-                                padding: 0.2rem 0rem;
-                                color: $saffron;
-                                text-shadow: 0.1rem 0.1rem 0rem $black;
-                                background-color: $darksinopia;
-                                box-shadow: 0rem 0.1rem 0.5rem $black;
-                                border-radius: 0.3rem;
-                                font-weight: 400;
-                            }
-                        }
+                        padding: 1rem;
+                        font-size: 0.85em;
+                        font-weight: 300;
+                        text-align: center;
+                        color: $lightgray;
                     }
                 }
-                .aside {
-                    margin: 1rem;
-                    .news {
-                        margin: 0;
-                        padding: 0;
-                        background-color: $darksinopia;
-                        border-radius: 0.1rem;
-                        .news__title {
-                            padding: 0.3rem;
-                            background-color: $black;
-                            border-radius: 0.3rem;
+                .index-catalog {
+                    margin: 0;
+                    padding: 1rem 0.5rem;
+                    background-color: transparentize($color: $black, $amount: 0.2);
+                    .heading {
+                        background-color: $black;
+                        width: 100%;
+                        .heading__title {
+                            padding: 0.1rem 0.2rem;
+                            margin-bottom: 0.2rem;
                             color: $saffron;
+                            font-family: $title;
                             text-align: center;
-                            font-size: 1em;
-                            font-weight: light;
+                            font-size: 1.1em;
+                            font-weight: 700;
                         }
-                        .news__title:hover {
+                        .heading__title:hover {
                             color: $sinopia;
                         }
-                        p {
-                            font-size: 0.8em;
-                            text-align: center;
-                            color: $lightgray;
+                    }
+                    .card-group {
+                        display: flex;
+                        flex-flow: row;
+                        .card {
+                            background-color: transparentize($color: $black, $amount: 0.8);
+                            position: relative;
+                            width: 110px;
+                            height: auto;
+                            margin: 0.5rem;
+                        }
+                    }
+                    img {
+                        opacity: 1;
+                        backface-visibility: hidden;
+                        width: 100px;
+                        height: auto;
+                        align-self: center;
+                    }
+                    .texto {
+                        opacity: 0;
+                        top: 20%;
+                        left: 10%;
+                        right: 10%;
+                        bottom: 35%;
+                        position: absolute;
+                    }
+                    .card:hover img {
+                        opacity: 0.25;
+                    }
+                    .card:hover .texto {
+                        opacity: 1;
+                        color: $lightgray;
+                        font-family: $title;
+                        font-size: 0.7em;
+                        font-weight: 400;
+                        text-shadow: 0rem 0rem 0.2rem $black;
+                        text-align: center;
+                        button {
+                            padding: 0.2rem 0rem;
+                            color: $saffron;
+                            text-shadow: 0.1rem 0.1rem 0rem $black;
+                            background-color: $darksinopia;
+                            box-shadow: 0rem 0.1rem 0.5rem $black;
+                            border-radius: 0.3rem;
+                            font-weight: 400;
                         }
                     }
                 }
             }
-        }
-        /* catalogo */
-        .catalog {
-            display: flex;
-            flex-flow: column;
-            .navcateg {
-                display: grid;
-                grid-template-areas: "pri" "categ" "sec" "subcateg";
-                grid-template-columns: auto;
-                grid-template-rows: auto 1fr auto 3fr;
-                width: auto;
-                height: auto;
-                background-color: $darksinopia;
-                .categ__title--pri {
-                    grid-area: pri;
-                    width: 100%;
-                    height: auto;
-                    margin: 0;
-                    padding: 0.5rem 1rem;
-                    background-color: $darkgray;
-                    color: $saffron;
-                    font-size: 0.8em;
-                    font-weight: 600;
-                }
-                .categories {
-                    margin: 0;
-                    padding: 0.5rem 1rem;
-                    grid-area: categ;
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-around;
-                    color: $lightgray;
-                    text-align: center;
-                    font-size: 0.8em;
-                }
-                .categ__title--sec {
-                    grid-area: sec;
-                    width: 100%;
-                    height: auto;
-                    margin: 0;
-                    padding: 0.5rem 1rem;
-                    background-color: $darkgray;
-                    color: $saffron;
-                    font-size: 0.8em;
-                    font-weight: 600;
-                }
-                .subcategories {
-                    margin: 0;
-                    padding: 0.5rem 0.2rem;
-                    grid-area: subcateg;
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                    color: $lightgray;
-                    text-align: center;
-                    font-size: 0.8em;
-                    li a {
-                        padding: 0rem 0.4rem;
-                    }
-                }
-                a:hover {
-                    color: $saffron;
-                    text-shadow: 0.01rem 0.01rem 0.1rem $black;
-                }
-            }
-            .library {
-                padding: 3rem 0.5rem;
-                .library__title {
-                    margin: 0;
-                    padding: 0.2rem 0.1rem;
-                    background-color: $saffron;
-                    color: $black;
-                    text-align: end;
-                    font-size: 0.7em;
-                    font-weight: 400;
-                }
-                .card {
-                    background-color: transparentize($color: $black, $amount: 0.3);
-                    position: relative;
-                }
-                img {
-                    opacity: 1;
-                    backface-visibility: hidden;
-                    min-width: 105px;
-                }
-                .texto {
-                    opacity: 0;
-                    top: 15%;
-                    left: 25%;
-                    right: 20%;
-                    bottom: 20%;
-                    position: absolute;
-                    display: flex;
-                    flex-flow: column;
-                }
-                .card:hover img {
-                    opacity: 0.2;
-                }
-                .card:hover .texto {
-                    opacity: 1;
-                    color: $lightgray;
+            .aside {
+                margin: 1rem;
+                .news {
                     margin: 0;
                     padding: 0;
-                    font-size: 0.75em;
-                    font-weight: 400;
-                    text-align: center;
-                    button {
-                        padding: 0.1rem 0rem;
-                        color: $saffron;
-                        text-shadow: 0.1rem 0.1rem 0rem $black;
-                        background-color: $darksinopia;
-                        box-shadow: 0rem 0.1rem 0.5rem $black;
+                    background-color: $darksinopia;
+                    border-radius: 0.1rem;
+                    .news__title {
+                        padding: 0.3rem;
+                        background-color: $black;
                         border-radius: 0.3rem;
-                        font-weight: 300;
+                        color: $saffron;
+                        font-family: $title;
+                        text-align: center;
+                        font-size: 1em;
+                        font-weight: light;
+                    }
+                    .news__title:hover {
+                        color: $sinopia;
+                    }
+                    p {
+                        font-size: 0.8em;
+                        text-align: center;
+                        color: $lightgray;
                     }
                 }
             }
         }
-        /* PublicDomain */
-        .mainpubdomain {
-            margin: 0;
-            padding: 2rem;
+    }
+    /* catalogo */
+    .catalog {
+        display: flex;
+        flex-flow: column;
+        .navcateg {
+            display: grid;
+            grid-template-areas: "pri" "categ" "sec" "subcateg";
+            grid-template-columns: auto;
+            grid-template-rows: auto 0.8fr auto 3fr;
+            width: auto;
+            height: auto;
+            background-color: $darksinopia;
+            .categ__title--pri {
+                grid-area: pri;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0.5rem 1rem;
+                background-color: $darkgray;
+                color: $saffron;
+                font-family: $title;
+                font-size: 0.8em;
+                font-weight: 600;
+            }
+            .categories {
+                margin: 0;
+                padding: 0.5rem 1rem;
+                grid-area: categ;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                color: $lightgray;
+                text-align: center;
+                font-size: 0.8em;
+            }
+            .categ__title--sec {
+                grid-area: sec;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0.5rem 1rem;
+                background-color: $darkgray;
+                color: $saffron;
+                font-family: $title;
+                font-size: 0.8em;
+                font-weight: 600;
+            }
+            .subcategories {
+                margin: 0;
+                padding: 0.5rem 0.2rem;
+                grid-area: subcateg;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                color: $lightgray;
+                text-align: center;
+                font-size: 0.8em;
+                li a {
+                    padding: 0rem 0.4rem;
+                }
+            }
+            a:hover {
+                color: $saffron;
+                text-shadow: 0.01rem 0.01rem 0.1rem $black;
+            }
+        }
+        .library {
+            padding: 1.5rem 0.5rem;
+            .library__title {
+                margin: 0;
+                padding: 0.2rem 0.1rem;
+                background-color: $saffron;
+                color: $black;
+                font-family: $title;
+                text-align: end;
+                font-size: 0.7em;
+                font-weight: 400;
+            }
+            .card {
+                background-color: transparentize($color: $black, $amount: 0.3);
+                position: relative;
+            }
+            img {
+                opacity: 1;
+                backface-visibility: hidden;
+                min-width: 105px;
+            }
+            .texto {
+                opacity: 0;
+                top: 15%;
+                left: 25%;
+                right: 20%;
+                bottom: 20%;
+                position: absolute;
+                display: flex;
+                flex-flow: column;
+            }
+            .card:hover img {
+                opacity: 0.2;
+            }
+            .card:hover .texto {
+                opacity: 1;
+                color: $lightgray;
+                margin: 0;
+                padding: 0;
+                font-family: $title;
+                font-size: 0.75em;
+                font-weight: 400;
+                text-align: center;
+                button {
+                    padding: 0.1rem 0rem;
+                    color: $saffron;
+                    text-shadow: 0.1rem 0.1rem 0rem $black;
+                    background-color: $darksinopia;
+                    box-shadow: 0rem 0.1rem 0.5rem $black;
+                    border-radius: 0.3rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    /* PublicDomain */
+    .mainpubdomain {
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        .pubdomain {
+            margin-bottom: 0.5rem;
+            background-color: $darkgray;
+            border: none;
+            max-width: 550px;
+            border-radius: 0.3rem;
+            box-shadow: 0rem 0rem 0.1rem $black;
+            .pubdomain__title {
+                margin: 0;
+                padding: 0.4rem;
+                background-color: $darkgray;
+                color: $saffron;
+                font-family: $title;
+                font-size: 1em;
+                font-weight: 400;
+                text-align: center;
+            }
+            .pubdomain__body {
+                color: $lightgray;
+                text-align: center;
+                font-size: 0.7em;
+                font-weight: 300;
+            }
+        }
+        .pubdomain__catalog {
+            margin: 0.5rem;
+            padding: 0;
+            width: auto;
+            background-color: transparentize($color: $black, $amount: 0.5);
+            box-shadow: 0rem 0rem 1.5rem $black;
+            border: none;
+            border-radius: 0.5rem;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            .pubdomain {
-                background-color: transparentize($color: $black, $amount: 0.8);
-                border: none;
-                width: auto;
-                border-radius: 0.3rem;
-                box-shadow: 0rem 0rem 0.1rem $black;
-                .pubdomain__title {
-                    margin: 0;
-                    padding: 0.4rem;
-                    background-color: $darkgray;
-                    color: $saffron;
-                    font-size: 1.2em;
-                    text-align: center;
-                }
-                .pubdomain__body {
-                    color: $black;
-                    text-align: center;
-                    font-size: 0.8em;
-                    font-weight: 500;
-                }
+            .pubdomain__catalog--title {
+                width: 100%;
+                margin: 1rem 0rem 2rem 0rem;
+                padding: 0.5em 1.2rem;
+                text-align: center;
+                background-color: $darksinopia;
+                box-shadow: 0rem 0rem 1rem $black;
+                color: $saffron;
+                font-family: $title;
+                text-shadow: 0rem 0.25rem 0.5rem $black;
+                font-size: 0.9em;
+                font-weight: 400;
             }
-            .pubdomain__catalog {
+            .pubdomain__catalog--body {
                 margin: 0.5rem;
                 padding: 0;
-                width: auto;
-                background-color: transparentize($color: $black, $amount: 0.5);
-                box-shadow: 0rem 0rem 1.5rem $black;
-                border: none;
-                border-radius: 0.5rem;
                 display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                .pubdomain__catalog--title {
-                    width: 100%;
-                    margin: 1rem 0rem 2rem 0rem;
-                    padding: 0.5em 1.2rem;
-                    text-align: center;
-                    background-color: $darksinopia;
-                    box-shadow: 0rem 0rem 1rem $black;
-                    color: $saffron;
-                    text-shadow: 0rem 0.25rem 0.5rem $black;
-                    font-size: 1em;
-                    font-weight: 400;
-                }
-                .pubdomain__catalog--body {
-                    margin: 0.5rem;
-                    padding: 0;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: center;
-                    align-content: center;
-                    .pd-card {
-                        width: 180px;
-                        height: 240px;
-                        margin: 0.2rem;
-                        padding: 0rem;
-                        display: flex;
-                        flex-flow: column nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: $black;
-                        color: $lightgray;
-                        border: none;
-                        border-radius: 0.3rem;
-                        text-align: center;
-                        .pd-card-title {
-                            color: $lightgray;
-                            text-shadow: 0rem 0rem 1rem $darkgray;
-                            font-size: 0.7rem;
-                            font-weight: 500;
-                        }
-                        .pd-card-author {
-                            color: $lightgray;
-                            text-shadow: 0rem 0rem 1rem $black;
-                            font-size: 0.65rem;
-                            font-weight: 300;
-                        }
-                        img {
-                            max-width: 90px;
-                            max-height: 100px;
-                            border: 0.25rem solid $black;
-                        }
-                        button {
-                            margin: 0rem 0.2rem;
-                            padding: 0.05rem 0.1rem;
-                            background-color: $black;
-                            border: none;
-                            color: $saffron;
-                            font-size: 0.75em;
-                        }
-                        button:hover {
-                            background-color: $saffron;
-                            color: $black;
-                        }
-                    }
-                    .pd-card:hover {
-                        background-color: $darksinopia;
-                        border: none;
-                        .pd-card-author,
-                        .pd-card-title {
-                            color: $saffron;
-                        }
-                    }
-                }
-            }
-        }
-        /* nosotros */
-        .info {
-            margin: 0;
-            padding: 0.5rem;
-            width: auto;
-            .info__title {
-                padding: 0.25rem 0rem;
-                background-color: $black;
-                color: $saffron;
-                border-radius: 0.2rem;
-                font-size: 1em;
-            }
-            .info__body {
-                .info__body--title {
-                    margin: 0;
-                    padding: 0.25rem 0rem;
-                    background-color: $darksinopia;
-                    color: $saffron;
-                    border-radius: 0.2rem;
-                    font-size: 0.95em;
-                }
-                .info__body--content {
-                    padding: 0.5rem 0.1rem;
-                    font-size: 0.7;
-                    font-weight: 400;
-                }
-            }
-        }
-        /* contacto */
-        .form {
-            width: auto;
-            .form__title {
-                padding: 0.5rem 0.2rem;
-                margin: 0;
-                background-color: $saffron;
-                color: $black;
-                border-bottom: 0.1rem solid $black;
-                text-align: center;
-                font-size: 1em;
-                font-weight: bold;
-            }
-            .form__body {
-                padding: 1rem 0.5rem;
-                text-align: center;
-                background-color: $lightgray;
-                color: $black;
-                .form__body--input {
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                .pd-card {
+                    width: 180px;
+                    height: 240px;
+                    margin: 0.2rem;
+                    padding: 0rem;
                     display: flex;
                     flex-flow: column nowrap;
-                    font-size: 0.8em;
-                    font-weight: bold;
-                }
-                .form__body--news {
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-                .form__body--comment {
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-                .form__buttons {
-                    font-size: 1em;
-                    font-weight: lighter;
-                    .button {
-                        padding: 0.1rem 0.4rem;
-                        border-radius: 0.2rem;
-                        background-color: $darksinopia;
-                        color: $saffron;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $black;
+                    color: $lightgray;
+                    border: none;
+                    border-radius: 0.3rem;
+                    text-align: center;
+                    .pd-card-title {
+                        color: $lightgray;
+                        text-shadow: 0rem 0rem 1rem $darkgray;
+                        font-size: 0.7rem;
                         font-weight: 500;
-                        text-shadow: 0.1rem 0.1rem 0rem $black;
                     }
+                    .pd-card-author {
+                        color: $lightgray;
+                        text-shadow: 0rem 0rem 1rem $black;
+                        font-size: 0.65rem;
+                        font-weight: 300;
+                    }
+                    img {
+                        max-width: 90px;
+                        max-height: 100px;
+                        border: 0.25rem solid $black;
+                    }
+                    button {
+                        margin: 0rem 0.2rem;
+                        padding: 0.05rem 0.1rem;
+                        background-color: $black;
+                        border: none;
+                        color: $saffron;
+                        font-size: 0.75em;
+                        font-family: $title;
+                    }
+                    button:hover {
+                        background-color: $saffron;
+                        color: $black;
+                    }
+                }
+                .pd-card:hover {
+                    background-color: $darksinopia;
+                    border: none;
+                    .pd-card-author,
+                    .pd-card-title {
+                        color: $saffron;
+                    }
+                }
+            }
+        }
+    }
+    /* nosotros */
+    .info {
+        margin: 0;
+        padding: 0.5rem;
+        width: auto;
+        .info__title {
+            padding: 0.25rem 0rem;
+            background-color: $black;
+            color: $saffron;
+            font-family: $title;
+            border-radius: 0.2rem;
+            font-size: 1em;
+        }
+        .info__body {
+            .info__body--title {
+                margin: 0;
+                padding: 0.25rem 0rem;
+                background-color: $darksinopia;
+                color: $saffron;
+                font-family: $title;
+                border-radius: 0.2rem;
+                font-size: 0.95em;
+            }
+            .info__body--content {
+                padding: 0.5rem 0.1rem;
+                font-size: 1rem;
+                font-weight: 400;
+                .body__content--title {
+                    font-family: $title;
+                    font-size: 0.85em;
+                }
+                ol > li {
+                    list-style-type: decimal;
+                }
+                ul > li {
+                    list-style-type: disc;
+                }
+                .body__content--text {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    /* contacto */
+    .form {
+        width: auto;
+        .form__title {
+            padding: 0.4rem 0.2rem;
+            margin: 0;
+            background-color: $saffron;
+            color: $black;
+            border-bottom: 0.1rem solid $black;
+            text-align: center;
+            font-family: $title;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .form__body {
+            padding: 1rem 0.5rem;
+            text-align: center;
+            background-color: $lightgray;
+            color: $black;
+            .form__body--input {
+                display: flex;
+                flex-flow: column nowrap;
+                font-size: 0.8em;
+                font-weight: bold;
+            }
+            .form__body--news {
+                font-size: 0.85em;
+                font-weight: bold;
+            }
+            .form__body--comment {
+                font-size: 0.9em;
+                font-weight: bold;
+            }
+            .form__buttons {
+                font-size: 0.85em;
+                font-weight: lighter;
+                .button {
+                    padding: 0.1rem 0.5rem;
+                    border-radius: 0.2rem;
+                    background-color: $darksinopia;
+                    color: $saffron;
+                    font-family: $title;
+                    font-weight: 500;
+                    text-shadow: 0.1rem 0.1rem 0rem $black;
                 }
             }
         }
@@ -472,450 +498,492 @@
 }
 
 @media only screen and (min-width: 768px) {
-    main {
-        background-image: radial-gradient(beige 20%, rgb(224, 219, 180) 80%);
-        /* index */
-        .index {
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            .quote {
-                margin-top: 0.5rem;
-                padding: 4rem 1rem;
-                min-width: 760px;
-                max-width: 900px;
-                height: 200px;
-                background-image: url(../img/bgquote-md.jpg);
-                background-color: transparentize($color: $black, $amount: 0.25);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 0.2rem;
-                color: $lightgray;
-                text-shadow: 0rem 0.1rem 0.5rem black;
-                font-family: serif;
-                font-size: 1em;
-                font-weight: 350;
+    /* index */
+    .index {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .quote {
+            margin-top: 0.5rem;
+            padding: 4rem 1rem;
+            min-width: 760px;
+            max-width: 900px;
+            height: 200px;
+            background-image: url(../img/bgquote-md.jpg);
+            background-color: transparentize($color: $black, $amount: 0.25);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 0.2rem;
+            color: $lightgray;
+            font-family: $title;
+            text-shadow: 0rem 0.1rem 0.5rem black;
+            text-align: right;
+            .quote__text {
                 letter-spacing: 0.1rem;
-                word-spacing: 0.15rem;
-                text-align: right;
+                font-size: 0.85em;
+                font-weight: 450;
             }
-            .main {
-                margin: 0.5rem;
-                min-width: 760px;
-                align-self: center;
-                display: grid;
-                grid-template-areas: "section aside";
-                grid-template-columns: 80% 20%;
-                grid-template-rows: auto;
-                section {
-                    grid-area: section;
-                    margin: 1rem 0rem;
-                    .aside-bd {
-                        margin: 1rem 0rem;
-                        padding: 0;
-                        background-color: transparentize($color: $black, $amount: 0.6);
-                        box-shadow: 0rem 0rem 0.5rem $black;
-                        .aside-title {
-                            text-align: center;
-                            padding-top: 0.5rem;
-                            color: $saffron;
-                            text-shadow: 0rem 0.1rem 0.5rem $black;
-                            font-size: 1.1em;
-                            font-weight: 700;
-                        }
-                        .aside-title:hover {
-                            color: $sinopia;
-                        }
-                        .bd-text {
-                            padding: 0.5rem 1rem;
-                            font-size: 1em;
-                            font-weight: 700;
-                            text-align: center;
-                            color: $black;
-                        }
-                    }
-                    .index-catalog {
-                        padding: 1rem 0.5rem;
-                        background-color: transparentize($color: $black, $amount: 0.3);
-                        .heading {
-                            background-color: $black;
-                            width: 100%;
-                            .heading__title {
-                                padding: 0.5rem 0.2rem;
-                                margin-bottom: 0.2rem;
-                                color: $saffron;
-                                text-align: center;
-                                font-family: $font;
-                                font-size: 1.3em;
-                                font-weight: 700;
-                            }
-                            .heading__title:hover {
-                                color: $sinopia;
-                            }
-                        }
-                        .card {
-                            background-color: transparentize($color: $black, $amount: 0.8);
-                            position: relative;
-                            width: 350px;
-                            height: auto;
-                            margin: 0rem 0.5rem;
-                        }
-                        img {
-                            opacity: 1;
-                            backface-visibility: hidden;
-                            width: 110px;
-                            height: auto;
-                            align-self: center;
-                        }
-                        .texto {
-                            opacity: 0;
-                            top: 20%;
-                            left: 10%;
-                            right: 10%;
-                            bottom: 35%;
-                            position: absolute;
-                        }
-                        .card:hover img {
-                            opacity: 0.25;
-                        }
-                        .card:hover .texto {
-                            opacity: 1;
-                            color: $lightgray;
-                            font-size: 0.75em;
-                            font-weight: 400;
-                            text-shadow: 0rem 0rem 0.2rem $black;
-                            text-align: center;
-                            button {
-                                padding: 0rem;
-                                color: $saffron;
-                                text-shadow: 0.1rem 0.1rem 0rem $black;
-                                background-color: $darksinopia;
-                                box-shadow: 0rem 0.1rem 0.5rem $black;
-                                border-radius: 0.3rem;
-                                font-weight: 400;
-                            }
-                        }
-                    }
-                }
-                .aside {
-                    grid-area: aside;
-                    position: sticky;
-                    top: 0;
-                    margin: 1rem 0rem 1rem 1rem;
-                    .news {
-                        margin: 0rem;
-                        background-color: $darksinopia;
-                        border-radius: 0.1rem;
-                        .news__title {
-                            padding: 0.3rem;
-                            background-color: $black;
-                            border-radius: 0.3rem;
-                            color: $saffron;
-                            text-align: center;
-                            font-size: 0.8em;
-                            font-weight: light;
-                        }
-                        .news__title:hover {
-                            color: $sinopia;
-                        }
-                        p {
-                            padding: 0.5rem 0.1rem;
-                            font-size: 0.7em;
-                            text-align: center;
-                            color: $lightgray;
-                        }
-                    }
-                }
+            .author {
+                font-size: 0.75em;
+                font-weight: 250;
             }
         }
-        /* catalogo */
-        .catalog {
-            width: 800px;
-            height: auto;
-            margin: auto;
+        .main {
+            margin: 0.5rem;
+            min-width: 760px;
+            align-self: center;
             display: grid;
-            grid-template-areas: "categories library";
-            grid-template-columns: 20% 80%;
+            grid-template-areas: "section aside";
+            grid-template-columns: 80% 20%;
             grid-template-rows: auto;
-            align-content: center;
-            .navcateg {
-                grid-area: categories;
-                background-color: $darksinopia;
-                color: $lightgray;
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: stretch;
-                width: 100%;
-                padding-top: 2rem;
-                .categories,
-                .subcategories {
-                    margin: 0;
-                    padding: 0.5rem 0.2rem;
-                    text-align: start;
-                    font-family: $font;
-                    font-size: 0.7em;
-                    font-weight: 100;
-                    line-height: 1.2rem;
-                }
-                .categ__title--pri,
-                .categ__title--sec {
-                    padding: 0.2rem;
-                    background-color: $darkgray;
-                    color: $saffron;
-                    box-shadow: 0rem 0.1rem 1rem $black;
-                    text-align: start;
-                    font-family: $font;
-                    font-size: 1em;
-                    font-weight: 400;
-                }
-                a:hover {
-                    color: $saffron;
-                    text-shadow: 0.01rem 0.01rem 0.1rem $black;
-                }
-            }
-            .library {
-                grid-area: library;
-                width: 100%;
-                margin: 2rem 0rem 0rem 0.5rem;
-                .library__title {
-                    padding: 0.2rem;
-                    border-radius: 0.25rem;
-                    background-color: $saffron;
-                    box-shadow: 0rem 0rem 1rem $black;
-                    color: $black;
-                    text-align: end;
-                    font-size: 0.8em;
-                    font-weight: 500;
-                }
-                .card {
-                    background-color: transparentize($color: $black, $amount: 0.3);
-                    position: relative;
-                    width: 180px;
-                    height: auto;
-                }
-                img {
-                    opacity: 1;
-                    backface-visibility: hidden;
-                }
-                .texto {
-                    opacity: 0;
-                    top: 20%;
-                    left: 20%;
-                    right: 20%;
-                    bottom: 20%;
-                    position: absolute;
-                    display: flex;
-                    flex-flow: column;
-                }
-                .card:hover img {
-                    opacity: 0.25;
-                }
-                .card:hover .texto {
-                    opacity: 1;
-                    color: $lightgray;
-                    font-size: 0.75em;
-                    font-weight: 600;
-                    text-align: center;
-                    padding: 0.2rem;
-                    button {
-                        padding: 0.1rem 0rem;
+            section {
+                grid-area: section;
+                margin: 1rem 0rem;
+                .aside-bd {
+                    margin: 1rem 0rem;
+                    padding: 0;
+                    background-color: $black;
+                    box-shadow: 0rem 0rem 0.5rem $black;
+                    border-radius: 0.3rem;
+                    .aside-title {
+                        text-align: center;
+                        padding-top: 0.5rem;
                         color: $saffron;
-                        text-shadow: 0.1rem 0.1rem 0rem $black;
-                        background-color: $darksinopia;
-                        box-shadow: 0rem 0.1rem 0.5rem $black;
-                        border-radius: 0.3rem;
+                        font-family: $title;
+                        text-shadow: 0rem 0.1rem 0.5rem $black;
+                        font-size: 1.1em;
+                        font-weight: 700;
+                    }
+                    .aside-title:hover {
+                        color: $sinopia;
+                    }
+                    .bd-text {
+                        padding: 0.5rem 1rem;
+                        font-size: 0.85em;
                         font-weight: 300;
+                        text-align: center;
+                        color: $lightgray;
                     }
                 }
-                img {
-                    min-width: 108px;
+                .index-catalog {
+                    padding: 1rem 0.5rem;
+                    background-color: transparentize($color: $black, $amount: 0.3);
+                    .heading {
+                        background-color: $black;
+                        width: 100%;
+                        .heading__title {
+                            padding: 0.5rem 0.2rem;
+                            margin-bottom: 0.2rem;
+                            color: $saffron;
+                            font-family: $title;
+                            text-align: center;
+                            font-size: 1.3em;
+                            font-weight: 700;
+                        }
+                        .heading__title:hover {
+                            color: $sinopia;
+                        }
+                    }
+                    .card {
+                        background-color: transparentize($color: $black, $amount: 0.8);
+                        position: relative;
+                        width: 350px;
+                        height: auto;
+                        margin: 0rem 0.5rem;
+                    }
+                    img {
+                        opacity: 1;
+                        backface-visibility: hidden;
+                        width: 110px;
+                        height: auto;
+                        align-self: center;
+                    }
+                    .texto {
+                        opacity: 0;
+                        top: 20%;
+                        left: 10%;
+                        right: 10%;
+                        bottom: 35%;
+                        position: absolute;
+                    }
+                    .card:hover img {
+                        opacity: 0.25;
+                    }
+                    .card:hover .texto {
+                        opacity: 1;
+                        color: $lightgray;
+                        font-family: $title;
+                        font-size: 0.75em;
+                        font-weight: 400;
+                        text-shadow: 0rem 0rem 0.2rem $black;
+                        text-align: center;
+                        button {
+                            padding: 0rem;
+                            color: $saffron;
+                            text-shadow: 0.1rem 0.1rem 0rem $black;
+                            background-color: $darksinopia;
+                            box-shadow: 0rem 0.1rem 0.5rem $black;
+                            border-radius: 0.3rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .aside {
+                grid-area: aside;
+                position: sticky;
+                top: 1rem;
+                margin: 1rem 0rem 1rem 1rem;
+                .news {
+                    margin: 0rem;
+                    background-color: $darksinopia;
+                    border-radius: 0.1rem;
+                    .news__title {
+                        padding: 0.3rem;
+                        background-color: $black;
+                        border-radius: 0.3rem;
+                        color: $saffron;
+                        font-family: $title;
+                        text-align: center;
+                        font-size: 0.8em;
+                        font-weight: light;
+                    }
+                    .news__title:hover {
+                        color: $sinopia;
+                    }
+                    p {
+                        padding: 0.5rem 0.1rem;
+                        font-size: 0.7em;
+                        text-align: center;
+                        color: $lightgray;
+                    }
                 }
             }
         }
-        /* PublicDomain */
-        .mainpubdomain {
-            margin: 0;
-            padding: 2rem;
+    }
+    /* catalogo */
+    .catalog {
+        width: 800px;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-areas: "categories library";
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        align-content: center;
+        .navcateg {
+            grid-area: categories;
+            background-color: $darksinopia;
+            color: $lightgray;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: stretch;
+            width: 100%;
+            padding-top: 2rem;
+            .categ__title--pri {
+                padding: 0.2rem;
+                background-color: $darkgray;
+                color: $saffron;
+                box-shadow: 0rem 0.1rem 1rem $black;
+                text-align: start;
+                font-family: $title;
+                font-size: 1em;
+                font-weight: 400;
+            }
+            .categories {
+                margin: 0;
+                padding: 0.5rem 0.2rem;
+                text-align: start;
+                font-size: 0.8em;
+                font-weight: 400;
+                line-height: 1.2rem;
+            }
+            .categ__title--sec {
+                padding: 0.2rem;
+                background-color: $darkgray;
+                color: $saffron;
+                box-shadow: 0rem 0.1rem 1rem $black;
+                text-align: start;
+                font-family: $title;
+                font-size: 1em;
+                font-weight: 400;
+            }
+            .subcategories {
+                margin: 0;
+                padding: 0.5rem 0.2rem;
+                text-align: start;
+                font-size: 0.8em;
+                font-weight: 400;
+                line-height: 1.2rem;
+            }
+            a:hover {
+                color: $saffron;
+                text-shadow: 0.01rem 0.01rem 0.1rem $black;
+            }
+        }
+        .library {
+            grid-area: library;
+            width: 100%;
+            margin: 2rem 0rem 0rem 0.5rem;
+            .library__title {
+                padding: 0.2rem;
+                border-radius: 0.25rem;
+                background-color: $saffron;
+                box-shadow: 0rem 0rem 1rem $black;
+                color: $black;
+                text-align: end;
+                font-size: 0.8em;
+                font-weight: 500;
+            }
+            .card {
+                background-color: transparentize($color: $black, $amount: 0.3);
+                position: relative;
+                width: 180px;
+                height: auto;
+            }
+            img {
+                opacity: 1;
+                backface-visibility: hidden;
+            }
+            .texto {
+                opacity: 0;
+                top: 20%;
+                left: 20%;
+                right: 20%;
+                bottom: 20%;
+                position: absolute;
+                display: flex;
+                flex-flow: column;
+            }
+            .card:hover img {
+                opacity: 0.25;
+            }
+            .card:hover .texto {
+                opacity: 1;
+                color: $lightgray;
+                font-size: 0.75em;
+                font-weight: 600;
+                text-align: center;
+                padding: 0.2rem;
+                button {
+                    padding: 0.1rem 0rem;
+                    color: $saffron;
+                    text-shadow: 0.1rem 0.1rem 0rem $black;
+                    background-color: $darksinopia;
+                    box-shadow: 0rem 0.1rem 0.5rem $black;
+                    border-radius: 0.3rem;
+                    font-weight: 300;
+                }
+            }
+            img {
+                min-width: 108px;
+            }
+        }
+    }
+    /* PublicDomain */
+    .mainpubdomain {
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        .pubdomain {
+            background-color: $darkgray;
+            border: none;
+            width: 700px;
+            height: auto;
+            border-radius: 0.3rem;
+            box-shadow: 0rem 0rem 0.1rem $black;
+            .pubdomain__title {
+                margin: 0;
+                padding: 0.4rem;
+                background-color: $darkgray;
+                color: $saffron;
+                font-family: $title;
+                font-size: 1.4em;
+                font-weight: 400;
+                text-align: center;
+            }
+            .pubdomain__body {
+                color: $lightgray;
+                text-align: center;
+                font-size: 0.9em;
+                font-weight: 300;
+            }
+        }
+        .pubdomain__catalog {
+            margin: 1rem;
+            width: 800px;
+            background-color: transparentize($color: $black, $amount: 0.8);
+            border: none;
+            border-radius: 0.5rem;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            .pubdomain {
-                background-color: transparentize($color: $black, $amount: 0.8);
-                border: none;
-                width: 760px;
-                border-radius: 0.3rem;
-                box-shadow: 0rem 0rem 0.1rem $black;
-                .pubdomain__title {
-                    margin: 0;
-                    padding: 0.4rem;
-                    background-color: $darkgray;
-                    color: $saffron;
-                    font-size: 1.8em;
+            .pubdomain__catalog--title {
+                width: 800px;
+                margin: 1rem 0rem 2rem 0rem;
+                padding: 0.5em 0rem;
+                text-align: center;
+                background-color: $darksinopia;
+                box-shadow: 0rem 0rem 1rem $black;
+                color: $saffron;
+                font-family: $title;
+                font-size: 1em;
+                text-shadow: 0rem 0.25rem 0.5rem $black;
+            }
+            .pubdomain__catalog--body {
+                margin: 1rem;
+                padding: 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-content: center;
+                .pd-card {
+                    width: 200px;
+                    height: 260px;
+                    margin: 0.5rem 1rem;
+                    padding: 0.8rem;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $black;
+                    color: $lightgray;
+                    border: none;
+                    border-radius: 0.3rem;
                     text-align: center;
+                    .pd-card-title {
+                        color: $lightgray;
+                        text-shadow: 0rem 0rem 1rem $darkgray;
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        letter-spacing: 0.1rem;
+                    }
+                    .pd-card-author {
+                        color: $lightgray;
+                        text-shadow: 0rem 0rem 1rem $black;
+                        font-size: 0.65rem;
+                        font-weight: 400;
+                    }
+                    img {
+                        max-width: 90px;
+                        max-height: 100px;
+                        border: 0.25rem solid $black;
+                    }
+                    button {
+                        margin: 0rem 0.2rem;
+                        padding: 0.05rem 0.1rem;
+                        background-color: $black;
+                        border: none;
+                        color: $saffron;
+                        font-family: $title;
+                        font-size: 0.75em;
+                    }
+                    button:hover {
+                        background-color: $saffron;
+                        color: $black;
+                    }
                 }
-                .pubdomain__body {
-                    color: $black;
-                    text-align: center;
-                    font-size: 1em;
-                    font-weight: 500;
+                .pd-card:hover {
+                    background-color: $darksinopia;
+                    border: none;
+                    .pd-card-author,
+                    .pd-card-title {
+                        color: $saffron;
+                    }
                 }
             }
-            .pubdomain__catalog {
-                margin: 1rem;
-                width: 800px;
-                background-color: transparentize($color: $black, $amount: 0.5);
-                box-shadow: 0rem 0rem 1.5rem $black;
-                border: none;
-                border-radius: 0.5rem;
+        }
+    }
+    /* nosotros*/
+    .info {
+        margin: 0;
+        padding: 0.5rem;
+        width: auto;
+        .info__title {
+            padding: 0.25rem 0rem;
+            background-color: $black;
+            color: $saffron;
+            font-family: $title;
+            border-radius: 0.2rem;
+            font-size: 1.2em;
+        }
+        .info__body {
+            .info__body--title {
+                margin: 0;
+                padding: 0.25rem 0rem;
+                background-color: $darksinopia;
+                color: $saffron;
+                font-family: $title;
+                border-radius: 0.2rem;
+                font-size: 1.1em;
+            }
+            .info__body--content {
+                padding: 0.5rem 0.1rem;
+                font-size: 0.6;
+                font-weight: 400;
+                .body__content--title {
+                    font-size: 0.9em;
+                }
+                ol > li {
+                    list-style-type: decimal;
+                }
+                ul > li {
+                    list-style-type: disc;
+                }
+                .body__content--text {
+                    font-size: 0.85em;
+                }
+            }
+        }
+    }
+    /* contacto*/
+    .form {
+        width: auto;
+        .form__title {
+            padding: 0.4rem 0.2rem;
+            margin: 0;
+            background-color: $saffron;
+            color: $black;
+            border-bottom: 0.1rem solid $black;
+            text-align: center;
+            font-family: $title;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .form__body {
+            padding: 1rem 0.5rem;
+            text-align: center;
+            background-color: $lightgray;
+            color: $black;
+            .form__body--input {
                 display: flex;
                 flex-flow: column nowrap;
-                align-items: center;
-                .pubdomain__catalog--title {
-                    width: 800px;
-                    margin: 1rem 0rem 2rem 0rem;
-                    padding: 0.5em 0rem;
-                    text-align: center;
-                    background-color: $darksinopia;
-                    box-shadow: 0rem 0rem 1rem $black;
-                    color: $saffron;
-                    text-shadow: 0rem 0.25rem 0.5rem $black;
-                }
-                .pubdomain__catalog--body {
-                    margin: 1rem;
-                    padding: 0;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                    align-content: center;
-                    .pd-card {
-                        width: 200px;
-                        height: 260px;
-                        margin: 0.5rem 1rem;
-                        padding: 0.8rem;
-                        display: flex;
-                        flex-flow: column nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: $black;
-                        color: $lightgray;
-                        border: none;
-                        border-radius: 0.3rem;
-                        text-align: center;
-                        .pd-card-title {
-                            color: $lightgray;
-                            text-shadow: 0rem 0rem 1rem $darkgray;
-                            font-size: 0.7rem;
-                            font-weight: 600;
-                            letter-spacing: 0.1rem;
-                        }
-                        .pd-card-author {
-                            color: $lightgray;
-                            text-shadow: 0rem 0rem 1rem $black;
-                            font-size: 0.65rem;
-                            font-weight: 400;
-                        }
-                        img {
-                            max-width: 90px;
-                            max-height: 100px;
-                            border: 0.25rem solid $black;
-                        }
-                        button {
-                            margin: 0rem 0.2rem;
-                            padding: 0.05rem 0.1rem;
-                            background-color: $black;
-                            border: none;
-                            color: $saffron;
-                            font-size: 0.75em;
-                        }
-                        button:hover {
-                            background-color: $saffron;
-                            color: $black;
-                        }
-                    }
-                    .pd-card:hover {
-                        background-color: $darksinopia;
-                        border: none;
-                        .pd-card-author,
-                        .pd-card-title {
-                            color: $saffron;
-                        }
-                    }
-                }
+                font-size: 0.8em;
+                font-weight: bold;
             }
-        }
-        /* nosotros*/
-        .info {
-            margin: 0;
-            padding: 0.5rem;
-            width: auto;
-            .info__title {
-                padding: 0.25rem 0rem;
-                background-color: $black;
-                color: $saffron;
-                border-radius: 0.2rem;
-                font-size: 1em;
-            }
-            .info__body {
-                .info__body--title {
-                    margin: 0;
-                    padding: 0.25rem 0rem;
-                    background-color: $darksinopia;
-                    color: $saffron;
-                    border-radius: 0.2rem;
-                    font-size: 0.95em;
-                }
-                .info__body--content {
-                    padding: 0.5rem 0.1rem;
-                    font-size: 0.7;
-                    font-weight: 400;
-                }
-            }
-        }
-        /* contacto*/
-        .form {
-            width: auto;
-            .form__title {
-                padding: 0.5rem 0.2rem;
-                margin: 0;
-                background-color: $saffron;
-                color: $black;
-                border-bottom: 0.1rem solid $black;
-                text-align: center;
+            .form__body--news {
                 font-size: 1em;
                 font-weight: bold;
             }
-            .form__body {
-                padding: 1rem 0.5rem;
-                text-align: center;
-                background-color: $lightgray;
-                color: $black;
-                .form__body--input {
-                    display: flex;
-                    flex-flow: column nowrap;
-                    font-size: 0.8em;
-                    font-weight: bold;
-                }
-                .form__body--news {
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-                .form__body--comment {
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-                .form__buttons {
-                    font-size: 1em;
-                    font-weight: lighter;
-                    .button {
-                        padding: 0.1rem 0.4rem;
-                        border-radius: 0.2rem;
-                        background-color: $darksinopia;
-                        color: $saffron;
-                        font-weight: 500;
-                        text-shadow: 0.1rem 0.1rem 0rem $black;
-                    }
+            .form__body--comment {
+                font-size: 1em;
+                font-weight: bold;
+            }
+            .form__buttons {
+                font-size: 1em;
+                font-weight: lighter;
+                .button {
+                    padding: 0.1rem 0.4rem;
+                    border-radius: 0.2rem;
+                    background-color: $darksinopia;
+                    color: $saffron;
+                    font-family: $title;
+                    font-weight: 500;
+                    text-shadow: 0.1rem 0.1rem 0rem $black;
                 }
             }
         }
@@ -923,458 +991,518 @@
 }
 
 @media only screen and (min-width: 992px) {
-    main {
-        background-image: radial-gradient(beige 20%, rgb(224, 219, 180) 80%);
-        /* index */
-        .index {
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            .quote {
-                margin-top: 0.5rem;
-                padding: 5rem;
-                max-width: 1200px;
-                min-width: 1000px;
-                height: 250px;
-                background-image: url(../img/bgquote-xl.jpg);
-                background-color: transparentize($color: $black, $amount: 0.25);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                color: $lightgray;
-                text-shadow: 0rem 0.1rem 0.5rem black;
-                font-family: serif;
-                font-size: 1.2em;
-                font-weight: 350;
-                letter-spacing: 0.15rem;
-                word-spacing: 0.2rem;
-                text-align: right;
+    /* index */
+    .index {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        .quote {
+            margin-top: 0.5rem;
+            padding: 5rem;
+            max-width: 1200px;
+            min-width: 1000px;
+            height: 250px;
+            background-image: url(../img/bgquote-xl.jpg);
+            background-color: transparentize($color: $black, $amount: 0.25);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: $lightgray;
+            font-family: $title;
+            text-shadow: 0rem 0.1rem 0.5rem black;
+            text-align: right;
+            .quote__text {
+                letter-spacing: 0.1rem;
+                font-size: 0.9em;
+                font-weight: 500;
             }
-            .main {
-                max-width: 1200px;
-                min-width: 1000px;
-                align-self: center;
-                display: grid;
-                grid-template-areas: "section aside";
-                grid-template-columns: 80% 20%;
-                grid-template-rows: auto;
-                section {
-                    grid-area: section;
-                    margin: 0rem 0.5rem;
-                    .aside-bd {
-                        margin: 1rem 0rem;
-                        padding: 0;
-                        background-color: transparentize($color: $black, $amount: 0.6);
-                        box-shadow: 0rem 0rem 0.5rem $black;
-                        .aside-title {
-                            text-align: center;
-                            padding-top: 0.5rem;
+            .author {
+                font-size: 0.8em;
+                font-weight: 300;
+            }
+        }
+        .main {
+            max-width: 1200px;
+            min-width: 1000px;
+            align-self: center;
+            display: grid;
+            grid-template-areas: "section aside";
+            grid-template-columns: 80% 20%;
+            grid-template-rows: auto;
+            section {
+                grid-area: section;
+                margin: 0rem 0.5rem;
+                .aside-bd {
+                    margin: 1rem 0rem;
+                    padding: 0;
+                    background-color: $black;
+                    box-shadow: 0rem 0rem 0.5rem $black;
+                    .aside-title {
+                        text-align: center;
+                        padding-top: 0.5rem;
+                        color: $saffron;
+                        font-family: $title;
+                        text-shadow: 0rem 0.1rem 0.5rem $black;
+                        font-size: 1.2em;
+                        font-weight: 900;
+                    }
+                    .aside-title:hover {
+                        color: $sinopia;
+                    }
+                    .bd-text {
+                        padding: 0.5rem 1rem;
+                        font-size: 0.85em;
+                        font-weight: 500;
+                        text-align: center;
+                        color: $lightgray;
+                    }
+                }
+                .index-catalog {
+                    padding: 2rem 1.5rem;
+                    background-color: transparentize($color: $black, $amount: 0.3);
+                    .heading {
+                        background-color: $black;
+                        width: 100%;
+                        .heading__title {
+                            padding: 0.5rem 0.2rem;
+                            margin-bottom: 0.2rem;
                             color: $saffron;
-                            text-shadow: 0rem 0.1rem 0.5rem $black;
-                            font-size: 1.2em;
-                            font-weight: 900;
+                            font-family: $title;
+                            text-align: center;
+                            font-size: 1.3em;
+                            font-weight: 700;
                         }
-                        .aside-title:hover {
+                        .heading__title:hover {
                             color: $sinopia;
                         }
-                        .bd-text {
-                            padding: 0.5rem 1rem;
-                            font-size: 1em;
-                            font-weight: 700;
-                            text-align: center;
-                            color: $black;
-                        }
                     }
-                    .index-catalog {
-                        padding: 2rem 1.5rem;
-                        background-color: transparentize($color: $black, $amount: 0.3);
-                        .heading {
-                            background-color: $black;
-                            width: 100%;
-                            .heading__title {
-                                padding: 0.5rem 0.2rem;
-                                margin-bottom: 0.2rem;
-                                color: $saffron;
-                                text-align: center;
-                                font-family: $font;
-                                font-size: 1.3em;
-                                font-weight: 700;
-                            }
-                            .heading__title:hover {
-                                color: $sinopia;
-                            }
-                        }
-                        .card {
-                            background-color: transparentize($color: $black, $amount: 0.8);
-                            position: relative;
-                            width: 200px;
-                            height: auto;
-                            margin: 0rem 1rem;
-                        }
-                        img {
-                            opacity: 1;
-                            backface-visibility: hidden;
-                            width: 110px;
-                            height: auto;
-                            align-self: center;
-                        }
-                        .texto {
-                            opacity: 0;
-                            top: 20%;
-                            left: 10%;
-                            right: 10%;
-                            bottom: 35%;
-                            position: absolute;
-                        }
-                        .card:hover img {
-                            opacity: 0.25;
-                        }
-                        .card:hover .texto {
-                            opacity: 1;
-                            color: $lightgray;
-                            font-size: 0.8em;
+                    .card {
+                        background-color: transparentize($color: $black, $amount: 0.8);
+                        position: relative;
+                        width: 200px;
+                        height: auto;
+                        margin: 0rem 1rem;
+                    }
+                    img {
+                        opacity: 1;
+                        backface-visibility: hidden;
+                        width: 110px;
+                        height: auto;
+                        align-self: center;
+                    }
+                    .texto {
+                        opacity: 0;
+                        top: 20%;
+                        left: 10%;
+                        right: 10%;
+                        bottom: 35%;
+                        position: absolute;
+                    }
+                    .card:hover img {
+                        opacity: 0.25;
+                    }
+                    .card:hover .texto {
+                        opacity: 1;
+                        color: $lightgray;
+                        font-family: $title;
+                        font-size: 0.8em;
+                        font-weight: 400;
+                        text-shadow: 0rem 0rem 0.2rem $black;
+                        text-align: center;
+                        button {
+                            padding: 0.2rem 0rem;
+                            color: $saffron;
+                            text-shadow: 0.1rem 0.1rem 0rem $black;
+                            background-color: $darksinopia;
+                            box-shadow: 0rem 0.1rem 0.5rem $black;
+                            border-radius: 0.3rem;
                             font-weight: 400;
-                            text-shadow: 0rem 0rem 0.2rem $black;
-                            text-align: center;
-                            button {
-                                padding: 0.2rem 0rem;
-                                color: $saffron;
-                                text-shadow: 0.1rem 0.1rem 0rem $black;
-                                background-color: $darksinopia;
-                                box-shadow: 0rem 0.1rem 0.5rem $black;
-                                border-radius: 0.3rem;
-                                font-weight: 400;
-                            }
                         }
                     }
                 }
-                .aside {
-                    grid-area: aside;
-                    position: sticky;
-                    top: 0;
-                    margin: 1rem 0rem 1rem 1rem;
-                    .news {
-                        margin: 0rem;
-                        background-color: $darksinopia;
+            }
+            .aside {
+                grid-area: aside;
+                position: sticky;
+                top: 1rem;
+                margin: 1rem 0rem 1rem 1rem;
+                .news {
+                    margin: 0rem;
+                    background-color: $darksinopia;
+                    border-radius: 0.3rem;
+                    .news__title {
+                        padding: 0.3rem;
+                        background-color: $black;
                         border-radius: 0.3rem;
-                        .news__title {
-                            padding: 0.3rem;
-                            background-color: $black;
-                            border-radius: 0.3rem;
-                            color: $saffron;
-                            text-align: center;
-                            font-size: 1.25em;
-                            font-weight: light;
-                        }
-                        .news__title:hover {
-                            color: $sinopia;
-                        }
-                        p {
-                            padding: 0.5rem 0.1rem;
-                            font-size: 0.8em;
-                            text-align: center;
-                            color: $lightgray;
-                        }
+                        color: $saffron;
+                        font-family: $title;
+                        text-align: center;
+                        font-size: 1.25em;
+                        font-weight: light;
+                    }
+                    .news__title:hover {
+                        color: $sinopia;
+                    }
+                    p {
+                        padding: 0.5rem 0.1rem;
+                        font-size: 0.8em;
+                        text-align: center;
+                        color: $lightgray;
                     }
                 }
             }
         }
-        /* catalogo */
-        .catalog {
-            width: 1000px;
-            height: auto;
-            margin: auto;
-            display: grid;
-            grid-template-areas: "categories library";
-            grid-template-columns: 20% 80%;
-            grid-template-rows: auto;
-            .navcateg {
-                grid-area: categories;
-                width: auto;
-                margin: 0rem;
-                padding: 2rem 0rem;
-                background-color: $darksinopia;
-                color: $lightgray;
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: stretch;
-                .categories,
-                .subcategories {
-                    margin: 0;
-                    padding: 0.5rem 0.5rem;
+    }
+    /* catalogo */
+    .catalog {
+        width: 1000px;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-areas: "categories library";
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        position: relative;
+        .navcateg {
+            grid-area: categories;
+            width: auto;
+            margin: 0rem;
+            padding: 2rem 0rem;
+            background-color: $darksinopia;
+            color: $lightgray;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: stretch;
+            .nav-sticky {
+                position: sticky;
+                top: 0;
+                .categ__title--pri {
+                    padding: 0.25rem 1rem;
+                    background-color: $darkgray;
+                    color: $saffron;
+                    font-family: $title;
+                    box-shadow: 0rem 0.1rem 1rem $black;
                     text-align: start;
-                    font-family: $font;
-                    font-size: 0.75em;
-                    font-weight: 200;
+                    font-size: 1em;
+                    font-weight: 600;
+                    letter-spacing: 0.1rem;
+                }
+                .categories {
+                    margin: 0;
+                    padding: 0.5rem 0.2rem;
+                    text-align: start;
+                    font-size: 0.8em;
+                    font-weight: 400;
                     line-height: 1.25rem;
                 }
-                .categ__title--pri,
                 .categ__title--sec {
                     padding: 0.25rem 1rem;
                     background-color: $darkgray;
                     color: $saffron;
+                    font-family: $title;
                     box-shadow: 0rem 0.1rem 1rem $black;
                     text-align: start;
-                    font-family: $font;
                     font-size: 1em;
                     font-weight: 600;
                     letter-spacing: 0.1rem;
+                }
+                .subcategories {
+                    margin: 0;
+                    padding: 0.5rem 0.2rem;
+                    text-align: start;
+                    font-size: 0.8em;
+                    font-weight: 400;
+                    line-height: 1.25rem;
                 }
                 a:hover {
                     color: $saffron;
                     text-shadow: 0.01rem 0.01rem 0.1rem $black;
                 }
             }
-            .library {
-                grid-area: library;
-                width: auto;
-                margin: 2rem 0rem 0rem 0.5rem;
-                .library__title {
-                    margin: 0.2rem 0rem;
-                    padding: 0.5rem;
-                    border-radius: 0.25rem;
-                    background-color: $saffron;
-                    box-shadow: 0rem 0rem 1rem $black;
-                    color: $black;
-                    text-align: end;
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-                .card {
-                    background-color: transparentize($color: $black, $amount: 0.3);
-                    position: relative;
-                    width: 250px;
-                    height: auto;
-                }
-                img {
-                    opacity: 1;
-                    backface-visibility: hidden;
-                }
-                .texto {
-                    opacity: 0;
-                    top: 20%;
-                    left: 20%;
-                    right: 20%;
-                    bottom: 20%;
-                    position: absolute;
-                    display: flex;
-                    flex-flow: column;
-                }
-                .card:hover img {
-                    opacity: 0.25;
-                }
-                .card:hover .texto {
-                    opacity: 1;
-                    color: $black;
-                    font-size: 1em;
-                    font-weight: 700;
-                    text-shadow: 0rem 0rem 0.2rem $lightgray;
-                    text-align: center;
-                    padding: 0.2rem;
-                    button {
-                        padding: 0.2rem 0rem;
-                        color: $saffron;
-                        text-shadow: 0.1rem 0.1rem 0rem $black;
-                        background-color: $darksinopia;
-                        box-shadow: 0rem 0.1rem 0.5rem $black;
-                        border-radius: 0.3rem;
-                        font-weight: 600;
-                    }
-                }
-                img {
-                    min-width: 108px;
+        }
+        .library {
+            grid-area: library;
+            width: auto;
+            margin: 2rem 0rem 0rem 0.5rem;
+            .library__title {
+                margin: 0.2rem 0rem;
+                padding: 0.5rem;
+                border-radius: 0.25rem;
+                background-color: $saffron;
+                box-shadow: 0rem 0rem 1rem $black;
+                color: $black;
+                font-family: $title;
+                text-align: end;
+                font-size: 0.9em;
+                font-weight: 900;
+            }
+            .card {
+                background-color: transparentize($color: $black, $amount: 0.3);
+                position: relative;
+                width: 250px;
+                height: auto;
+            }
+            img {
+                opacity: 1;
+                backface-visibility: hidden;
+            }
+            .texto {
+                opacity: 0;
+                top: 20%;
+                left: 20%;
+                right: 20%;
+                bottom: 20%;
+                position: absolute;
+                display: flex;
+                flex-flow: column;
+            }
+            .card:hover img {
+                opacity: 0.25;
+            }
+            .card:hover .texto {
+                opacity: 1;
+                color: $lightgray;
+                font-family: $title;
+                font-size: 0.75em;
+                font-weight: 500;
+                text-shadow: 0rem 0rem 0.2rem $black;
+                text-align: center;
+                padding: 0.2rem;
+                button {
+                    margin: 0;
+                    padding: 0.1rem;
+                    color: $saffron;
+                    text-shadow: 0.1rem 0.1rem 0rem $black;
+                    background-color: $darksinopia;
+                    box-shadow: 0rem 0.1rem 0.5rem $black;
+                    border-radius: 0.3rem;
                 }
             }
+            img {
+                min-width: 108px;
+            }
         }
-        /* PublicDomain */
-        .mainpubdomain {
-            margin: 0;
-            padding: 2rem;
+    }
+    /* PublicDomain */
+    .mainpubdomain {
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        .pubdomain {
+            margin-top: 2.2rem;
+            padding: 0.5rem;
+            background-color: $darkgray;
+            border: none;
+            width: 200px;
+            border-radius: 0.3rem;
+            box-shadow: 0rem 0rem 0.1rem $black;
+            position: sticky;
+            top: 2rem;
+            .pubdomain__title {
+                margin: 0;
+                padding: 0.4rem;
+                color: $saffron;
+                font-family: $title;
+                font-size: 1em;
+                font-weight: 500;
+                text-align: center;
+            }
+            .pubdomain__body {
+                color: $lightgray;
+                text-align: center;
+                font-size: 0.85em;
+                font-weight: 300;
+            }
+        }
+        .pubdomain__catalog {
+            margin: 1rem;
+            max-width: 1000px;
+            background-color: transparentize($color: $black, $amount: 0.8);
+            border: none;
+            border-radius: 0.5rem;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            .pubdomain {
-                background-color: transparentize($color: $black, $amount: 0.8);
-                border: none;
-                width: 1000px;
-                border-radius: 0.3rem;
-                box-shadow: 0rem 0rem 0.1rem $black;
-                .pubdomain__title {
-                    margin: 0;
-                    padding: 0.4rem;
-                    background-color: $darkgray;
-                    color: $saffron;
-                    font-size: 1.8em;
-                    text-align: center;
-                }
-                .pubdomain__body {
-                    color: $black;
-                    text-align: center;
-                    font-size: large;
-                    font-weight: 500;
-                }
-            }
-            .pubdomain__catalog {
-                margin: 1rem;
-                width: 1000px;
-                background-color: transparentize($color: $black, $amount: 0.5);
-                box-shadow: 0rem 0rem 1.5rem $black;
-                border: none;
-                border-radius: 0.5rem;
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                .pubdomain__catalog--title {
-                    width: 1000px;
-                    margin: 1rem 0rem 2rem 0rem;
-                    padding: 0.5em 0rem;
-                    text-align: center;
-                    background-color: $darksinopia;
-                    box-shadow: 0rem 0rem 1rem $black;
-                    color: $saffron;
-                    text-shadow: 0rem 0.25rem 0.5rem $black;
-                }
-                .pubdomain__catalog--body {
-                    margin: 1rem;
-                    padding: 0;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                    align-content: center;
-                    .pd-card {
-                        width: 280px;
-                        height: 320px;
-                        margin: 0.5rem 1rem;
-                        padding: 0.8rem;
-                        display: flex;
-                        flex-flow: column nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: $black;
-                        color: $lightgray;
-                        border: none;
-                        border-radius: 0.3rem;
-                        text-align: center;
-                        .pd-card-title {
-                            color: $lightgray;
-                            text-shadow: 0rem 0rem 1rem $darkgray;
-                            font-size: 0.75rem;
-                            font-weight: 600;
-                            letter-spacing: 0.1rem;
-                        }
-                        .pd-card-author {
-                            color: $lightgray;
-                            text-shadow: 0rem 0rem 1rem $black;
-                            font-size: 0.75rem;
-                            font-weight: 400;
-                        }
-                        img {
-                            max-width: 120px;
-                            max-height: 180px;
-                            border: 0.5rem solid $black;
-                        }
-                        button {
-                            margin: 0rem 0.5rem;
-                            padding: 0.05rem 0.3rem;
-                            background-color: $black;
-                            border: none;
-                            color: $saffron;
-                            font-size: 0.85em;
-                        }
-                        button:hover {
-                            background-color: $saffron;
-                            color: $black;
-                        }
-                    }
-                    .pd-card:hover {
-                        background-color: $darksinopia;
-                        border: none;
-                        .pd-card-author,
-                        .pd-card-title {
-                            color: $saffron;
-                        }
-                    }
-                }
-            }
-        }
-        /* nosotros*/
-        .info {
-            margin: auto;
-            padding: 0.5rem;
-            max-width: 1200px;
-            .info__title {
-                padding: 0.5rem 0.2rem;
+            .pubdomain__catalog--title {
                 width: 100%;
-                background-color: $black;
+                margin: 1rem 0rem 2rem 0rem;
+                padding: 0.5em 0rem;
+                text-align: center;
+                background-color: $darksinopia;
+                box-shadow: 0rem 0rem 1rem $black;
                 color: $saffron;
-                border-radius: 0.2rem;
-                font-size: 1.2em;
+                font-family: $title;
+                text-shadow: 0rem 0.25rem 0.5rem $black;
             }
-            .info__body {
-                .info__body--title {
-                    margin: 0;
-                    padding: 0.25rem;
-                    background-color: $darksinopia;
-                    color: $saffron;
-                    border-radius: 0.2rem;
-                    font-size: 1.1em;
-                }
-                .info__body--content {
-                    padding: 0.5rem 0.1rem;
-                    font-size: 0.8;
-                    font-weight: 400;
-                }
-            }
-        }
-        /* contacto*/
-        .form {
-            margin: auto;
-            width: 992px;
-            border-left: 0.2rem solid $sinopia;
-            border-right: 0.2rem solid $sinopia;
-            .form__title {
-                padding: 0.5rem 0.2rem;
-                margin: 0;
-                background-color: $saffron;
-                color: $black;
-                border-bottom: 0.1rem solid $black;
-                text-align: center;
-                font-size: 1em;
-                font-weight: bold;
-            }
-            .form__body {
-                padding: 1rem 0.5rem;
-                text-align: center;
-                background-color: $lightgray;
-                color: $black;
-                .form__body--input {
+            .pubdomain__catalog--body {
+                margin: 1rem;
+                padding: 0;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                align-content: center;
+                .pd-card {
+                    width: 200px;
+                    height: 260px;
+                    margin: 0.5rem 1rem;
+                    padding: 0.8rem;
                     display: flex;
                     flex-flow: column nowrap;
-                    font-size: 0.8em;
-                    font-weight: bold;
-                }
-                .form__body--news {
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-                .form__body--comment {
-                    font-size: 1em;
-                    font-weight: bold;
-                }
-                .form__buttons {
-                    font-size: 1em;
-                    font-weight: lighter;
-                    .button {
-                        padding: 0.1rem 0.4rem;
-                        border-radius: 0.2rem;
-                        background-color: $darksinopia;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $black;
+                    color: $lightgray;
+                    border: none;
+                    border-radius: 0.3rem;
+                    text-align: center;
+                    .pd-card-title {
+                        color: $lightgray;
+                        text-shadow: 0rem 0rem 1rem $darkgray;
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        letter-spacing: 0.1rem;
+                    }
+                    .pd-card-author {
+                        color: $lightgray;
+                        text-shadow: 0rem 0rem 1rem $black;
+                        font-size: 0.65rem;
+                        font-weight: 400;
+                    }
+                    img {
+                        max-width: 90px;
+                        max-height: 100px;
+                        border: 0.25rem solid $black;
+                    }
+                    button {
+                        margin: 0rem 0.2rem;
+                        padding: 0.05rem 0.1rem;
+                        background-color: $black;
+                        border: none;
                         color: $saffron;
-                        font-weight: 500;
-                        text-shadow: 0.1rem 0.1rem 0rem $black;
+                        font-family: $title;
+                        font-size: 0.75em;
+                    }
+                    button:hover {
+                        background-color: $saffron;
+                        color: $black;
+                    }
+                }
+                .pd-card:hover {
+                    background-color: $darksinopia;
+                    border: none;
+                    .pd-card-author,
+                    .pd-card-title {
+                        color: $saffron;
                     }
                 }
             }
         }
     }
+    /* nosotros*/
+    .info {
+        margin: auto;
+        padding: 0.5rem;
+        max-width: 1200px;
+        .info__title {
+            padding: 0.5rem 0.2rem;
+            width: 100%;
+            background-color: $black;
+            color: $saffron;
+            font-family: $title;
+            border-radius: 0.2rem;
+            font-size: 1.2em;
+        }
+        .info__body {
+            .info__body--title {
+                margin: 0;
+                padding: 0.25rem;
+                background-color: $darksinopia;
+                color: $saffron;
+                font-family: $title;
+                border-radius: 0.2rem;
+                font-size: 1.2em;
+            }
+            .info__body--content {
+                padding: 0.5rem 0.1rem;
+                font-size: 0.8;
+                font-weight: 400;
+                .body__content--title {
+                    font-size: 0.9em;
+                    font-family: $title;
+                }
+                ol > li {
+                    list-style-type: decimal;
+                }
+                ul > li {
+                    list-style-type: disc;
+                }
+                .body__content--text {
+                    font-size: 0.85em;
+                }
+            }
+        }
+    }
+    /* contacto*/
+    .form {
+        margin: auto;
+        width: 992px;
+        border-left: 0.2rem solid $sinopia;
+        border-right: 0.2rem solid $sinopia;
+        .form__title {
+            padding: 0.5rem 0.2rem;
+            margin: 0;
+            background-color: $saffron;
+            color: $black;
+            border-bottom: 0.1rem solid $black;
+            text-align: center;
+            font-family: $title;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .form__body {
+            padding: 1rem 0.5rem;
+            text-align: center;
+            background-color: $lightgray;
+            color: $black;
+            .form__body--input {
+                display: flex;
+                flex-flow: column nowrap;
+                font-size: 0.8em;
+                font-weight: bold;
+            }
+            .form__body--news {
+                font-size: 1em;
+                font-weight: bold;
+            }
+            .form__body--comment {
+                font-size: 1em;
+                font-weight: bold;
+            }
+            .form__buttons {
+                font-size: 1em;
+                font-weight: lighter;
+                .button {
+                    padding: 0.1rem 0.4rem;
+                    border-radius: 0.2rem;
+                    background-color: $darksinopia;
+                    color: $saffron;
+                    font-family: $title;
+                    font-weight: 500;
+                    text-shadow: 0.1rem 0.1rem 0rem $black;
+                }
+            }
+        }
+    }
+}
+
+main {
+    background-image: url(../img/vintage-paper.png);
+    background-repeat: repeat;
+    background-size: 10%;
+    font-family: $text;
 }

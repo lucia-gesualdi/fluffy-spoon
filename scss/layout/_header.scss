@@ -3,6 +3,7 @@
         background-color: $black;
         width: auto;
         height: auto;
+        font-family: $title;
         /* top */
         .header__top {
             padding: 0.5rem 1rem 1.2rem 1rem;
@@ -13,17 +14,18 @@
                 display: flex;
                 flex-flow: row;
                 img {
-                    width: 50px;
+                    width: 55px;
                     height: 45px;
                 }
                 h1 {
-                    font-family: $font;
-                    padding-top: 0.8rem;
+                    font-family: $elelivros;
+                    padding-top: 0rem;
                     color: $saffron;
-                    font-size: 1.25em;
+                    font-size: 1.3em;
                     font-weight: 500;
                     em {
                         color: $sinopia;
+                        font-size: 1.5em;
                     }
                 }
             }
@@ -44,6 +46,7 @@
         /* bottom */
         .header__bottom {
             padding-bottom: 0.5rem;
+            font-family: $title;
             display: flex;
             flex-flow: row wrap;
             .header__nav {
@@ -73,11 +76,14 @@
                     .menu-content {
                         background-color: $black;
                         border-radius: 0.5rem;
-                        font-size: 1em;
+                        font-size: 0.8em;
                         overflow: hidden;
                         max-height: 0;
                         li a {
                             padding: 0.4rem 1rem;
+                            .active {
+                                color: $lightgray;
+                            }
                         }
                         a:hover {
                             color: $saffron;
@@ -124,6 +130,7 @@
         background-color: $black;
         width: auto;
         height: auto;
+        font-family: $title;
         /* top */
         .header__top {
             padding: 0.5rem 1rem 1.2rem 1rem;
@@ -134,8 +141,8 @@
                 display: flex;
                 flex-flow: row;
                 img {
-                    width: 95px;
-                    height: 75px;
+                    width: 90px;
+                    height: 70px;
                 }
                 img:hover {
                     animation-name: logo;
@@ -145,13 +152,13 @@
                     animation-iteration-count: 1;
                 }
                 h1 {
-                    font-family: $font;
-                    padding-top: 1.2rem;
+                    font-family: $elelivros;
+                    padding-top: 0rem;
                     color: $saffron;
-                    font-size: 1.8em;
-                    font-weight: 500;
+                    font-size: 2em;
                     em {
                         color: $sinopia;
+                        font-size: 1.5em;
                     }
                 }
             }
@@ -172,6 +179,7 @@
         /* bottom */
         .header__bottom {
             padding-bottom: 0.5rem;
+            font-family: $title;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -186,6 +194,9 @@
                         font-weight: 500;
                         li a {
                             padding: 0rem 0.8rem;
+                            .active {
+                                color: $lightgray;
+                            }
                         }
                         a:hover {
                             color: $saffron;
@@ -197,6 +208,9 @@
                     label {
                         display: none;
                     }
+                }
+                .active {
+                    color: $lightgray;
                 }
             }
             .header__searchbar {

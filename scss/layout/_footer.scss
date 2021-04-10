@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px) {
     .footer {
-        background-color: $black;
         display: flex;
         flex-flow: column nowrap;
         .footer__links {
@@ -14,7 +13,7 @@
             .links__contact {
                 text-align: center;
                 padding: 0.4rem 1rem;
-                font-size: 0.7em;
+                font-size: 0.6em;
                 li a {
                     padding: 0.5rem 0rem;
                 }
@@ -22,13 +21,13 @@
             .links__tandc {
                 text-align: center;
                 padding: 0rem 1rem;
-                font-size: 0.7em;
+                font-size: 0.6em;
                 li a {
                     padding: 0.5rem 0rem;
                 }
             }
             .links__social {
-                font-size: 0.85em;
+                font-size: 0.7em;
                 text-align: center;
                 display: flex;
                 flex-flow: row;
@@ -43,7 +42,7 @@
         }
         .copyright {
             color: $sinopia;
-            font-size: 0.7em;
+            font-size: 0.6em;
             margin: 0rem;
             padding: 0rem;
             text-align: center;
@@ -53,8 +52,8 @@
 
 @media screen and (min-width: 768px) {
     .footer {
-        margin: 0;
-        background-color: $black;
+        max-width: 1480px;
+        margin: auto;
         display: flex;
         flex-flow: column nowrap;
         .footer__links {
@@ -63,19 +62,20 @@
             padding: 0rem 1rem 0.5rem 1rem;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            font-family: $title;
             letter-spacing: 0.1rem;
             word-spacing: 0.1rem;
             line-height: 1.5rem;
             .links__contact {
-                font-size: 0.75em;
+                font-size: 0.7em;
                 padding: 0.4rem 1rem;
                 li {
                     padding: 0.1rem;
                 }
             }
             .links__tandc {
-                font-size: 0.75em;
+                font-size: 0.7em;
                 padding: 0.4rem 1rem;
                 li {
                     padding: 0.1rem;
@@ -83,7 +83,7 @@
             }
             .links__social {
                 padding: 1rem;
-                font-size: 1em;
+                font-size: 0.9em;
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: space-evenly;
@@ -96,10 +96,15 @@
             }
         }
         .copyright {
-            font-size: 0.7em;
+            font-size: 0.6em;
             color: $sinopia;
             padding: 0rem 1rem;
             text-align: center;
         }
     }
+}
+
+footer {
+    background-color: black;
+    font-family: $title;
 }
